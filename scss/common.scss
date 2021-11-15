@@ -238,6 +238,7 @@ header {
 	right: 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	padding: 10px 0;
+	z-index: 999;
 	.logo {
 		background-color: $primary-color-contrast;
 		padding-right: 30px;
@@ -259,6 +260,19 @@ header {
 	}
 	.searchInput {
 		border-radius: 30px;
+	}
+	.quickAction {
+		.btn {
+			&:hover {
+				color: $primary-color;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		.dropdown-menu {
+			z-index: 9999;
+		}
 	}
 	.profileNot {
 		> ul {

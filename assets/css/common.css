@@ -7989,7 +7989,8 @@ header {
   top: 0;
   right: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 0; }
+  padding: 10px 0;
+  z-index: 999; }
   header .logo {
     background-color: #fff;
     padding-right: 30px; }
@@ -8004,6 +8005,12 @@ header {
       font-size: 13px; }
   header .searchInput {
     border-radius: 30px; }
+  header .quickAction .btn:hover {
+    color: #267dff; }
+  header .quickAction .btn:focus {
+    box-shadow: none; }
+  header .quickAction .dropdown-menu {
+    z-index: 9999; }
   header .profileNot > ul {
     display: flex;
     justify-content: flex-end;

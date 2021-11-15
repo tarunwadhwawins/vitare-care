@@ -19,10 +19,22 @@
           </select>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <input type="text" class="form-control" placeholder="Search" class="searchInput">
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-2">
+        <div class="dropdown quickAction">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Quick Action
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Add Appoinment</a></li>
+            <li><a class="dropdown-item" href="#">Add Patient</a></li>
+            <li><a class="dropdown-item" href="#">Add Care Coordinator</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2">
         <div class="profileNot">
           <ul>
             <li>
