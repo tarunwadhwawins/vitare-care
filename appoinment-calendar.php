@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 
 </head>
 
@@ -36,7 +37,7 @@
                <div class="row">
                   <div class="col-sm-3 leftCalendarView">
                      <div class="text-center mb-3">
-                        <button class="btn primaryBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa fa-plus"></i> New Appoinment</button>
+                        <button class="btn primaryBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa fa-plus"></i> New Appointment</button>
                      </div>
                      <div class="calendar">
                         <div class="header">
@@ -783,7 +784,7 @@
       <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
          <div class="modal-content">
             <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">Appoinment Detail</h5>
+               <h5 class="modal-title" id="exampleModalLabel">Appointment Detail</h5>
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body appoinmentDetailModal">
@@ -802,7 +803,7 @@
                   </div>
 
                   <div class="col-sm-6">
-                  <div class="mb-3 selectOption">
+                     <div class="mb-3 selectOption">
                         <label for="exampleInputEmail1" class="form-label">Staff</label>
                         <select class="js-example-basic-single">
                            <option>Search & Select Staff</option>
@@ -810,19 +811,19 @@
                            <option value="2">Steve Smith</option>
                            <option value="3">Joseph Spouse</option>
                            <option value="4">Robert Henry</option>
-                        </select>                       
+                        </select>
                      </div>
                   </div>
                   <div class="col-sm-6">
                      <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Start Date</label>
-                        <input type="date" class="form-control" aria-describedby="emailHelp">
+                        <input type="text"  class="form-control" id="datepicker" placeholder="Select Date">
                      </div>
                   </div>
                   <div class="col-sm-6">
                      <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"> Time</label>
-                        <input type="time" class="form-control" aria-describedby="emailHelp">
+                        <input type="text"  class="form-control" id="timepicker" placeholder="Select Time">
                      </div>
                   </div>
                   <div class="col-sm-12">
@@ -853,6 +854,15 @@
    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="assets/js/main.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+   <script>
+      $(function() {
+         $("#datepicker").datepicker();
+      });
+      $(function() {
+         $("#timepicker").timepicker();
+      });
+   </script>
    <script>
       $('.fullCalendarBtn').click(function() {
          $('.leftCalendarView').addClass('d-none');
