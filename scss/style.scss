@@ -428,6 +428,33 @@
 		}
 	}
 }
+.select2-container {
+	z-index: 99999!important;
+}
+.appoinmentDetailModal {
+	.selectOption {
+		.form-label {
+			display: block;
+		}
+		.select2-container {
+			width: 100% !important;
+			.selection {
+				.select2-selection--single {
+					border: 1px solid #dce0e4 !important;
+					padding: 4px 10px !important;
+					height: auto !important;
+					.select2-selection__rendered {
+						padding-left: 0px !important;
+					}
+					.select2-selection__arrow {
+						top: 50% !important;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+}
 
 // Calendar CSS
 .appointmentCalendar {

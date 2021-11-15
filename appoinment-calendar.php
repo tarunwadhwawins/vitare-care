@@ -13,6 +13,8 @@
    <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -777,20 +779,20 @@
    </div>
 
    <!-- Modal -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
          <div class="modal-content">
             <div class="modal-header">
                <h5 class="modal-title" id="exampleModalLabel">Appoinment Detail</h5>
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body appoinmentDetailModal">
                <div class="row">
                   <div class="col-sm-6">
-                     <div class="mb-3">
+                     <div class="mb-3 selectOption">
                         <label for="exampleInputEmail1" class="form-label">Patient</label>
-                        <select class="form-select" aria-label="Default select example">
-                           <option selected>Select Patient</option>
+                        <select class="js-example-basic-single">
+                           <option>Search & Select Patient</option>
                            <option value="1">Jane Doe</option>
                            <option value="2">Steve Smith</option>
                            <option value="3">Joseph Spouse</option>
@@ -798,32 +800,19 @@
                         </select>
                      </div>
                   </div>
-                  <!-- <div class="col-sm-4">
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" aria-describedby="emailHelp">
-                     </div>
-                  </div> -->
+
                   <div class="col-sm-6">
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Doctor</label>
-                        <select class="form-select" aria-label="Default select example">
-                           <option selected>Select a Doctor</option>
+                  <div class="mb-3 selectOption">
+                        <label for="exampleInputEmail1" class="form-label">Staff</label>
+                        <select class="js-example-basic-single">
+                           <option>Search & Select Staff</option>
                            <option value="1">Jane Doe</option>
                            <option value="2">Steve Smith</option>
                            <option value="3">Joseph Spouse</option>
                            <option value="4">Robert Henry</option>
-                        </select>
+                        </select>                       
                      </div>
                   </div>
-                  <!-- <div class="col-sm-6">
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Address</label>
-                        <textarea class="form-control" aria-describedby="emailHelp"></textarea>
-                     </div>
-                  </div> -->
-
-
                   <div class="col-sm-6">
                      <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Start Date</label>
@@ -863,6 +852,7 @@
    <script type="text/javascript" src="assets/js/iconify.min.js"></script>
    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="assets/js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
    <script>
       $('.fullCalendarBtn').click(function() {
          $('.leftCalendarView').addClass('d-none');
@@ -877,6 +867,13 @@
          $('.rightCalendarView').addClass('col-sm-9');
          $('.HideCalendarBtn').addClass('d-none');
          $('.fullCalendarBtn').removeClass('d-none');
+      });
+   </script>
+   <script>
+      $(document).ready(function() {
+         $('.js-example-basic-single').select2({
+            placeholder: "Select a Patient",
+         });
       });
    </script>
    <!---->
