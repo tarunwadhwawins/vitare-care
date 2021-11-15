@@ -1,7 +1,7 @@
 .commonTable {
   background-color: #fff; }
   .commonTable .table thead tr th {
-    color: #222;
+    color: #111;
     font-weight: 600;
     font-size: 13px;
     position: relative;
@@ -51,10 +51,10 @@
   .topBox.one {
     background-color: #fff; }
     .topBox.one i {
-      color: #222; }
+      color: #111; }
     .topBox.one h5,
     .topBox.one p {
-      color: #000; }
+      color: #111; }
   .topBox.two {
     background-color: #8e60ff; }
   .topBox.three {
@@ -64,7 +64,7 @@
   .topBox.five {
     background-color: #0fb5c2; }
   .topBox.six {
-    background-color: #222; }
+    background-color: #267dff; }
   .topBox i {
     color: #fff;
     font-size: 22px; }
@@ -96,8 +96,8 @@
       align-items: center;
       justify-content: space-between; }
       .commonCard.card .card-header .buttons .btn {
-        color: #222;
-        background-color: #267dff4d; }
+        color: #111;
+        background-color: #d9d9d9; }
   .commonCard.card .list-group .list-group-item {
     display: flex;
     align-items: center;
@@ -141,13 +141,13 @@
           position: relative;
           font-size: 13px; }
           .commonCard.card .card-body .nav .nav-item .nav-link.active {
-            border-color: #222;
-            color: #222;
+            border-color: #111;
+            color: #111;
             background-color: #fff; }
     .commonCard.card .card-body .table {
       margin: 0; }
       .commonCard.card .card-body .table thead tr th {
-        color: #222;
+        color: #111;
         font-size: 13px; }
 
 .chartBox {
@@ -156,21 +156,25 @@
   margin: 15px 0 10px;
   padding: 15px; }
 
-.appointmentCalendar .nav .nav-item .nav-link.active {
-  background-color: #222; }
+.appointmentCalendar .nav .nav-item .nav-link {
+  color: #111; }
+  .appointmentCalendar .nav .nav-item .nav-link.active {
+    background-color: #d9d9d9;
+    color: #111; }
 
 .appointmentCalendar .dayCalendar .table tbody {
   vertical-align: middle; }
   .appointmentCalendar .dayCalendar .table tbody tr th {
     font-size: 13px;
-    color: #222;
+    color: #111;
     width: 100px;
     height: 70px;
     text-align: center; }
   .appointmentCalendar .dayCalendar .table tbody tr td .dropdown {
     display: inline-block; }
     .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.one .btn {
-      background-color: #222; }
+      background-color: #d9d9d9;
+      color: #111; }
     .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.two .btn {
       background-color: #8e60ff; }
     .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.three .btn {
@@ -203,7 +207,7 @@
 
 .appointmentCalendar .monthCalendar .table thead tr th {
   font-size: 13px;
-  color: #222;
+  color: #111;
   width: 100px;
   height: 70px;
   text-align: center;
@@ -275,7 +279,7 @@
           background-color: #fff;
           border-radius: 50%; }
           .appointmentCalendar .doctors ul li .img .check.one span {
-            background-color: #222; }
+            background-color: #111; }
           .appointmentCalendar .doctors ul li .img .check.two span {
             background-color: #8e60ff; }
           .appointmentCalendar .doctors ul li .img .check.three span {
@@ -325,7 +329,7 @@
 .appointmentCalendar .calendar .header {
   height: 100px;
   position: relative;
-  color: #fff; }
+  color: #111; }
 
 .appointmentCalendar .calendar .header .text {
   position: absolute;
@@ -333,7 +337,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #308ff0;
+  background-color: #d9d9d9;
   padding: 15px;
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
@@ -403,7 +407,7 @@
   display: table-row; }
 
 .appointmentCalendar .table .row.head {
-  color: #308ff0;
+  color: #111;
   text-transform: uppercase; }
 
 .appointmentCalendar .table .row .cell {
@@ -425,8 +429,8 @@
   transition: color, background 0.4s ease-in-out 0s; }
 
 .appointmentCalendar .table .row .cell.active span {
-  color: #fff;
-  background-color: #308ff0;
+  color: #111;
+  background-color: #d9d9d9;
   border-radius: 4px;
   padding: 0; }
 
@@ -642,7 +646,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #222;
+    background-color: #d9d9d9;
     height: 80px;
     position: absolute;
     z-index: -1; }
@@ -693,7 +697,7 @@
   background-color: #267dff4d;
   padding: 10px 15px; }
   .patientSummary .notification p {
-    color: #222; }
+    color: #111; }
 
 .patientSummary .patientDes {
   margin: 15px 0 0; }
@@ -707,8 +711,8 @@
       padding: 10px;
       font-size: 15px; }
       .patientSummary .patientDes .accordion .accordion-item .accordion-header .accordion-button[aria-expanded="true"] {
-        color: #fff;
-        background-color: #222;
+        color: #111;
+        background-color: #d9d9d9;
         box-shadow: none; }
         .patientSummary .patientDes .accordion .accordion-item .accordion-header .accordion-button[aria-expanded="true"]::after {
           color: #fff; }
@@ -725,9 +729,9 @@
       .patientSummary .patientDes .accordion .accordion-item .accordion-body a.edit {
         position: absolute;
         right: 10px;
-        color: #222; }
+        color: #111; }
       .patientSummary .patientDes .accordion .accordion-item .accordion-body h4 {
-        color: #222;
+        color: #111;
         position: relative;
         font-size: 1.2rem; }
         .patientSummary .patientDes .accordion .accordion-item .accordion-body h4 span {
@@ -758,7 +762,7 @@
             width: 100%;
             padding: 0 25px 0 0; }
             .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .content .name {
-              color: #222;
+              color: #111;
               font-size: 16px; }
             .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .content .role {
               font-size: 13px;
@@ -801,8 +805,8 @@
         position: relative;
         font-size: 15px; }
         .patientSummary .patientTabs .nav .nav-item .nav-link.active {
-          border-color: #222;
-          color: #222;
+          border-color: #111;
+          color: #111;
           background-color: transparent; }
   .patientSummary .patientTabs .card {
     border: none;
@@ -986,7 +990,6 @@
     padding: 15px 0; }
     .stepper .stepperCard .stepperFooter .btn {
       font-size: 16px;
-      color: #fff;
       padding: 8px 15px;
       border: none;
       border-radius: 5px;
@@ -995,8 +998,6 @@
       margin: 0 0 0 5px;
       display: inline-flex;
       align-items: center; }
-      .stepper .stepperCard .stepperFooter .btn.back {
-        background-color: #6c757d; }
       @media (max-width: 767px) {
         .stepper .stepperCard .stepperFooter .btn {
           font-size: 13px;
@@ -1027,7 +1028,7 @@
       height: 0;
       width: 0; }
       .checkBox .checkInput input:checked ~ .checkmark {
-        background-color: #2196f3; }
+        background-color: #111; }
         .checkBox .checkInput input:checked ~ .checkmark:after {
           display: block; }
     .checkBox .checkInput .checkmark {
@@ -1069,7 +1070,7 @@
     opacity: 0;
     cursor: pointer; }
     .radioForm .radioInput input:checked ~ .checkmark {
-      background-color: #2196f3; }
+      background-color: #111; }
       .radioForm .radioInput input:checked ~ .checkmark:after {
         display: block; }
   .radioForm .radioInput .checkmark {

@@ -103,7 +103,9 @@
                                  <div class="accordion-body">
                                     <div class="row">
                                        <div class="col-sm-4">
-                                          <h4>Health Team</h4>
+                                          <h4>Health Team
+                                          <span data-bs-toggle="modal" data-bs-target="#health"><i class="fa fa-plus"></i></span>
+                                          </h4>
                                           <ul>
                                              <li>
                                                 <div class="profileImg">
@@ -595,8 +597,8 @@
                </div>
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
+               <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn primaryBtn">Save changes</button>
             </div>
          </div>
       </div>
@@ -611,14 +613,14 @@
             </div>
             <div class="modal-body">
                <div class="row">
-                  <div class="col-sm-10">
+                  <div class="col-sm-9">
                      <div class="form-group">
                         <input type="text" class="form-control" placeholder="Enter Search Here..">
                      </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                      <div class="form-group">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Add New</button>
+                        <button class="btn primaryBtn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Add New</button>
                      </div>
                   </div>
                   <!---->
@@ -710,8 +712,122 @@
                  </div>
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
+               <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn primaryBtn">Save changes</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="health" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Health </h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-9">
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Search Here..">
+                     </div>
+                  </div>
+                  <div class="col-sm-3">
+                     <div class="form-group">
+                        <button class="btn primaryBtn" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Add New</button>
+                     </div>
+                  </div>
+                  <!---->
+               </div>
+               <div class="row">
+                 <div class="col-sm-12">
+                     <div class="table-responsive commonTable">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>First Name
+                                 <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                                 <th>Last Name
+                                 <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                                 <th>Role
+                                 <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Jane</td>
+                                 <td>Doe</td>
+                                 <td>Physician</td>
+                              </tr>
+                              <tr>
+                              <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Steve </td>
+                                 <td>Smith</td>
+                                 <td>Cardiologist</td>
+                              </tr>
+                              <tr>
+                              <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Joseph </td>
+                                 <td>William</td>
+                                 <td>RN</td>
+                              </tr>
+                              <tr>
+                              <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Robert </td>
+                                 <td>Henry</td>
+                                 <td>Physician</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                 </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn primaryBtn">Save changes</button>
             </div>
          </div>
       </div>
@@ -779,7 +895,7 @@
                               </div>
                            </div>
                            <div class="stepperFooter">
-                              <button class="btn next btn-primary">Next</button>
+                              <button class="btn next primaryBtn">Next</button>
                            </div>
                         </div>
                      </div>
@@ -816,7 +932,7 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-group text-end">
-                                       <button class="btn btn-primary">Add</button>
+                                       <button class="btn primaryBtn">Add</button>
                                     </div>
                                  </div>
                                  <div class="col-sm-12">
@@ -865,7 +981,7 @@
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
-                              <button class="btn next btn-primary">Next </button>
+                              <button class="btn next primaryBtn">Next </button>
                            </div>
                         </div>
                      </div>
@@ -914,7 +1030,7 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-group text-end">
-                                       <button class="btn btn-primary">Add</button>
+                                       <button class="btn primaryBtn">Add</button>
                                     </div>
                                  </div>
                                  <div class="col-sm-12">
@@ -958,7 +1074,7 @@
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
-                              <button class="btn next btn-primary">Next </button>
+                              <button class="btn next primaryBtn">Next </button>
                            </div>
                         </div>
                      </div>
@@ -1004,7 +1120,7 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-group text-end">
-                                       <button class="btn btn-primary">Add</button>
+                                       <button class="btn primaryBtn">Add</button>
                                     </div>
                                  </div>
                               </div>
@@ -1054,7 +1170,7 @@
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
-                              <button class="btn save btn-primary">Save </button>
+                              <button class="btn save primaryBtn">Save </button>
                            </div>
                         </div>
                      </div>
@@ -1063,11 +1179,68 @@
                </div>
             </div>
             <!-- <div class="modal-footer">
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+            <button class="btn primaryBtn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
             </div> -->
          </div>
       </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+         <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Add Health </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Phone No</label>
+                        <input type="number" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Relationship</label>
+                        <select class="form-select">
+                           <option value="0">Select Relationship</option>
+                           <option value="1">Brother</option>
+                           <option value="1">Sister</option>
+                           <option value="1">Mother</option>
+                           <option value="1">Father</option>
+                        </select>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn primaryBtn">Save changes</button>
+            </div>
+         </div>
       </div>
+   </div>
    <!---->
    <script type="text/javascript" src="assets/js/jquery.js"></script>
    <script type="text/javascript" src="assets/js/popper.js"></script>

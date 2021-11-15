@@ -7841,7 +7841,7 @@ a, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "poppinsbold";
-  color: #222; }
+  color: #111; }
 
 ul {
   list-style: none;
@@ -7849,40 +7849,40 @@ ul {
   margin: 0; }
 
 .primary-color {
-  color: #222; }
+  color: #111; }
   .primary-color:hover {
-    color: #222; }
+    color: #111; }
 
 .secondary-color {
-  color: #00c6ca; }
+  color: #d9d9d9; }
   .secondary-color:hover {
-    color: #00c6ca; }
+    color: #d9d9d9; }
 
 .primaryBtn {
-  background-color: #222;
+  background-color: #111;
   color: #fff;
   font-size: 14px;
-  border: 1px solid #222;
+  border: 1px solid #111;
   padding: 8px 25px;
   font-family: "poppinsbold"; }
   .primaryBtn:hover {
-    color: #222;
+    color: #111;
     background-color: #fff; }
 
 .secondaryBtn {
-  background-color: #00c6ca;
+  background-color: #d9d9d9;
   color: #fff;
   font-size: 14px;
   border-radius: 15px;
-  border: 1px solid #00c6ca;
+  border: 1px solid #d9d9d9;
   padding: 8px 25px;
   font-family: "poppinsbold"; }
   .secondaryBtn:hover {
-    color: #00c6ca;
+    color: #d9d9d9;
     background-color: #fff; }
 
 .deleteBtn {
-  background-color: #00c6ca;
+  background-color: #d9d9d9;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -7897,7 +7897,7 @@ ul {
     color: #fff; }
 
 .editBtn {
-  background-color: #222;
+  background-color: #111;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -7920,15 +7920,15 @@ ul {
   color: #999; }
 
 .commonRadio .form-check-input:checked {
-  background-color: #222;
-  border-color: #222; }
+  background-color: #111;
+  border-color: #111; }
 
 .commonRadio .form-check-input:focus {
   box-shadow: none; }
 
 .commonCheckbox .form-check-input:checked {
-  background-color: #222;
-  border-color: #222; }
+  background-color: #111;
+  border-color: #111; }
 
 .commonCheckbox .form-check-input:focus {
   box-shadow: none; }
@@ -7939,7 +7939,7 @@ ul {
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: #222; }
+  background-color: #111; }
   .sidebar .logo {
     text-align: center;
     padding: 10px 0;
@@ -7951,7 +7951,7 @@ ul {
     .sidebar .menuList ul li:hover a {
       text-decoration: none;
       background-color: #f9f9f9;
-      color: #222;
+      color: #111;
       border-color: #f9f9f9; }
     .sidebar .menuList ul li a {
       padding: 10px 15px;
@@ -7975,7 +7975,7 @@ header {
     align-items: center;
     height: 100%; }
     header .menuBar a {
-      color: #222;
+      color: #111;
       font-size: 22px; }
   header .organisation {
     display: flex;

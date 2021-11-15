@@ -7841,7 +7841,7 @@ a, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "poppinsbold";
-  color: #222; }
+  color: #111; }
 
 .form-group {
   margin-bottom: 15px; }
@@ -7873,40 +7873,39 @@ ul {
   margin: 0; }
 
 .primary-color {
-  color: #222; }
+  color: #111; }
   .primary-color:hover {
-    color: #222; }
+    color: #111; }
 
 .secondary-color {
-  color: #00c6ca; }
+  color: #d9d9d9; }
   .secondary-color:hover {
-    color: #00c6ca; }
+    color: #d9d9d9; }
+
+.btn:focus {
+  box-shadow: none; }
 
 .primaryBtn {
-  background-color: #222;
-  color: #fff;
+  background-color: #d9d9d9;
+  color: #111;
   font-size: 14px;
-  border: 1px solid #222;
   padding: 8px 25px;
   font-family: "poppinsbold"; }
-  .primaryBtn:hover {
-    color: #222;
-    background-color: #fff; }
 
 .secondaryBtn {
-  background-color: #00c6ca;
+  background-color: #d9d9d9;
   color: #fff;
   font-size: 14px;
   border-radius: 15px;
-  border: 1px solid #00c6ca;
+  border: 1px solid #d9d9d9;
   padding: 8px 25px;
   font-family: "poppinsbold"; }
   .secondaryBtn:hover {
-    color: #00c6ca;
+    color: #d9d9d9;
     background-color: #fff; }
 
 .deleteBtn {
-  background-color: #00c6ca;
+  background-color: #d9d9d9;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -7921,7 +7920,7 @@ ul {
     color: #fff; }
 
 .editBtn {
-  background-color: #222;
+  background-color: #111;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -7944,15 +7943,15 @@ ul {
   color: #999; }
 
 .commonRadio .form-check-input:checked {
-  background-color: #222;
-  border-color: #222; }
+  background-color: #111;
+  border-color: #111; }
 
 .commonRadio .form-check-input:focus {
   box-shadow: none; }
 
 .commonCheckbox .form-check-input:checked {
-  background-color: #222;
-  border-color: #222; }
+  background-color: #111;
+  border-color: #111; }
 
 .commonCheckbox .form-check-input:focus {
   box-shadow: none; }
@@ -8006,7 +8005,7 @@ header {
   header .searchInput {
     border-radius: 30px; }
   header .quickAction .btn:hover {
-    color: #267dff; }
+    color: #111; }
   header .quickAction .btn:focus {
     box-shadow: none; }
   header .quickAction .dropdown-menu {
@@ -8071,12 +8070,12 @@ header {
       border-radius: 15px;
       overflow: hidden; }
       .loginWrapper .logIn .loginInner .leftWrapper {
-        background-color: #222;
+        background-color: #d9d9d9;
         height: 100%;
         padding: 15px 40px;
         display: flex;
         align-items: center;
-        color: #fff;
+        color: #111;
         position: relative; }
         .loginWrapper .logIn .loginInner .leftWrapper .logo {
           text-align: center; }
@@ -8085,7 +8084,7 @@ header {
             margin: 0 auto;
             display: inline-block; }
         .loginWrapper .logIn .loginInner .leftWrapper h2, .loginWrapper .logIn .loginInner .leftWrapper .h2 {
-          color: #fff;
+          color: #111;
           position: relative;
           margin: 0 0 30px;
           font-size: 22px; }
@@ -8095,7 +8094,7 @@ header {
             bottom: -8px;
             left: 0;
             height: 2px;
-            background-color: #fff;
+            background-color: #111;
             width: 50px; }
         .loginWrapper .logIn .loginInner .leftWrapper .rightImg {
           position: absolute;
@@ -8118,7 +8117,7 @@ header {
             left: 50%;
             transform: translateX(-50%);
             height: 2px;
-            background-color: #222;
+            background-color: #111;
             width: 30px; }
         .loginWrapper .logIn .loginInner .rightWrapper .rightImg {
           position: absolute;

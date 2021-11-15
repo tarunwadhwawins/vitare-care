@@ -96,18 +96,18 @@ ul {
 		color: $secondary-color;
 	}
 }
+.btn {
+	&:focus {
+		box-shadow: none;
+	}
+}
 
 .primaryBtn {
-	background-color: $primary-color;
-	color: #fff;
+	background-color: $secondary-color;
+	color: $primary-color;
 	font-size: 14px;
-	border: 1px solid $primary-color;
 	padding: 8px 25px;
 	font-family: $font-family-bold;
-	&:hover {
-		color: $primary-color;
-		background-color: #fff;
-	}
 }
 .secondaryBtn {
 	background-color: $secondary-color;
@@ -358,12 +358,12 @@ header {
 			// 	padding: 0 !important;
 			// }
 			.leftWrapper {
-				background-color: $primary-color;
+				background-color: $secondary-color;
 				height: 100%;
 				padding: 15px 40px;
 				display: flex;
 				align-items: center;
-				color: $primary-color-contrast;
+				color: $primary-color;
 				position: relative;
 				.logo {
 					text-align: center;
@@ -374,7 +374,7 @@ header {
 					}
 				}
 				h2 {
-					color: $primary-color-contrast;
+					color: $primary-color;
 					position: relative;
 					margin: 0 0 30px;
 					font-size: 22px;
@@ -384,7 +384,7 @@ header {
 						bottom: -8px;
 						left: 0;
 						height: 2px;
-						background-color: $primary-color-contrast;
+						background-color: $primary-color;
 						width: 50px;
 					}
 				}

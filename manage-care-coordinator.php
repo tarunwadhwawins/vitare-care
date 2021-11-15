@@ -199,7 +199,7 @@
                               </div>
                            </div>
                            <div class="stepperFooter">
-                              <button class="btn next btn-primary">Next</button>
+                              <button class="btn next primaryBtn">Next</button>
                            </div>
                         </div>
                      </div>
@@ -236,7 +236,7 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-group text-end">
-                                       <button class="btn btn-primary">Add</button>
+                                       <button class="btn primaryBtn">Add</button>
                                     </div>
                                  </div>
                                  <div class="col-sm-12">
@@ -285,7 +285,7 @@
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
-                              <button class="btn next btn-primary">Next </button>
+                              <button class="btn next primaryBtn">Next </button>
                            </div>
                         </div>
                      </div>
@@ -334,7 +334,7 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-group text-end">
-                                       <button class="btn btn-primary">Add</button>
+                                       <button class="btn primaryBtn">Add</button>
                                     </div>
                                  </div>
                                  <div class="col-sm-12">
@@ -378,7 +378,7 @@
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
-                              <button class="btn next btn-primary">Next </button>
+                              <button class="btn next primaryBtn">Next </button>
                            </div>
                         </div>
                      </div>
@@ -424,7 +424,7 @@
                                  </div>
                                  <div class="col-sm-12">
                                     <div class="form-group text-end">
-                                       <button class="btn btn-primary">Add</button>
+                                       <button class="btn primaryBtn">Add</button>
                                     </div>
                                  </div>
                               </div>
@@ -474,7 +474,7 @@
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
-                              <button class="btn save btn-primary">Save </button>
+                              <button class="btn save primaryBtn">Save </button>
                            </div>
                         </div>
                      </div>

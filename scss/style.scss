@@ -58,9 +58,9 @@
 						margin: 0;
 						.checkInput {
 							margin: 0;
-							padding-left:10px;
-							.checkmark{
-							 height:20px;
+							padding-left: 10px;
+							.checkmark {
+								height: 20px;
 							}
 						}
 					}
@@ -82,7 +82,7 @@
 		}
 		h5,
 		p {
-			color: $black-color;
+			color: $primary-color;
 		}
 	}
 	&.two {
@@ -98,7 +98,7 @@
 		background-color: #0fb5c2;
 	}
 	&.six {
-		background-color: $primary-color;
+		background-color: #267dff;
 	}
 	i {
 		color: $primary-color-contrast;
@@ -137,7 +137,7 @@
 				justify-content: space-between;
 				.btn {
 					color: $primary-color;
-					background-color: $primary-color-100;
+					background-color: $secondary-color;
 				}
 			}
 		}
@@ -227,8 +227,10 @@
 	.nav {
 		.nav-item {
 			.nav-link {
+				color: $primary-color;
 				&.active {
-					background-color: $primary-color;
+					background-color: $secondary-color;
+					color: $primary-color;
 				}
 			}
 		}
@@ -251,7 +253,8 @@
 							display: inline-block;
 							&.one {
 								.btn {
-									background-color: $primary-color;
+									background-color: $secondary-color;
+									color: $primary-color;
 								}
 							}
 							&.two {
@@ -484,7 +487,7 @@
 	.calendar .header {
 		height: 100px;
 		position: relative;
-		color: #fff;
+		color: $primary-color;
 	}
 	.calendar .header .text {
 		position: absolute;
@@ -492,7 +495,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #308ff0;
+		background-color: $secondary-color;
 		padding: 15px;
 		-webkit-transform: rotateX(90deg);
 		transform: rotateX(90deg);
@@ -567,7 +570,7 @@
 		display: table-row;
 	}
 	.table .row.head {
-		color: #308ff0;
+		color: $primary-color;
 		text-transform: uppercase;
 	}
 	.table .row .cell {
@@ -589,8 +592,8 @@
 		transition: color, background 0.4s ease-in-out 0s;
 	}
 	.table .row .cell.active span {
-		color: #fff;
-		background-color: #308ff0;
+		color: $primary-color;
+		background-color: $secondary-color;
 		border-radius: 4px;
 		padding: 0;
 	}
@@ -851,7 +854,7 @@
 			top: 0;
 			left: 0;
 			right: 0;
-			background-color: $primary-color;
+			background-color: $secondary-color;
 			height: 80px;
 			position: absolute;
 			z-index: -1;
@@ -938,8 +941,8 @@
 						padding: 10px;
 						font-size: 15px;
 						&[aria-expanded="true"] {
-							color: $primary-color-contrast;
-							background-color: $primary-color;
+							color: $primary-color;
+							background-color: $secondary-color;
 							box-shadow: none;
 							&::after {
 								color: $primary-color-contrast;
@@ -1295,7 +1298,6 @@
 			padding: 15px 0;
 			.btn {
 				font-size: 16px;
-				color: #fff;
 				padding: 8px 15px;
 				border: none;
 				border-radius: 5px;
@@ -1304,9 +1306,9 @@
 				margin: 0 0 0 5px;
 				display: inline-flex;
 				align-items: center;
-				&.back {
-					background-color: #6c757d;
-				}
+				// &.back {
+				// 	background-color: #6c757d;
+				// }
 				@media (max-width: 767px) {
 					font-size: 13px;
 					padding: 8px 12px;
@@ -1345,7 +1347,7 @@
 			width: 0;
 			&:checked {
 				& ~ .checkmark {
-					background-color: #2196f3;
+					background-color: $primary-color;
 					&:after {
 						display: block;
 					}
@@ -1404,7 +1406,7 @@
 			cursor: pointer;
 			&:checked {
 				& ~ .checkmark {
-					background-color: #2196f3;
+					background-color: $primary-color;
 					&:after {
 						display: block;
 					}
