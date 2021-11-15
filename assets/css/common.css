@@ -7841,7 +7841,7 @@ a, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "poppinsbold";
-  color: #267dff; }
+  color: #222; }
 
 .form-group {
   margin-bottom: 15px; }
@@ -7873,9 +7873,9 @@ ul {
   margin: 0; }
 
 .primary-color {
-  color: #267dff; }
+  color: #222; }
   .primary-color:hover {
-    color: #267dff; }
+    color: #222; }
 
 .secondary-color {
   color: #00c6ca; }
@@ -7883,14 +7883,14 @@ ul {
     color: #00c6ca; }
 
 .primaryBtn {
-  background-color: #267dff;
+  background-color: #222;
   color: #fff;
   font-size: 14px;
-  border: 1px solid #267dff;
+  border: 1px solid #222;
   padding: 8px 25px;
   font-family: "poppinsbold"; }
   .primaryBtn:hover {
-    color: #267dff;
+    color: #222;
     background-color: #fff; }
 
 .secondaryBtn {
@@ -7921,7 +7921,7 @@ ul {
     color: #fff; }
 
 .editBtn {
-  background-color: #267dff;
+  background-color: #222;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -7944,15 +7944,15 @@ ul {
   color: #999; }
 
 .commonRadio .form-check-input:checked {
-  background-color: #267dff;
-  border-color: #267dff; }
+  background-color: #222;
+  border-color: #222; }
 
 .commonRadio .form-check-input:focus {
   box-shadow: none; }
 
 .commonCheckbox .form-check-input:checked {
-  background-color: #267dff;
-  border-color: #267dff; }
+  background-color: #222;
+  border-color: #222; }
 
 .commonCheckbox .form-check-input:focus {
   box-shadow: none; }
@@ -7963,21 +7963,21 @@ ul {
   left: 0;
   top: 64px;
   bottom: 0;
-  background-color: #267dff; }
+  background-color: #fff; }
   .sidebar .menuList ul li:hover a {
     text-decoration: none;
     background-color: #f9f9f9;
-    color: #267dff;
+    color: #000;
     border-color: #f9f9f9; }
   .sidebar .menuList ul li a {
     padding: 18px 15px;
     font-size: 13px;
-    color: #fff;
+    color: #6e84a3;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
-    border-bottom: 1px solid #aaa; }
+    border-bottom: 1px solid #eee; }
     .sidebar .menuList ul li a span {
       display: none; }
   .sidebar .menuList ul li:last-child a {
@@ -7995,6 +7995,8 @@ header {
     padding-right: 30px; }
     header .logo img {
       max-width: 95px; }
+  header .menuBar a {
+    color: #000; }
   header .organisation {
     display: flex;
     align-items: center; }
@@ -8008,9 +8010,14 @@ header {
     align-items: center; }
     header .profileNot > ul li {
       padding: 0 10px; }
+      header .profileNot > ul li a {
+        color: #000; }
       header .profileNot > ul li .dropdown .btn {
         display: flex;
         align-items: center; }
+        header .profileNot > ul li .dropdown .btn:focus {
+          outline: none;
+          box-shadow: none; }
         header .profileNot > ul li .dropdown .btn::after {
           display: none; }
         header .profileNot > ul li .dropdown .btn .profileTitle {
@@ -8057,7 +8064,7 @@ header {
       border-radius: 15px;
       overflow: hidden; }
       .loginWrapper .logIn .loginInner .leftWrapper {
-        background-color: #267dff;
+        background-color: #222;
         height: 100%;
         padding: 15px 40px;
         display: flex;
@@ -8104,7 +8111,7 @@ header {
             left: 50%;
             transform: translateX(-50%);
             height: 2px;
-            background-color: #267dff;
+            background-color: #222;
             width: 30px; }
         .loginWrapper .logIn .loginInner .rightWrapper .rightImg {
           position: absolute;

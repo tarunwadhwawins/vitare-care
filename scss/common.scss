@@ -194,7 +194,7 @@ ul {
 	left: 0;
 	top: 64px;
 	bottom: 0;
-	background-color: $primary-color;
+	background-color:$white-color;
 	.menuList {
 		ul {
 			li {
@@ -202,19 +202,19 @@ ul {
 					a {
 						text-decoration: none;
 						background-color: $gray-color-100;
-						color: $primary-color;
+						color: $black-color;
 						border-color: $gray-color-100;
 					}
 				}
 				a {
 					padding: 18px 15px;
 					font-size: 13px;
-					color: $primary-color-contrast;
+					color: #6e84a3;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
 					text-decoration: none;
-					border-bottom: 1px solid $gray-color-300;
+					border-bottom: 1px solid #eee;
 
 					span {
 						display: none;
@@ -245,15 +245,11 @@ header {
 			max-width: 95px;
 		}
 	}
-	// .menuBar {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	height: 100%;
-	// 	a {
-	// 		color: $primary-color;
-	// 		font-size: 22px;
-	// 	}
-	// }
+	.menuBar {
+		a {
+			color: $black-color;
+		}
+	}
 	.organisation {
 		display: flex;
 		align-items: center;
@@ -271,10 +267,17 @@ header {
 			align-items: center;
 			li {
 				padding: 0 10px;
+				a{
+					color: $black-color;
+				}
 				.dropdown {
 					.btn {
 						display: flex;
 						align-items: center;
+						&:focus{
+						 outline:none;
+						 box-shadow:none;
+						}
 						&::after {
 							display: none;
 						}
