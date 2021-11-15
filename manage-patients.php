@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/tagger.css" type="text/css" />
    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -183,7 +184,7 @@
 
    <!-- Modal -->
    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
             <div class="modal-header">
                <h5 class="modal-title" id="exampleModalLabel">Add New Patients</h5>
@@ -214,7 +215,7 @@
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>Date of Birth</label>
-                                       <input type="date" class="form-control" />
+                                       <input type="text"  class="form-control datepicker" placeholder="Select Date">
                                     </div>
                                  </div>
                                  <div class="col-sm-6">
@@ -297,7 +298,12 @@
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>Gender</label>
-                                       <input type="date" class="form-control" />
+                                       <select class="form-select">
+                                          <option value="0" selected> Choose </option>
+                                          <option value="0"> Male </option>
+                                          <option value="0"> Female </option>
+                                          <option value="0"> Others </option>
+                                       </select>
                                     </div>
                                  </div>
                                  <div class="col-sm-6">
@@ -471,13 +477,13 @@
                                  <div class="col-sm-3">
                                     <div class="form-group">
                                        <label>Start Date</label>
-                                       <input type="date" class="form-control" />
+                                       <input type="text"  class="form-control datepicker" placeholder="Select Date">
                                     </div>
                                  </div>
                                  <div class="col-sm-3">
                                     <div class="form-group">
                                        <label>End Date</label>
-                                       <input type="date" class="form-control" />
+                                       <input type="text"  class="form-control datepicker" placeholder="Select Date">
                                     </div>
                                  </div>
                                  <div class="col-sm-6">
@@ -952,7 +958,12 @@
          tokenSeparators: [',', ' ']
       })
    </script>
-
+   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+   <script>
+      $(function() {
+         $(".datepicker").datepicker();
+      });
+   </script>
    <!---->
 </body>
 

@@ -13,7 +13,9 @@
    <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+   <link rel="stylesheet" href="assets/css/tagger.css" type="text/css" />
    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -189,6 +191,7 @@
    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.29.0/apexcharts.min.js"></script>
    <script type="text/javascript" src="assets/js/stepper.js"></script>
+   <script type="text/javascript" src="assets/js/tagger.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
       $(document).ready(function() {
@@ -301,6 +304,18 @@
 
       var chart = new ApexCharts(document.querySelector("#chart2"), options);
       chart.render();
+   </script>
+      <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+   <script>
+      $(function() {
+         $(".datepicker").datepicker();
+      });
+   </script>
+      <script>
+      $(".tags").select2({
+         tags: true,
+         tokenSeparators: [',', ' ']
+      })
    </script>
    <!---->
 </body>

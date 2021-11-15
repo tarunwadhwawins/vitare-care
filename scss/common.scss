@@ -238,6 +238,7 @@ width:100%;
 }
 
 // Header
+
 header {
 	position: fixed;
 	left: 0px;
@@ -246,6 +247,7 @@ header {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	padding: 10px 0;
 	z-index: 999;
+	background-color: #fff;
 	.logo {
 		background-color: $primary-color-contrast;
 		padding-right: 30px;
@@ -444,5 +446,13 @@ header {
 				}
 			}
 		}
+	}
+}
+
+
+@media (max-width: 1199px)
+{
+	.modal-xl {
+		max-width: 100%;
 	}
 }

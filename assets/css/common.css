@@ -7995,7 +7995,8 @@ header {
   right: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
-  z-index: 999; }
+  z-index: 999;
+  background-color: #fff; }
   header .logo {
     background-color: #fff;
     padding-right: 30px; }
@@ -8139,3 +8140,7 @@ header {
             border-radius: 0; }
         .loginWrapper .logIn .loginInner .rightWrapper form .btn {
           margin: 30px 0 0; }
+
+@media (max-width: 1199px) {
+  .modal-xl {
+    max-width: 100%; } }

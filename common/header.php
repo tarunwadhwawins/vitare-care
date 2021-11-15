@@ -65,7 +65,7 @@
 
 <!-- Modals -->
 <div class="modal fade" id="appModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-fullscreen-xl-down modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Appoinment Detail</h5>
@@ -101,13 +101,13 @@
           <div class="col-sm-6">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Start Date</label>
-              <input type="date" class="form-control" aria-describedby="emailHelp">
+              <input type="text"  class="form-control datepicker" placeholder="Select Date">
             </div>
           </div>
           <div class="col-sm-6">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"> Time</label>
-              <input type="time" class="form-control" aria-describedby="emailHelp">
+              <input type="text" class="form-control" aria-describedby="emailHelp">
             </div>
           </div>
           <div class="col-sm-12">
@@ -127,7 +127,7 @@
 </div>
 <!-- -->
 <div class="modal fade" id="patientModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-xl-down">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Add New Patients</h5>
@@ -158,7 +158,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Date of Birth</label>
-                        <input type="date" class="form-control" />
+                        <input type="text"  class="form-control datepicker" placeholder="Select Date">
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -241,7 +241,12 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Gender</label>
-                        <input type="date" class="form-control" />
+                        <select class="form-select">
+                          <option value="0" selected> Choose </option>
+                          <option value="0"> Male </option>
+                          <option value="0"> Female </option>
+                          <option value="0"> Others </option>
+                        </select>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -415,13 +420,13 @@
                     <div class="col-sm-3">
                       <div class="form-group">
                         <label>Start Date</label>
-                        <input type="date" class="form-control" />
+                        <input type="text"  class="form-control datepicker" placeholder="Select Date">
                       </div>
                     </div>
                     <div class="col-sm-3">
                       <div class="form-group">
                         <label>End Date</label>
-                        <input type="date" class="form-control" />
+                        <input type="text"  class="form-control datepicker" placeholder="Select Date">
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -774,10 +779,10 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Tags</label>
-                        <select class="form-control" multiple="multiple">
-                          <option selected="selected">orange</option>
-                          <option>white</option>
-                          <option selected="selected">purple</option>
+                        <select class="form-control tags" multiple="multiple">
+                          <option selected="selected">Tag one</option>
+                          <option>Tag Two</option>
+                          <option selected="selected">Tag three</option>
                         </select>
                       </div>
                     </div>

@@ -13,6 +13,8 @@
    <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -104,7 +106,7 @@
                                     <div class="row">
                                        <div class="col-sm-4">
                                           <h4>Health Team
-                                          <span data-bs-toggle="modal" data-bs-target="#health"><i class="fa fa-plus"></i></span>
+                                             <span data-bs-toggle="modal" data-bs-target="#health"><i class="fa fa-plus"></i></span>
                                           </h4>
                                           <ul>
                                              <li>
@@ -239,7 +241,7 @@
                                        </div>
                                        <div class="card-body">
                                           <div class="row">
-                                             <div class="col-sm-5">
+                                             <div class="col-xl-5">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -274,7 +276,7 @@
                                                 </div>
                                                 <p>Average of last 5 : <strong>120.55</strong></p>
                                              </div>
-                                             <div class="col-sm-7">
+                                             <div class="col-xl-7">
                                                 <div id="chart1"></div>
                                              </div>
                                           </div>
@@ -289,7 +291,7 @@
                                        </div>
                                        <div class="card-body">
                                           <div class="row">
-                                             <div class="col-sm-5">
+                                             <div class="col-xl-5">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -324,7 +326,7 @@
                                                 </div>
                                                 <p>Average of last 5 : <strong>75.55</strong></p>
                                              </div>
-                                             <div class="col-sm-7">
+                                             <div class="col-xl-7">
                                                 <div id="chart2"></div>
                                              </div>
                                           </div>
@@ -339,7 +341,7 @@
                                        </div>
                                        <div class="card-body">
                                           <div class="row">
-                                             <div class="col-sm-5">
+                                             <div class="col-xl-5">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -374,7 +376,7 @@
                                                 </div>
                                                 <p>Average of last 5 : <strong>120.85</strong></p>
                                              </div>
-                                             <div class="col-sm-7">
+                                             <div class="col-xl-7">
                                                 <div id="chart3"></div>
                                              </div>
                                           </div>
@@ -389,7 +391,7 @@
                                        </div>
                                        <div class="card-body">
                                           <div class="row">
-                                             <div class="col-sm-5">
+                                             <div class="col-xl-5">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -406,7 +408,7 @@
                                                    </table>
                                                 </div>
                                              </div>
-                                             <div class="col-sm-7">
+                                             <div class="col-xl-7">
                                                 <div id="chart4"></div>
                                              </div>
                                           </div>
@@ -547,8 +549,8 @@
    </div>
 
    <!---->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
             <div class="modal-header">
                <h5 class="modal-title" id="exampleModalLabel">Add Family Coordinators</h5>
@@ -605,7 +607,7 @@
    </div>
    <!---->
    <div class="modal fade" id="care" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
             <div class="modal-header">
                <h5 class="modal-title" id="exampleModalLabel">Add Care Coordinators</h5>
@@ -626,26 +628,26 @@
                   <!---->
                </div>
                <div class="row">
-                 <div class="col-sm-12">
+                  <div class="col-sm-12">
                      <div class="table-responsive commonTable">
                         <table class="table">
                            <thead>
                               <tr>
                                  <th></th>
                                  <th>First Name
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Last Name
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Role
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
@@ -655,7 +657,7 @@
                            <tbody>
                               <tr>
                                  <td>
-                                 <div class="checkBox">
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -667,8 +669,8 @@
                                  <td>Physician</td>
                               </tr>
                               <tr>
-                              <td>
-                                 <div class="checkBox">
+                                 <td>
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -680,8 +682,8 @@
                                  <td>Cardiologist</td>
                               </tr>
                               <tr>
-                              <td>
-                                 <div class="checkBox">
+                                 <td>
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -693,8 +695,8 @@
                                  <td>RN</td>
                               </tr>
                               <tr>
-                              <td>
-                                 <div class="checkBox">
+                                 <td>
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -709,7 +711,7 @@
                         </table>
                      </div>
                   </div>
-                 </div>
+               </div>
             </div>
             <div class="modal-footer">
                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
@@ -719,7 +721,7 @@
       </div>
    </div>
    <div class="modal fade" id="health" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
             <div class="modal-header">
                <h5 class="modal-title" id="exampleModalLabel">Add Health </h5>
@@ -740,26 +742,26 @@
                   <!---->
                </div>
                <div class="row">
-                 <div class="col-sm-12">
+                  <div class="col-sm-12">
                      <div class="table-responsive commonTable">
                         <table class="table">
                            <thead>
                               <tr>
                                  <th></th>
                                  <th>First Name
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Last Name
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Role
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
@@ -769,7 +771,7 @@
                            <tbody>
                               <tr>
                                  <td>
-                                 <div class="checkBox">
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -781,8 +783,8 @@
                                  <td>Physician</td>
                               </tr>
                               <tr>
-                              <td>
-                                 <div class="checkBox">
+                                 <td>
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -794,8 +796,8 @@
                                  <td>Cardiologist</td>
                               </tr>
                               <tr>
-                              <td>
-                                 <div class="checkBox">
+                                 <td>
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -807,8 +809,8 @@
                                  <td>RN</td>
                               </tr>
                               <tr>
-                              <td>
-                                 <div class="checkBox">
+                                 <td>
+                                    <div class="checkBox">
                                        <label class="checkInput">
                                           <input type="checkbox">
                                           <span class="checkmark"></span>
@@ -823,7 +825,7 @@
                         </table>
                      </div>
                   </div>
-                 </div>
+               </div>
             </div>
             <div class="modal-footer">
                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
@@ -834,11 +836,11 @@
    </div>
    <!---->
    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">Add New Care Coordinators</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               <h5 class="modal-title" id="exampleModalToggleLabel2">Add New Care Coordinators</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="min-height:380px;">
                <div class="stepper">
@@ -905,7 +907,7 @@
                         </div>
                         <div class="stepperCard">
                            <div class="stepperBody">
-                           <div class="row">
+                              <div class="row">
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>First Name</label>
@@ -1007,13 +1009,13 @@
                                           <option value="1">11:30 AM</option>
                                           <option value="1">12:00 PM</option>
                                           <option value="1">12:30 PM</option>
-                                          
+
                                        </select>
                                     </div>
                                  </div>
                                  <div class="col-sm-6">
                                     <div class="form-group">
-                                    <label>End Time</label>
+                                       <label>End Time</label>
                                        <select class="form-select">
                                           <option value="0" selected> Choose End Time</option>
                                           <option value="1">2:00 PM</option>
@@ -1024,7 +1026,7 @@
                                           <option value="1">4:30 PM</option>
                                           <option value="1">5:00 PM</option>
                                           <option value="1">5:30 PM</option>
-                                         
+
                                        </select>
                                     </div>
                                  </div>
@@ -1111,10 +1113,10 @@
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>Tags</label>
-                                       <select class="form-control" multiple="multiple">
-                                          <option selected="selected">orange</option>
-                                          <option>white</option>
-                                          <option selected="selected">purple</option>
+                                       <select class="form-control tags" multiple="multiple">
+                                          <option selected="selected">Tag One</option>
+                                          <option>Tag Three</option>
+                                          <option selected="selected">Tag Two</option>
                                        </select>
                                     </div>
                                  </div>
@@ -1186,11 +1188,11 @@
    </div>
    <!---->
    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">Add Health </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               <h5 class="modal-title" id="exampleModalToggleLabel2">Add Health </h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                <div class="row">
@@ -1250,6 +1252,13 @@
    <script type="text/javascript" src="assets/js/iconify.min.js"></script>
    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.29.0/apexcharts.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <script>
+      $(".tags").select2({
+         tags: true,
+         tokenSeparators: [',', ' ']
+      })
+   </script>
    <script>
       var options = {
          series: [{
