@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -37,31 +38,31 @@
                            <thead>
                               <tr>
                                  <th>First Name
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Last Name
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Role
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Created At
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
                                  <th>Status
-                                 <span class="icon">
+                                    <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
@@ -209,7 +210,7 @@
                         </div>
                         <div class="stepperCard">
                            <div class="stepperBody">
-                           <div class="row">
+                              <div class="row">
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>First Name</label>
@@ -311,13 +312,13 @@
                                           <option value="1">11:30 AM</option>
                                           <option value="1">12:00 PM</option>
                                           <option value="1">12:30 PM</option>
-                                          
+
                                        </select>
                                     </div>
                                  </div>
                                  <div class="col-sm-6">
                                     <div class="form-group">
-                                    <label>End Time</label>
+                                       <label>End Time</label>
                                        <select class="form-select">
                                           <option value="0" selected> Choose End Time</option>
                                           <option value="1">2:00 PM</option>
@@ -328,7 +329,7 @@
                                           <option value="1">4:30 PM</option>
                                           <option value="1">5:00 PM</option>
                                           <option value="1">5:30 PM</option>
-                                         
+
                                        </select>
                                     </div>
                                  </div>
@@ -415,10 +416,10 @@
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>Tags</label>
-                                       <select class="form-control" multiple="multiple">
-                                          <option selected="selected">orange</option>
-                                          <option>white</option>
-                                          <option selected="selected">purple</option>
+                                       <select class="form-control tags" multiple="multiple">
+                                          <option selected="selected">Tag One</option>
+                                          <option>Tag Two</option>
+                                          <option selected="selected">Tag Three</option>
                                        </select>
                                     </div>
                                  </div>
@@ -482,7 +483,7 @@
                   </div>
                </div>
             </div>
-           
+
          </div>
       </div>
    </div>
@@ -498,6 +499,7 @@
    <script type="text/javascript" src="assets/js/iconify.min.js"></script>
    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="assets/js/stepper.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
    <script>
       $(document).ready(function() {
          $(".next").click(function() {
@@ -526,6 +528,10 @@
             $(".step").removeClass('active');
             $(this).parent().parent().addClass('active');
          });
+      })
+      $(".tags").select2({
+         tags: true,
+         tokenSeparators: [',', ' ']
       })
    </script>
    <!---->

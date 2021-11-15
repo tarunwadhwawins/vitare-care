@@ -565,8 +565,8 @@
                         </div>
                         <div class="stepperCard">
                            <div class="stepperBody">
-                            <div class="row">
-                                  <div class="col-sm-12">
+                              <div class="row">
+                                 <div class="col-sm-12">
                                     <div class="formHeading">
                                        <h2>Blood Pressure</h2>
                                     </div>
@@ -625,7 +625,7 @@
 
 
 
-                            </div>
+                              </div>
                            </div>
                            <div class="stepperFooter">
                               <button class="btn back">Back</button>
@@ -830,10 +830,10 @@
                                  <div class="col-sm-6">
                                     <div class="form-group">
                                        <label>Tags</label>
-                                       <select class="form-control" multiple="multiple">
-                                          <option selected="selected">orange</option>
-                                          <option>white</option>
-                                          <option selected="selected">purple</option>
+                                       <select class="form-control tags w-100" multiple="multiple">
+                                          <option selected="selected">Tag One</option>
+                                          <option>Tag Two</option>
+                                          <option selected="selected">Tag Three</option>
                                        </select>
                                     </div>
                                  </div>
@@ -947,7 +947,7 @@
       })
    </script>
    <script>
-      $(".js-example-tokenizer").select2({
+      $(".tags").select2({
          tags: true,
          tokenSeparators: [',', ' ']
       })

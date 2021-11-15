@@ -297,22 +297,21 @@
         margin: 10px 0 0; }
 
 .select2-container {
-  z-index: 99999 !important; }
+  z-index: 99999 !important;
+  width: 100% !important; }
 
 .appoinmentDetailModal .selectOption .form-label {
   display: block; }
 
-.appoinmentDetailModal .selectOption .select2-container {
-  width: 100% !important; }
-  .appoinmentDetailModal .selectOption .select2-container .selection .select2-selection--single {
-    border: 1px solid #dce0e4 !important;
-    padding: 4px 10px !important;
-    height: auto !important; }
-    .appoinmentDetailModal .selectOption .select2-container .selection .select2-selection--single .select2-selection__rendered {
-      padding-left: 0px !important; }
-    .appoinmentDetailModal .selectOption .select2-container .selection .select2-selection--single .select2-selection__arrow {
-      top: 50% !important;
-      transform: translateY(-50%); }
+.appoinmentDetailModal .selectOption .select2-container .selection .select2-selection--single {
+  border: 1px solid #dce0e4 !important;
+  padding: 4px 10px !important;
+  height: auto !important; }
+  .appoinmentDetailModal .selectOption .select2-container .selection .select2-selection--single .select2-selection__rendered {
+    padding-left: 0px !important; }
+  .appoinmentDetailModal .selectOption .select2-container .selection .select2-selection--single .select2-selection__arrow {
+    top: 50% !important;
+    transform: translateY(-50%); }
 
 .appointmentCalendar .calendar {
   font-size: 100%;
