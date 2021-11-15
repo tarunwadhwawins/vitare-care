@@ -1,0 +1,1062 @@
+.commonTable {
+  background-color: #fff; }
+  .commonTable .table thead tr th {
+    color: #267dff;
+    font-weight: 100;
+    font-size: 13px;
+    position: relative;
+    vertical-align: top; }
+    .commonTable .table thead tr th .icon {
+      position: absolute;
+      right: 5px;
+      top: 10px; }
+      .commonTable .table thead tr th .icon .fa-caret-up {
+        position: absolute;
+        top: -3px;
+        right: 0;
+        font-size: 11px;
+        color: #a6a6a6; }
+      .commonTable .table thead tr th .icon .fa-caret-down {
+        right: 0;
+        bottom: 11px;
+        font-size: 11px;
+        color: #a6a6a6; }
+  .commonTable .table tbody {
+    border-top: none; }
+    .commonTable .table tbody tr td {
+      font-size: 13px; }
+      .commonTable .table tbody tr td .action {
+        display: flex; }
+        .commonTable .table tbody tr td .action li {
+          padding: 0 5px; }
+          .commonTable .table tbody tr td .action li a {
+            font-size: 15px; }
+      .commonTable .table tbody tr td .box {
+        width: 24px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 4px; }
+
+.topBox {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .topBox.one {
+    background-color: #fff; }
+    .topBox.one i {
+      color: #267dff; }
+    .topBox.one h5,
+    .topBox.one p {
+      color: #444; }
+  .topBox.two {
+    background-color: #8e60ff; }
+  .topBox.three {
+    background-color: #ff6061; }
+  .topBox.four {
+    background-color: #ffa800; }
+  .topBox.five {
+    background-color: #0fb5c2; }
+  .topBox.six {
+    background-color: #267dff; }
+  .topBox i {
+    color: #fff;
+    font-size: 22px; }
+  .topBox h5 {
+    color: #fff;
+    padding: 10px 0 0px;
+    font-size: 30px; }
+  .topBox p {
+    font-size: 12px;
+    color: #fff; }
+
+.commonCard.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .commonCard.card .card-header {
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #fff;
+    padding: 10px 15px; }
+    .commonCard.card .card-header h4 {
+      font-size: 18px;
+      color: #444;
+      padding: 8px 0; }
+    .commonCard.card .card-header .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .commonCard.card .card-header .buttons .btn {
+        color: #267dff;
+        background-color: #267dff4d; }
+  .commonCard.card .list-group .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .commonCard.card .list-group .list-group-item .img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      overflow: hidden; }
+      .commonCard.card .list-group .list-group-item .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .commonCard.card .list-group .list-group-item .name {
+      font-size: 13px; }
+    .commonCard.card .list-group .list-group-item .progressBar {
+      width: 150px; }
+      .commonCard.card .list-group .list-group-item .progressBar .progress {
+        height: 6px; }
+  .commonCard.card .card-body {
+    padding: 8px 15px; }
+    .commonCard.card .card-body .nav {
+      position: relative; }
+      .commonCard.card .card-body .nav::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #e3e3e3;
+        height: 2px; }
+      .commonCard.card .card-body .nav .nav-item {
+        padding: 0 0 0 20px; }
+        .commonCard.card .card-body .nav .nav-item:first-of-type {
+          padding: 0; }
+        .commonCard.card .card-body .nav .nav-item .nav-link {
+          color: #444;
+          padding: 5px 0;
+          border-bottom: 2px solid transparent;
+          border-radius: 0;
+          position: relative;
+          font-size: 13px; }
+          .commonCard.card .card-body .nav .nav-item .nav-link.active {
+            border-color: #267dff;
+            color: #267dff;
+            background-color: #fff; }
+    .commonCard.card .card-body .table {
+      margin: 0; }
+      .commonCard.card .card-body .table thead tr th {
+        color: #267dff;
+        font-size: 13px; }
+
+.chartBox {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 15px 0 10px;
+  padding: 15px; }
+
+.appointmentCalendar .nav .nav-item .nav-link.active {
+  background-color: #267dff; }
+
+.appointmentCalendar .dayCalendar .table tbody {
+  vertical-align: middle; }
+  .appointmentCalendar .dayCalendar .table tbody tr th {
+    font-size: 13px;
+    color: #267dff;
+    width: 100px;
+    height: 70px;
+    text-align: center; }
+  .appointmentCalendar .dayCalendar .table tbody tr td .dropdown {
+    display: inline-block; }
+    .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.one .btn {
+      background-color: #267dff; }
+    .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.two .btn {
+      background-color: #8e60ff; }
+    .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.three .btn {
+      background-color: #ff6061; }
+    .appointmentCalendar .dayCalendar .table tbody tr td .dropdown.four .btn {
+      background-color: #ffa800; }
+    .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .btn {
+      color: #fff;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding: 5px 8px; }
+      .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .btn::after {
+        display: none; }
+      .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .btn:focus {
+        box-shadow: none; }
+      .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .btn p {
+        text-align: left;
+        padding-right: 25px; }
+        .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .btn p span {
+          display: block; }
+      .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .btn img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover; }
+    .appointmentCalendar .dayCalendar .table tbody tr td .dropdown .dropdown-menu li {
+      padding: 10px;
+      font-size: 13px; }
+
+.appointmentCalendar .monthCalendar .table thead tr th {
+  font-size: 13px;
+  color: #267dff;
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle; }
+
+.appointmentCalendar .monthCalendar .table tbody {
+  border-top: none;
+  vertical-align: middle; }
+  .appointmentCalendar .monthCalendar .table tbody tr td {
+    position: relative;
+    padding: 20px 15px;
+    text-align: center; }
+    .appointmentCalendar .monthCalendar .table tbody tr td .date {
+      position: absolute;
+      left: 5px;
+      top: 5px; }
+    .appointmentCalendar .monthCalendar .table tbody tr td .dropdown {
+      display: block;
+      text-align: center;
+      margin: 10px 0 0; }
+      .appointmentCalendar .monthCalendar .table tbody tr td .dropdown:first-of-type {
+        margin: 0; }
+      .appointmentCalendar .monthCalendar .table tbody tr td .dropdown .btn {
+        display: inline-flex; }
+        .appointmentCalendar .monthCalendar .table tbody tr td .dropdown .btn p {
+          padding: 0; }
+      .appointmentCalendar .monthCalendar .table tbody tr td .dropdown .dropdown-menu {
+        width: 300px; }
+        .appointmentCalendar .monthCalendar .table tbody tr td .dropdown .dropdown-menu li {
+          display: flex;
+          align-items: center; }
+          .appointmentCalendar .monthCalendar .table tbody tr td .dropdown .dropdown-menu li img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 15px 0 0; }
+
+.appointmentCalendar .doctors {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 30px 0 0;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .appointmentCalendar .doctors .title {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 16px; }
+  .appointmentCalendar .doctors ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .appointmentCalendar .doctors ul li {
+      text-align: center;
+      width: 50%;
+      margin: 0 0 15px; }
+      .appointmentCalendar .doctors ul li .img {
+        position: relative;
+        display: inline-block; }
+        .appointmentCalendar .doctors ul li .img img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          object-fit: cover; }
+        .appointmentCalendar .doctors ul li .img .check {
+          position: absolute;
+          right: -10px;
+          bottom: 0;
+          padding: 5px;
+          background-color: #fff;
+          border-radius: 50%; }
+          .appointmentCalendar .doctors ul li .img .check.one span {
+            background-color: #267dff; }
+          .appointmentCalendar .doctors ul li .img .check.two span {
+            background-color: #8e60ff; }
+          .appointmentCalendar .doctors ul li .img .check.three span {
+            background-color: #ff6061; }
+          .appointmentCalendar .doctors ul li .img .check.four span {
+            background-color: #ffa800; }
+          .appointmentCalendar .doctors ul li .img .check span {
+            height: 20px;
+            width: 20px;
+            color: #fff;
+            border-radius: 50%;
+            display: block; }
+      .appointmentCalendar .doctors ul li p {
+        font-size: 13px;
+        margin: 10px 0 0; }
+
+.appointmentCalendar .calendar {
+  font-size: 100%;
+  margin: 0 auto;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  cursor: default;
+  position: relative; }
+
+@media (max-width: 767.98px) {
+  .appointmentCalendar .calendar {
+    width: 100%; } }
+
+.appointmentCalendar .calendar .header {
+  height: 100px;
+  position: relative;
+  color: #fff; }
+
+.appointmentCalendar .calendar .header .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #308ff0;
+  padding: 15px;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.4s ease-in-out 0s;
+  -o-transition: 0.4s ease-in-out 0s;
+  transition: 0.4s ease-in-out 0s;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0; }
+
+.appointmentCalendar .calendar .header .text > span {
+  text-align: center;
+  padding: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.appointmentCalendar .calendar .header.active .text {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1; }
+
+.appointmentCalendar .months {
+  width: 100%;
+  height: 280px;
+  position: relative; }
+
+.appointmentCalendar .months .hr {
+  height: 1px;
+  margin: 15px 0;
+  background: #ccc; }
+
+.appointmentCalendar .month {
+  padding: 15px;
+  width: inherit;
+  height: inherit;
+  background: #fff;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
+
+.appointmentCalendar .months[data-flow="left"] .month {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg); }
+
+.appointmentCalendar .months[data-flow="right"] .month {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.appointmentCalendar .table {
+  width: 100%;
+  font-size: 10px;
+  font-weight: 400;
+  display: table; }
+
+.appointmentCalendar .table .row {
+  display: table-row; }
+
+.appointmentCalendar .table .row.head {
+  color: #308ff0;
+  text-transform: uppercase; }
+
+.appointmentCalendar .table .row .cell {
+  width: 14.28%;
+  padding: 5px;
+  text-align: center;
+  display: table-cell; }
+
+.appointmentCalendar .table .row .cell.disable {
+  color: #ccc; }
+
+.appointmentCalendar .table .row .cell span {
+  display: block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  -webkit-transition: color, background 0.4s ease-in-out 0s;
+  -o-transition: color, background 0.4s ease-in-out 0s;
+  transition: color, background 0.4s ease-in-out 0s; }
+
+.appointmentCalendar .table .row .cell.active span {
+  color: #fff;
+  background-color: #308ff0;
+  border-radius: 4px;
+  padding: 0; }
+
+.appointmentCalendar .months .month[data-active="true"] {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0); }
+
+.appointmentCalendar .header [data-action] {
+  color: inherit;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
+
+.appointmentCalendar .header [data-action] > i {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -10px; }
+
+.appointmentCalendar .header [data-action] > i:before,
+.appointmentCalendar .header [data-action] > i:after {
+  top: 50%;
+  margin-top: -1px;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  border-top: 2px solid;
+  border-radius: 2px; }
+
+.appointmentCalendar .header [data-action*="prev"] {
+  left: 15px; }
+
+.appointmentCalendar .header [data-action*="prev"] > i:before,
+.appointmentCalendar .header [data-action*="prev"] > i:after {
+  left: 0; }
+
+.appointmentCalendar .header [data-action*="prev"] > i:before {
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.appointmentCalendar .header [data-action*="prev"] > i:after {
+  top: auto;
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.appointmentCalendar .header [data-action*="next"] {
+  right: 15px; }
+
+.appointmentCalendar .header [data-action*="next"] > i:before,
+.appointmentCalendar .header [data-action*="next"] > i:after {
+  right: 0; }
+
+.appointmentCalendar .header [data-action*="next"] > i:before {
+  top: auto;
+  bottom: 3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.appointmentCalendar .header [data-action*="next"] > i:after {
+  top: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.appointmentCalendar .header.active [data-action] {
+  opacity: 1; }
+
+.appointmentCalendar [data-theme="january"] {
+  background-color: #90caf9; }
+
+.appointmentCalendar [data-theme="january"] .row.head {
+  color: #1e88e5; }
+
+.appointmentCalendar [data-theme="january"] .header .text,
+.appointmentCalendar [data-theme="january"] .table .row .cell.active span {
+  background-color: #1e88e5; }
+
+.appointmentCalendar [data-theme="february"] {
+  background-color: #81d4fa; }
+
+.appointmentCalendar [data-theme="february"] .row.head {
+  color: #039be5; }
+
+.appointmentCalendar [data-theme="february"] .header .text,
+.appointmentCalendar [data-theme="february"] .table .row .cell.active span {
+  background-color: #039be5; }
+
+.appointmentCalendar [data-theme="march"] {
+  background-color: #80cbc4; }
+
+.appointmentCalendar [data-theme="march"] .row.head {
+  color: #00897b; }
+
+.appointmentCalendar [data-theme="march"] .header .text,
+.appointmentCalendar [data-theme="march"] .table .row .cell.active span {
+  background-color: #00897b; }
+
+.appointmentCalendar [data-theme="april"] {
+  background-color: #c5e1a5; }
+
+.appointmentCalendar [data-theme="april"] .row.head {
+  color: #7cb342; }
+
+.appointmentCalendar [data-theme="april"] .header .text,
+.appointmentCalendar [data-theme="april"] .table .row .cell.active span {
+  background-color: #7cb342; }
+
+.appointmentCalendar [data-theme="may"] {
+  background-color: #ffe082; }
+
+.appointmentCalendar [data-theme="may"] .row.head {
+  color: #ffb300; }
+
+.appointmentCalendar [data-theme="may"] .header .text,
+.appointmentCalendar [data-theme="may"] .table .row .cell.active span {
+  background-color: #ffb300; }
+
+.appointmentCalendar [data-theme="june"] {
+  background-color: #ffab91; }
+
+.appointmentCalendar [data-theme="june"] .row.head {
+  color: #f4511e; }
+
+.appointmentCalendar [data-theme="june"] .header .text,
+.appointmentCalendar [data-theme="june"] .table .row .cell.active span {
+  background-color: #f4511e; }
+
+.appointmentCalendar [data-theme="july"] {
+  background-color: #ce93d8; }
+
+.appointmentCalendar [data-theme="july"] .row.head {
+  color: #8e24aa; }
+
+.appointmentCalendar [data-theme="july"] .header .text,
+.appointmentCalendar [data-theme="july"] .table .row .cell.active span {
+  background-color: #8e24aa; }
+
+.appointmentCalendar [data-theme="august"] {
+  background-color: #b39ddb; }
+
+.appointmentCalendar [data-theme="august"] .row.head {
+  color: #5e35b1; }
+
+.appointmentCalendar [data-theme="august"] .header .text,
+.appointmentCalendar [data-theme="august"] .table .row .cell.active span {
+  background-color: #5e35b1; }
+
+.appointmentCalendar [data-theme="september"] {
+  background-color: #ef9a9a; }
+
+.appointmentCalendar [data-theme="september"] .row.head {
+  color: #e53935; }
+
+.appointmentCalendar [data-theme="september"] .header .text,
+.appointmentCalendar [data-theme="september"] .table .row .cell.active span {
+  background-color: #e53935; }
+
+.appointmentCalendar [data-theme="october"] {
+  background-color: #ce93d8; }
+
+.appointmentCalendar [data-theme="october"] .row.head {
+  color: #8e24aa; }
+
+.appointmentCalendar [data-theme="october"] .header .text,
+.appointmentCalendar [data-theme="october"] .table .row .cell.active span {
+  background-color: #8e24aa; }
+
+.appointmentCalendar [data-theme="november"] {
+  background-color: #bcaaa4; }
+
+.appointmentCalendar [data-theme="november"] .row.head {
+  color: #6d4c41; }
+
+.appointmentCalendar [data-theme="november"] .header .text,
+.appointmentCalendar [data-theme="november"] .table .row .cell.active span {
+  background-color: #6d4c41; }
+
+.appointmentCalendar [data-theme="december"] {
+  background-color: #b0bec5; }
+
+.appointmentCalendar [data-theme="december"] .row.head {
+  color: #546e7a; }
+
+.appointmentCalendar [data-theme="december"] .header .text,
+.appointmentCalendar [data-theme="december"] .table .row .cell.active span {
+  background-color: #546e7a; }
+
+.patientSummary .patientInfo {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+  padding: 25px 0 0; }
+  .patientSummary .patientInfo::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #267dff;
+    height: 80px;
+    position: absolute;
+    z-index: -1; }
+  .patientSummary .patientInfo .patientImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto; }
+    .patientSummary .patientInfo .patientImg img {
+      height: 100%;
+      object-fit: cover; }
+  .patientSummary .patientInfo .name {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0; }
+  .patientSummary .patientInfo .table tbody {
+    vertical-align: middle; }
+    .patientSummary .patientInfo .table tbody tr:last-of-type th,
+    .patientSummary .patientInfo .table tbody tr:last-of-type td {
+      border: none; }
+    .patientSummary .patientInfo .table tbody tr th {
+      color: #aaa;
+      font-size: 13px;
+      padding: 8px 15px;
+      font-weight: 100; }
+    .patientSummary .patientInfo .table tbody tr td {
+      text-align: right;
+      font-size: 13px;
+      padding: 8px 15px; }
+      .patientSummary .patientInfo .table tbody tr td .flags {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end; }
+        .patientSummary .patientInfo .table tbody tr td .flags .flag {
+          height: 15px;
+          width: 30px;
+          border-radius: 3px;
+          display: inline-block;
+          margin: 0 0 0 10px; }
+          .patientSummary .patientInfo .table tbody tr td .flags .flag.redBg {
+            background-color: #ff6061; }
+          .patientSummary .patientInfo .table tbody tr td .flags .flag.yellowBg {
+            background-color: #ffa800; }
+
+.patientSummary .notification {
+  background-color: #267dff4d;
+  padding: 10px 15px; }
+  .patientSummary .notification p {
+    color: #267dff; }
+
+.patientSummary .patientDes {
+  margin: 15px 0 0; }
+  .patientSummary .patientDes .accordion .accordion-item {
+    margin: 0 0 15px;
+    border: none; }
+    .patientSummary .patientDes .accordion .accordion-item .accordion-header .accordion-button {
+      display: block;
+      width: 100%;
+      box-shadow: none;
+      padding: 10px;
+      font-size: 15px; }
+      .patientSummary .patientDes .accordion .accordion-item .accordion-header .accordion-button[aria-expanded="true"] {
+        color: #fff;
+        background-color: #267dff;
+        box-shadow: none; }
+        .patientSummary .patientDes .accordion .accordion-item .accordion-header .accordion-button[aria-expanded="true"]::after {
+          color: #fff; }
+      .patientSummary .patientDes .accordion .accordion-item .accordion-header .accordion-button::after {
+        position: absolute;
+        right: 10px;
+        content: "\f107 ";
+        font-family: "FontAwesome";
+        background-image: none;
+        width: auto; }
+    .patientSummary .patientDes .accordion .accordion-item .accordion-body {
+      position: relative;
+      padding: 10px 40px 10px 15px; }
+      .patientSummary .patientDes .accordion .accordion-item .accordion-body a.edit {
+        position: absolute;
+        right: 10px;
+        color: #267dff; }
+      .patientSummary .patientDes .accordion .accordion-item .accordion-body h4 {
+        color: #267dff; }
+      .patientSummary .patientDes .accordion .accordion-item .accordion-body ul {
+        margin: 20px 0 0; }
+        .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px; }
+          .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li:last-of-type {
+            margin: 0; }
+          .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .profileImg {
+            max-width: 50px;
+            min-width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-right: 10px;
+            overflow: hidden; }
+            .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .profileImg img {
+              height: 100%;
+              object-fit: cover; }
+          .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .content {
+            position: relative;
+            width: 100%;
+            padding: 0 25px 0 0; }
+            .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .content .name {
+              color: #267dff;
+              font-size: 16px; }
+            .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .content .role {
+              font-size: 13px;
+              color: #aaa; }
+            .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li .content i {
+              position: absolute;
+              right: 0;
+              top: 5px;
+              background: #ffa800;
+              height: 20px;
+              width: 20px;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 20px;
+              color: #fff;
+              font-size: 12px; }
+
+.patientSummary .patientTabs {
+  background-color: #fff;
+  padding: 15px; }
+  .patientSummary .patientTabs .nav {
+    position: relative; }
+    .patientSummary .patientTabs .nav::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #e3e3e3;
+      height: 2px; }
+    .patientSummary .patientTabs .nav .nav-item {
+      padding: 0 0 0 40px; }
+      .patientSummary .patientTabs .nav .nav-item:first-of-type {
+        padding: 0; }
+      .patientSummary .patientTabs .nav .nav-item .nav-link {
+        color: #444;
+        padding: 5px 0;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+        position: relative;
+        font-size: 15px; }
+        .patientSummary .patientTabs .nav .nav-item .nav-link.active {
+          border-color: #267dff;
+          color: #267dff;
+          background-color: transparent; }
+  .patientSummary .patientTabs .card {
+    border: none;
+    background-color: #f9f9f9;
+    margin: 10px 0 10px; }
+    .patientSummary .patientTabs .card .card-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px; }
+      .patientSummary .patientTabs .card .card-title h3 {
+        font-size: 25px; }
+    .patientSummary .patientTabs .card .card-body {
+      padding: 10px 15px; }
+      .patientSummary .patientTabs .card .card-body .commonTable {
+        margin: 0;
+        padding: 0; }
+
+.stepper .stepperHead {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .stepper .stepperHead:before {
+    content: "";
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px; }
+  @media (max-width: 767px) {
+    .stepper .stepperHead {
+      display: block; } }
+  .stepper .stepperHead .step {
+    cursor: pointer;
+    position: static; }
+    .stepper .stepperHead .step.active .title {
+      background-color: #fff !important;
+      color: #6c757d !important;
+      font-weight: 600 !important; }
+    .stepper .stepperHead .step.active .stepperCard {
+      display: block; }
+    .stepper .stepperHead .step.completed .title {
+      color: #267dff !important; }
+    .stepper .stepperHead .step:last-child .stepTitle {
+      margin: 0; }
+    .stepper .stepperHead .step .stepTitle {
+      text-align: center;
+      margin: 0 15px 0 0;
+      position: relative; }
+      @media (max-width: 767px) {
+        .stepper .stepperHead .step .stepTitle {
+          margin: 10px 0; } }
+      .stepper .stepperHead .step .stepTitle .title {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: 500;
+        background-color: #fff;
+        text-align: center;
+        color: #999; }
+        @media (max-width: 767px) {
+          .stepper .stepperHead .step .stepTitle .title {
+            width: 100%; } }
+
+.stepper .stepperCard {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  right: 0;
+  display: none; }
+  @media (max-width: 767px) {
+    .stepper .stepperCard {
+      position: initial; } }
+  .stepper .stepperCard .stepperHeader {
+    background-color: #f54952;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+    text-align: center;
+    padding: 5px 10px; }
+    @media (max-width: 767px) {
+      .stepper .stepperCard .stepperHeader {
+        font-size: 16px;
+        padding: 5px 10px; } }
+  .stepper .stepperCard .stepperBody .form-group {
+    margin-bottom: 15px; }
+    .stepper .stepperCard .stepperBody .form-group label {
+      display: block;
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      font-weight: 500; }
+  .stepper .stepperCard .stepperBody .info {
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    margin: 10px 0 40px; }
+    @media (max-width: 767px) {
+      .stepper .stepperCard .stepperBody .info {
+        font-size: 13px; } }
+  .stepper .stepperCard .stepperBody .form {
+    display: flex; }
+    @media (max-width: 767px) {
+      .stepper .stepperCard .stepperBody .form {
+        display: initial; } }
+    .stepper .stepperCard .stepperBody .form .profile {
+      max-width: 200px;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .stepper .stepperCard .stepperBody .form .profile {
+          margin: 0 auto 10px; } }
+      .stepper .stepperCard .stepperBody .form .profile .profileImg {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        margin: 0 auto 10px; }
+        .stepper .stepperCard .stepperBody .form .profile .profileImg img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .stepper .stepperCard .stepperBody .form .profile a {
+        font-size: 16px;
+        color: #000; }
+    .stepper .stepperCard .stepperBody .form .formInputs {
+      width: 100%; }
+      @media (max-width: 767px) {
+        .stepper .stepperCard .stepperBody .form .formInputs {
+          padding: 0; } }
+      .stepper .stepperCard .stepperBody .form .formInputs .formInner {
+        display: flex;
+        flex-wrap: wrap; }
+        .stepper .stepperCard .stepperBody .form .formInputs .formInner .formGroup {
+          flex: 1 0 46%;
+          margin: 10px 0 10px 20px; }
+          @media (max-width: 767px) {
+            .stepper .stepperCard .stepperBody .form .formInputs .formInner .formGroup {
+              margin: 0 0 15px;
+              flex: 1 0 100%; } }
+          .stepper .stepperCard .stepperBody .form .formInputs .formInner .formGroup label {
+            display: block;
+            font-size: 16px;
+            color: #c7c7c7;
+            margin: 0 0 2px;
+            text-transform: uppercase; }
+          .stepper .stepperCard .stepperBody .form .formInputs .formInner .formGroup input {
+            border: 1px solid #d9d9d9;
+            padding: 8px 10px;
+            border-radius: 10px;
+            width: 100%; }
+            .stepper .stepperCard .stepperBody .form .formInputs .formInner .formGroup input:focus {
+              border-color: #999;
+              outline: none; }
+  .stepper .stepperCard .stepperBody .formHeading {
+    margin: 0 0 25px 0; }
+    .stepper .stepperCard .stepperBody .formHeading h2 {
+      font-size: 17px;
+      border-bottom: 1px solid #ddd;
+      padding: 0 0 5px 0; }
+  .stepper .stepperCard .stepperBody .uploadFiles {
+    border: 2px dashed #ddd;
+    margin: 18px 0 5px 0;
+    padding: 30px 15px;
+    text-align: center;
+    color: #7c7c7c; }
+    .stepper .stepperCard .stepperBody .uploadFiles i {
+      font-size: 30px;
+      display: block; }
+    .stepper .stepperCard .stepperBody .uploadFiles span {
+      font-size: 25px;
+      display: block; }
+    .stepper .stepperCard .stepperBody .uploadFiles .files {
+      font-size: 16px; }
+      .stepper .stepperCard .stepperBody .uploadFiles .files a {
+        color: #7c7c7c;
+        text-decoration: underline; }
+  .stepper .stepperCard .stepperBody .format {
+    text-align: center;
+    font-size: 14px;
+    color: #7c7c7c; }
+  .stepper .stepperCard .stepperFooter {
+    text-align: right;
+    padding: 15px 0; }
+    .stepper .stepperCard .stepperFooter .btn {
+      font-size: 16px;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 0 0 0 5px;
+      display: inline-flex;
+      align-items: center; }
+      .stepper .stepperCard .stepperFooter .btn.back {
+        background-color: #6c757d; }
+      @media (max-width: 767px) {
+        .stepper .stepperCard .stepperFooter .btn {
+          font-size: 13px;
+          padding: 8px 12px; } }
+      .stepper .stepperCard .stepperFooter .btn img {
+        vertical-align: middle;
+        max-width: 40px;
+        margin: 0 0 0 5px;
+        display: none; }
+
+.checkBox {
+  margin: 0 0 20px 0; }
+  .checkBox .checkInput {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .checkBox .checkInput input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+      .checkBox .checkInput input:checked ~ .checkmark {
+        background-color: #2196f3; }
+        .checkBox .checkInput input:checked ~ .checkmark:after {
+          display: block; }
+    .checkBox .checkInput .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee; }
+      .checkBox .checkInput .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .checkBox .checkInput:hover input ~ .checkmark {
+      background-color: #ccc; }
+
+.radioForm .radioInput {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .radioForm .radioInput input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+    .radioForm .radioInput input:checked ~ .checkmark {
+      background-color: #2196f3; }
+      .radioForm .radioInput input:checked ~ .checkmark:after {
+        display: block; }
+  .radioForm .radioInput .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%; }
+    .radioForm .radioInput .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white; }
+  .radioForm .radioInput:hover input ~ .checkmark {
+    background-color: #ccc; }

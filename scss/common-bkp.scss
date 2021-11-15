@@ -1,0 +1,288 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./variables.scss";
+
+@font-face {
+	font-family: "poppins";
+	src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+		url("../fonts/poppins-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "poppinsbold";
+	src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
+		url("../fonts/poppins-bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "poppins";
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+p {
+	font-size: 14px;
+}
+
+svg {
+	vertical-align: middle;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-bold;
+	color: $primary-color;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.primary-color {
+	color: $primary-color;
+	&:hover {
+		color: $primary-color;
+	}
+}
+.secondary-color {
+	color: $secondary-color;
+	&:hover {
+		color: $secondary-color;
+	}
+}
+
+.primaryBtn {
+	background-color: $primary-color;
+	color: #fff;
+	font-size: 14px;
+	border: 1px solid $primary-color;
+	padding: 8px 25px;
+	font-family: $font-family-bold;
+	&:hover {
+		color: $primary-color;
+		background-color: #fff;
+	}
+}
+.secondaryBtn {
+	background-color: $secondary-color;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 15px;
+	border: 1px solid $secondary-color;
+	padding: 8px 25px;
+	font-family: $font-family-bold;
+	&:hover {
+		color: $secondary-color;
+		background-color: #fff;
+	}
+}
+
+.deleteBtn {
+	background-color: $secondary-color;
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	text-decoration: none;
+	border: none;
+	font-size: 18px;
+	&:hover {
+		color: #fff;
+	}
+}
+.editBtn {
+	background-color: $primary-color;
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	text-decoration: none;
+	border: none;
+	&:hover {
+		color: #fff;
+	}
+}
+.form-control,
+.form-select {
+	&:focus {
+		box-shadow: none;
+		border-color: #999;
+	}
+	&::placeholder {
+		color: #999;
+	}
+}
+.commonRadio {
+	.form-check-input {
+		&:checked {
+			background-color: $primary-color;
+			border-color: $primary-color;
+		}
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+.commonCheckbox {
+	.form-check-input {
+		&:checked {
+			background-color: $primary-color;
+			border-color: $primary-color;
+		}
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+
+// Sidebar
+.sidebar {
+	width: 230px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: $primary-color;
+	.logo {
+		text-align: center;
+		padding: 10px 0;
+		background-color: $primary-color-contrast;
+		img {
+			max-width: 95px;
+		}
+	}
+	.menuList {
+		margin: 10px 0 0;
+		ul {
+			li {
+				&:hover {
+					a {
+						text-decoration: none;
+						background-color: $gray-color-100;
+						color: $primary-color;
+						border-color: $gray-color-100;
+					}
+				}
+				a {
+					padding: 10px 15px;
+					font-size: 13px;
+					color: $primary-color-contrast;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					text-decoration: none;
+					border-bottom: 1px solid $gray-color-300;
+				}
+			}
+		}
+	}
+}
+
+// Header
+header {
+	position: fixed;
+	left: 230px;
+	top: 0;
+	right: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 10px 0;
+	.menuBar {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		a {
+			color: $primary-color;
+			font-size: 22px;
+		}
+	}
+	.organisation {
+		display: flex;
+		align-items: center;
+		label {
+			font-size: 13px;
+		}
+	}
+	.searchInput {
+		border-radius: 30px;
+	}
+	.profileNot {
+		> ul {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			li {
+				padding: 0 10px;
+				.dropdown {
+					.btn {
+						display: flex;
+						align-items: center;
+						&::after {
+							display: none;
+						}
+						.profileTitle {
+							text-align: right;
+							padding: 0 10px 0 0;
+							p {
+								font-size: 13px;
+								line-height: 15px;
+								&.role {
+									font-weight: 600;
+								}
+							}
+						}
+						img {
+							max-width: 30px;
+							border-radius: 5px;
+							height: 30px;
+							object-fit: cover;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.main {
+	.pageWrapper {
+		padding: 64px 0 0 230px;
+		.contentWrapper {
+			background-color: $gray-color-100;
+			padding: 15px 0;
+			height: calc(100vh - 64px);
+			overflow: auto;
+			.pageTittle {
+				font-size: 25px;
+				margin: 0 0 20px;
+			}
+		}
+	}
+}

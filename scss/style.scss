@@ -1,0 +1,1397 @@
+@import "./variables.scss";
+
+.commonTable {
+	background-color: $primary-color-contrast;
+	// padding: 15px;
+	// margin: 20px 0 0;
+	.table {
+		thead {
+			tr {
+				th {
+					color: $primary-color;
+					font-weight: 100;
+					font-size: 13px;
+					position: relative;
+					vertical-align: top;
+					.icon {
+						position: absolute;
+						right: 5px;
+						top: 10px;
+						.fa-caret-up {
+							position: absolute;
+							top: -3px;
+							right: 0;
+							font-size: 11px;
+							color: #a6a6a6;
+						}
+						.fa-caret-down {
+							right: 0;
+							bottom: 11px;
+							font-size: 11px;
+							color: #a6a6a6;
+						}
+					}
+				}
+			}
+		}
+		tbody {
+			border-top: none;
+			tr {
+				td {
+					font-size: 13px;
+					.action {
+						display: flex;
+						li {
+							padding: 0 5px;
+							a {
+								font-size: 15px;
+							}
+						}
+					}
+					.box {
+						width: 24px;
+						height: 10px;
+						display: inline-block;
+						border-radius: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Dashboard Css
+.topBox {
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	&.one {
+		background-color: $primary-color-contrast;
+		i {
+			color: $primary-color;
+		}
+		h5,
+		p {
+			color: $black-color;
+		}
+	}
+	&.two {
+		background-color: #8e60ff;
+	}
+	&.three {
+		background-color: #ff6061;
+	}
+	&.four {
+		background-color: #ffa800;
+	}
+	&.five {
+		background-color: #0fb5c2;
+	}
+	&.six {
+		background-color: $primary-color;
+	}
+	i {
+		color: $primary-color-contrast;
+		font-size: 22px;
+	}
+	h5 {
+		color: $primary-color-contrast;
+		padding: 10px 0 0px;
+		font-size: 30px;
+	}
+	p {
+		font-size: 12px;
+		color: $primary-color-contrast;
+	}
+}
+.commonCard {
+	&.card {
+		background-color: $primary-color-contrast;
+		border: none;
+		border-radius: 10px;
+		overflow: hidden;
+		margin: 30px 0 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		.card-header {
+			border-bottom: 1px solid $gray-color-200;
+			background-color: $primary-color-contrast;
+			padding: 10px 15px;
+			h4 {
+				font-size: 18px;
+				color: $black-color;
+				padding: 8px 0;
+			}
+			.buttons {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.btn {
+					color: $primary-color;
+					background-color: $primary-color-100;
+				}
+			}
+		}
+		.list-group {
+			.list-group-item {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.img {
+					height: 30px;
+					width: 30px;
+					border-radius: 50%;
+					overflow: hidden;
+					img {
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+				}
+				.name {
+					font-size: 13px;
+				}
+				.progressBar {
+					width: 150px;
+					.progress {
+						height: 6px;
+					}
+				}
+			}
+		}
+		.card-body {
+			padding: 8px 15px;
+			.nav {
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-color: $gray-color-200;
+					height: 2px;
+				}
+				.nav-item {
+					padding: 0 0 0 20px;
+					&:first-of-type {
+						padding: 0;
+					}
+					.nav-link {
+						color: $black-color;
+						padding: 5px 0;
+						border-bottom: 2px solid transparent;
+						border-radius: 0;
+						position: relative;
+						font-size: 13px;
+						&.active {
+							border-color: $primary-color;
+							color: $primary-color;
+							background-color: $primary-color-contrast;
+						}
+					}
+				}
+			}
+			.table {
+				margin: 0;
+				thead {
+					tr {
+						th {
+							color: $primary-color;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.chartBox {
+	background-color: $primary-color-contrast;
+	border-radius: 10px;
+	margin: 15px 0 10px;
+	padding: 15px;
+}
+
+// Appointment Calendar
+.appointmentCalendar {
+	.nav {
+		.nav-item {
+			.nav-link {
+				&.active {
+					background-color: $primary-color;
+				}
+			}
+		}
+	}
+	.dayCalendar {
+		.table {
+			tbody {
+				// border-top: none;
+				vertical-align: middle;
+				tr {
+					th {
+						font-size: 13px;
+						color: $primary-color;
+						width: 100px;
+						height: 70px;
+						text-align: center;
+					}
+					td {
+						.dropdown {
+							display: inline-block;
+							&.one {
+								.btn {
+									background-color: $primary-color;
+								}
+							}
+							&.two {
+								.btn {
+									background-color: #8e60ff;
+								}
+							}
+							&.three {
+								.btn {
+									background-color: #ff6061;
+								}
+							}
+							&.four {
+								.btn {
+									background-color: #ffa800;
+								}
+							}
+							.btn {
+								color: $primary-color-contrast;
+								font-size: 12px;
+								display: flex;
+								align-items: center;
+								padding: 5px 8px;
+								&::after {
+									display: none;
+								}
+								&:focus {
+									box-shadow: none;
+								}
+								p {
+									text-align: left;
+									padding-right: 25px;
+									span {
+										display: block;
+									}
+								}
+								img {
+									width: 35px;
+									height: 35px;
+									border-radius: 50%;
+									object-fit: cover;
+								}
+							}
+							.dropdown-menu {
+								li {
+									padding: 10px;
+									font-size: 13px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.monthCalendar {
+		.table {
+			thead {
+				tr {
+					th {
+						font-size: 13px;
+						color: $primary-color;
+						width: 100px;
+						height: 70px;
+						text-align: center;
+						vertical-align: middle;
+					}
+				}
+			}
+			tbody {
+				border-top: none;
+				vertical-align: middle;
+				tr {
+					td {
+						position: relative;
+						padding: 20px 15px;
+						text-align: center;
+						.date {
+							position: absolute;
+							left: 5px;
+							top: 5px;
+						}
+						.dropdown {
+							display: block;
+							text-align: center;
+							margin: 10px 0 0;
+							&:first-of-type {
+								margin: 0;
+							}
+							.btn {
+								display: inline-flex;
+								p {
+									padding: 0;
+								}
+							}
+							.dropdown-menu {
+								width: 300px;
+								li {
+									display: flex;
+									align-items: center;
+									img {
+										width: 35px;
+										height: 35px;
+										border-radius: 50%;
+										object-fit: cover;
+										margin: 0 15px 0 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.doctors {
+		background-color: $primary-color-contrast;
+		border-radius: 10px;
+		margin: 30px 0 0;
+		padding: 15px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		.title {
+			text-align: center;
+			margin: 0 0 10px;
+			font-size: 16px;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			li {
+				text-align: center;
+				width: 50%;
+				margin: 0 0 15px;
+				.img {
+					position: relative;
+					display: inline-block;
+					img {
+						width: 80px;
+						height: 80px;
+						border-radius: 50%;
+						object-fit: cover;
+					}
+					.check {
+						position: absolute;
+						right: -10px;
+						bottom: 0;
+						padding: 5px;
+						background-color: $primary-color-contrast;
+						border-radius: 50%;
+						&.one {
+							span {
+								background-color: $primary-color;
+							}
+						}
+						&.two {
+							span {
+								background-color: #8e60ff;
+							}
+						}
+						&.three {
+							span {
+								background-color: #ff6061;
+							}
+						}
+						&.four {
+							span {
+								background-color: #ffa800;
+							}
+						}
+						span {
+							height: 20px;
+							width: 20px;
+							color: $primary-color-contrast;
+							border-radius: 50%;
+							display: block;
+						}
+					}
+				}
+				p {
+					font-size: 13px;
+					margin: 10px 0 0;
+				}
+			}
+		}
+	}
+}
+
+// Calendar CSS
+.appointmentCalendar {
+	.calendar {
+		font-size: 100%;
+		margin: 0 auto;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+		cursor: default;
+		position: relative;
+	}
+	@media (max-width: 767.98px) {
+		.calendar {
+			width: 100%;
+		}
+	}
+	.calendar .header {
+		height: 100px;
+		position: relative;
+		color: #fff;
+	}
+	.calendar .header .text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #308ff0;
+		padding: 15px;
+		-webkit-transform: rotateX(90deg);
+		transform: rotateX(90deg);
+		-webkit-transform-origin: bottom;
+		-ms-transform-origin: bottom;
+		transform-origin: bottom;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: 0.4s ease-in-out 0s;
+		-o-transition: 0.4s ease-in-out 0s;
+		transition: 0.4s ease-in-out 0s;
+		-webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+		opacity: 0;
+	}
+	.calendar .header .text > span {
+		text-align: center;
+		padding: 20px;
+		display: block;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	.calendar .header.active .text {
+		-webkit-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+
+	.months {
+		width: 100%;
+		height: 280px;
+		position: relative;
+	}
+	.months .hr {
+		height: 1px;
+		margin: 15px 0;
+		background: #ccc;
+	}
+
+	.month {
+		padding: 15px;
+		width: inherit;
+		height: inherit;
+		background: #fff;
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: all 0.4s ease-in-out 0s;
+		-o-transition: all 0.4s ease-in-out 0s;
+		transition: all 0.4s ease-in-out 0s;
+		-webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.months[data-flow="left"] .month {
+		-webkit-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+	}
+
+	.months[data-flow="right"] .month {
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+	.table {
+		width: 100%;
+		font-size: 10px;
+		font-weight: 400;
+		display: table;
+	}
+	.table .row {
+		display: table-row;
+	}
+	.table .row.head {
+		color: #308ff0;
+		text-transform: uppercase;
+	}
+	.table .row .cell {
+		width: 14.28%;
+		padding: 5px;
+		text-align: center;
+		display: table-cell;
+	}
+	.table .row .cell.disable {
+		color: #ccc;
+	}
+	.table .row .cell span {
+		display: block;
+		width: 28px;
+		height: 28px;
+		line-height: 28px;
+		-webkit-transition: color, background 0.4s ease-in-out 0s;
+		-o-transition: color, background 0.4s ease-in-out 0s;
+		transition: color, background 0.4s ease-in-out 0s;
+	}
+	.table .row .cell.active span {
+		color: #fff;
+		background-color: #308ff0;
+		border-radius: 4px;
+		padding: 0;
+	}
+
+	.months .month[data-active="true"] {
+		-webkit-transform: rotateY(0);
+		transform: rotateY(0);
+	}
+
+	.header [data-action] {
+		color: inherit;
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+		width: 40px;
+		height: 40px;
+		z-index: 1;
+		opacity: 0;
+		-webkit-transition: all 0.4s ease-in-out 0s;
+		-o-transition: all 0.4s ease-in-out 0s;
+		transition: all 0.4s ease-in-out 0s;
+	}
+	.header [data-action] > i {
+		width: 20px;
+		height: 20px;
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+	.header [data-action] > i:before,
+	.header [data-action] > i:after {
+		top: 50%;
+		margin-top: -1px;
+		content: "";
+		position: absolute;
+		height: 2px;
+		width: 20px;
+		border-top: 2px solid;
+		border-radius: 2px;
+	}
+
+	.header [data-action*="prev"] {
+		left: 15px;
+	}
+	.header [data-action*="prev"] > i:before,
+	.header [data-action*="prev"] > i:after {
+		left: 0;
+	}
+	.header [data-action*="prev"] > i:before {
+		top: 3px;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	.header [data-action*="prev"] > i:after {
+		top: auto;
+		bottom: 3px;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	.header [data-action*="next"] {
+		right: 15px;
+	}
+	.header [data-action*="next"] > i:before,
+	.header [data-action*="next"] > i:after {
+		right: 0;
+	}
+	.header [data-action*="next"] > i:before {
+		top: auto;
+		bottom: 3px;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	.header [data-action*="next"] > i:after {
+		top: 3px;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	.header.active [data-action] {
+		opacity: 1;
+	}
+
+	[data-theme="january"] {
+		background-color: #90caf9;
+	}
+
+	[data-theme="january"] .row.head {
+		color: #1e88e5;
+	}
+
+	[data-theme="january"] .header .text,
+	[data-theme="january"] .table .row .cell.active span {
+		background-color: #1e88e5;
+	}
+
+	[data-theme="february"] {
+		background-color: #81d4fa;
+	}
+
+	[data-theme="february"] .row.head {
+		color: #039be5;
+	}
+
+	[data-theme="february"] .header .text,
+	[data-theme="february"] .table .row .cell.active span {
+		background-color: #039be5;
+	}
+
+	[data-theme="march"] {
+		background-color: #80cbc4;
+	}
+
+	[data-theme="march"] .row.head {
+		color: #00897b;
+	}
+
+	[data-theme="march"] .header .text,
+	[data-theme="march"] .table .row .cell.active span {
+		background-color: #00897b;
+	}
+
+	[data-theme="april"] {
+		background-color: #c5e1a5;
+	}
+
+	[data-theme="april"] .row.head {
+		color: #7cb342;
+	}
+
+	[data-theme="april"] .header .text,
+	[data-theme="april"] .table .row .cell.active span {
+		background-color: #7cb342;
+	}
+
+	[data-theme="may"] {
+		background-color: #ffe082;
+	}
+
+	[data-theme="may"] .row.head {
+		color: #ffb300;
+	}
+
+	[data-theme="may"] .header .text,
+	[data-theme="may"] .table .row .cell.active span {
+		background-color: #ffb300;
+	}
+
+	[data-theme="june"] {
+		background-color: #ffab91;
+	}
+
+	[data-theme="june"] .row.head {
+		color: #f4511e;
+	}
+
+	[data-theme="june"] .header .text,
+	[data-theme="june"] .table .row .cell.active span {
+		background-color: #f4511e;
+	}
+
+	[data-theme="july"] {
+		background-color: #ce93d8;
+	}
+
+	[data-theme="july"] .row.head {
+		color: #8e24aa;
+	}
+
+	[data-theme="july"] .header .text,
+	[data-theme="july"] .table .row .cell.active span {
+		background-color: #8e24aa;
+	}
+
+	[data-theme="august"] {
+		background-color: #b39ddb;
+	}
+
+	[data-theme="august"] .row.head {
+		color: #5e35b1;
+	}
+
+	[data-theme="august"] .header .text,
+	[data-theme="august"] .table .row .cell.active span {
+		background-color: #5e35b1;
+	}
+
+	[data-theme="september"] {
+		background-color: #ef9a9a;
+	}
+
+	[data-theme="september"] .row.head {
+		color: #e53935;
+	}
+
+	[data-theme="september"] .header .text,
+	[data-theme="september"] .table .row .cell.active span {
+		background-color: #e53935;
+	}
+
+	[data-theme="october"] {
+		background-color: #ce93d8;
+	}
+
+	[data-theme="october"] .row.head {
+		color: #8e24aa;
+	}
+
+	[data-theme="october"] .header .text,
+	[data-theme="october"] .table .row .cell.active span {
+		background-color: #8e24aa;
+	}
+
+	[data-theme="november"] {
+		background-color: #bcaaa4;
+	}
+
+	[data-theme="november"] .row.head {
+		color: #6d4c41;
+	}
+
+	[data-theme="november"] .header .text,
+	[data-theme="november"] .table .row .cell.active span {
+		background-color: #6d4c41;
+	}
+
+	[data-theme="december"] {
+		background-color: #b0bec5;
+	}
+
+	[data-theme="december"] .row.head {
+		color: #546e7a;
+	}
+
+	[data-theme="december"] .header .text,
+	[data-theme="december"] .table .row .cell.active span {
+		background-color: #546e7a;
+	}
+}
+
+// Patient Summary
+.patientSummary {
+	.patientInfo {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		background-color: $primary-color-contrast;
+		position: relative;
+		z-index: 0;
+		padding: 25px 0 0;
+		&::before {
+			content: "";
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: $primary-color;
+			height: 80px;
+			position: absolute;
+			z-index: -1;
+		}
+		.patientImg {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 0 auto;
+			img {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.name {
+			text-align: center;
+			font-size: 18px;
+			padding: 10px 0;
+		}
+		.table {
+			tbody {
+				vertical-align: middle;
+				tr {
+					&:last-of-type {
+						th,
+						td {
+							border: none;
+						}
+					}
+					th {
+						color: $gray-color-300;
+						font-size: 13px;
+						padding: 8px 15px;
+						font-weight: 100;
+					}
+					td {
+						text-align: right;
+						font-size: 13px;
+						padding: 8px 15px;
+
+						.flags {
+							display: flex;
+							align-items: center;
+							height: 100%;
+							justify-content: flex-end;
+							.flag {
+								height: 15px;
+								width: 30px;
+								border-radius: 3px;
+								display: inline-block;
+								margin: 0 0 0 10px;
+								&.redBg {
+									background-color: #ff6061;
+								}
+								&.yellowBg {
+									background-color: #ffa800;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.notification {
+		background-color: $primary-color-100;
+		padding: 10px 15px;
+		p {
+			color: $primary-color;
+		}
+	}
+	.patientDes {
+		margin: 15px 0 0;
+		.accordion {
+			.accordion-item {
+				margin: 0 0 15px;
+				border: none;
+				.accordion-header {
+					.accordion-button {
+						display: block;
+						width: 100%;
+						box-shadow: none;
+						padding: 10px;
+						font-size: 15px;
+						&[aria-expanded="true"] {
+							color: $primary-color-contrast;
+							background-color: $primary-color;
+							box-shadow: none;
+							&::after {
+								color: $primary-color-contrast;
+							}
+						}
+						&::after {
+							position: absolute;
+							right: 10px;
+							content: "\f107 ";
+							font-family: "FontAwesome";
+							background-image: none;
+							width: auto;
+						}
+					}
+				}
+				.accordion-body {
+					position: relative;
+					padding: 10px 40px 10px 15px;
+					a.edit {
+						position: absolute;
+						right: 10px;
+						color: $primary-color;
+					}
+					h4 {
+						color: $primary-color;
+					}
+					ul {
+						margin: 20px 0 0;
+						li {
+							display: flex;
+							align-items: center;
+							margin-bottom: 20px;
+							&:last-of-type {
+								margin: 0;
+							}
+							.profileImg {
+								max-width: 50px;
+								min-width: 50px;
+								height: 50px;
+								border-radius: 10px;
+								margin-right: 10px;
+								overflow: hidden;
+								img {
+									height: 100%;
+									object-fit: cover;
+								}
+							}
+							.content {
+								position: relative;
+								width: 100%;
+								padding: 0 25px 0 0;
+								.name {
+									color: $primary-color;
+									font-size: 16px;
+								}
+								.role {
+									font-size: 13px;
+									color: $gray-color-300;
+								}
+								i {
+									position: absolute;
+									right: 0;
+									top: 5px;
+									background: #ffa800;
+									height: 20px;
+									width: 20px;
+									border-radius: 50%;
+									text-align: center;
+									line-height: 20px;
+									color: $primary-color-contrast;
+									font-size: 12px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.patientTabs {
+		background-color: $primary-color-contrast;
+		padding: 15px;
+
+		.nav {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: $gray-color-200;
+				height: 2px;
+			}
+			.nav-item {
+				padding: 0 0 0 40px;
+				&:first-of-type {
+					padding: 0;
+				}
+				.nav-link {
+					color: $black-color;
+					padding: 5px 0;
+					border-bottom: 3px solid transparent;
+					border-radius: 0;
+					position: relative;
+					font-size: 15px;
+					&.active {
+						border-color: $primary-color;
+						color: $primary-color;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+		.card {
+			border: none;
+			background-color: $gray-color-100;
+			margin: 10px 0 10px;
+			.card-title {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 10px 15px;
+				h3 {
+					font-size: 25px;
+				}
+			}
+			.card-body {
+				padding: 10px 15px;
+				.commonTable {
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+// Stepper
+.stepper {
+	.stepperHead {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		&:before {
+			content: "";
+			background: #eee;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			height: 1px;
+		}
+		@media (max-width: 767px) {
+			display: block;
+		}
+		.step {
+			// flex: 1;
+			cursor: pointer;
+			position: static;
+			&.active {
+				.title {
+					background-color: #fff !important;
+					color: #6c757d !important;
+					font-weight: 600 !important;
+				}
+				.stepperCard {
+					display: block;
+				}
+			}
+			&.completed {
+				.title {
+					color: #267dff !important;
+				}
+			}
+			&:last-child {
+				.stepTitle {
+					margin: 0;
+				}
+			}
+			.stepTitle {
+				text-align: center;
+				margin: 0 15px 0 0;
+				position: relative;
+				@media (max-width: 767px) {
+					margin: 10px 0;
+				}
+
+				.title {
+					padding: 10px 15px;
+					border-radius: 5px;
+					font-weight: 500;
+					background-color: #fff;
+					text-align: center;
+					color: #999;
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.stepperCard {
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		left: 0;
+		right: 0;
+		display: none;
+		@media (max-width: 767px) {
+			position: initial;
+		}
+		.stepperHeader {
+			background-color: #f54952;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 21px;
+			text-align: center;
+			padding: 5px 10px;
+			@media (max-width: 767px) {
+				font-size: 16px;
+				padding: 5px 10px;
+			}
+		}
+		.stepperBody {
+			.form-group {
+				margin-bottom: 15px;
+				label {
+					display: block;
+					margin: 0 0 5px 0;
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+			.info {
+				font-size: 16px;
+				text-align: center;
+				color: #000;
+				margin: 10px 0 40px;
+				@media (max-width: 767px) {
+					font-size: 13px;
+				}
+			}
+			.form {
+				display: flex;
+				@media (max-width: 767px) {
+					display: initial;
+				}
+				.profile {
+					max-width: 200px;
+					text-align: center;
+					@media (max-width: 767px) {
+						margin: 0 auto 10px;
+					}
+					.profileImg {
+						height: 140px;
+						width: 140px;
+						border-radius: 50%;
+						margin: 0 auto 10px;
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+					a {
+						font-size: 16px;
+						color: #000;
+					}
+				}
+				.formInputs {
+					width: 100%;
+					@media (max-width: 767px) {
+						padding: 0;
+					}
+					.formInner {
+						display: flex;
+						flex-wrap: wrap;
+						.formGroup {
+							flex: 1 0 46%;
+							margin: 10px 0 10px 20px;
+							@media (max-width: 767px) {
+								margin: 0 0 15px;
+								flex: 1 0 100%;
+							}
+							label {
+								display: block;
+								font-size: 16px;
+								color: #c7c7c7;
+								margin: 0 0 2px;
+								text-transform: uppercase;
+							}
+							input {
+								border: 1px solid #d9d9d9;
+								padding: 8px 10px;
+								border-radius: 10px;
+								width: 100%;
+								&:focus {
+									border-color: #999;
+									outline: none;
+								}
+							}
+						}
+					}
+				}
+			}
+			.formHeading {
+				margin: 0 0 25px 0;
+				h2 {
+					font-size: 17px;
+					border-bottom: 1px solid #ddd;
+					padding: 0 0 5px 0;
+				}
+			}
+
+			.uploadFiles {
+				border: 2px dashed #ddd;
+				margin: 18px 0 5px 0;
+				padding: 30px 15px;
+				text-align: center;
+				color: #7c7c7c;
+				i {
+					font-size: 30px;
+					display: block;
+				}
+				span {
+					font-size: 25px;
+					display: block;
+				}
+				.files {
+					font-size: 16px;
+					a {
+						color: #7c7c7c;
+						text-decoration: underline;
+					}
+				}
+			}
+			.format {
+				text-align: center;
+				font-size: 14px;
+				color: #7c7c7c;
+			}
+		}
+		.stepperFooter {
+			text-align: right;
+			padding: 15px 0;
+			.btn {
+				font-size: 16px;
+				color: #fff;
+				padding: 8px 15px;
+				border: none;
+				border-radius: 5px;
+				text-transform: uppercase;
+				cursor: pointer;
+				margin: 0 0 0 5px;
+				display: inline-flex;
+				align-items: center;
+				&.back {
+					background-color: #6c757d;
+				}
+				@media (max-width: 767px) {
+					font-size: 13px;
+					padding: 8px 12px;
+				}
+				img {
+					vertical-align: middle;
+					max-width: 40px;
+					margin: 0 0 0 5px;
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// checkbox
+
+.checkBox {
+	margin: 0 0 20px 0;
+	.checkInput {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 14px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+			&:checked {
+				& ~ .checkmark {
+					background-color: #2196f3;
+					&:after {
+						display: block;
+					}
+				}
+			}
+		}
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			background-color: #eee;
+			&:after {
+				content: "";
+				position: absolute;
+				display: none;
+				left: 9px;
+				top: 5px;
+				width: 5px;
+				height: 10px;
+				border: solid white;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+		&:hover {
+			input {
+				& ~ .checkmark {
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+}
+
+//radio button
+
+.radioForm {
+	.radioInput {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			&:checked {
+				& ~ .checkmark {
+					background-color: #2196f3;
+					&:after {
+						display: block;
+					}
+				}
+			}
+		}
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			background-color: #eee;
+			border-radius: 50%;
+			&:after {
+				content: "";
+				position: absolute;
+				display: none;
+				top: 9px;
+				left: 9px;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background: white;
+			}
+		}
+		&:hover {
+			input {
+				& ~ .checkmark {
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+}

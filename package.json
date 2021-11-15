@@ -1,0 +1,23 @@
+{
+  "name": "tomrex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "bootstrap": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.1.0",
+    "less": "^3.11.1",
+    "sass": "^1.43.4"
+  },
+  "description": ""
+}
