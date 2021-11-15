@@ -36,6 +36,13 @@
         height: 10px;
         display: inline-block;
         border-radius: 4px; }
+      .commonTable .table tbody tr td .checkBox {
+        margin: 0; }
+        .commonTable .table tbody tr td .checkBox .checkInput {
+          margin: 0;
+          padding-left: 10px; }
+          .commonTable .table tbody tr td .checkBox .checkInput .checkmark {
+            height: 20px; }
 
 .topBox {
   padding: 15px;
@@ -714,13 +721,20 @@
         width: auto; }
     .patientSummary .patientDes .accordion .accordion-item .accordion-body {
       position: relative;
-      padding: 10px 40px 10px 15px; }
+      padding: 10px 15px 10px 15px; }
       .patientSummary .patientDes .accordion .accordion-item .accordion-body a.edit {
         position: absolute;
         right: 10px;
         color: #222; }
       .patientSummary .patientDes .accordion .accordion-item .accordion-body h4 {
-        color: #222; }
+        color: #222;
+        position: relative;
+        font-size: 1.2rem; }
+        .patientSummary .patientDes .accordion .accordion-item .accordion-body h4 span {
+          font-size: 1.2rem;
+          position: absolute;
+          right: 0;
+          cursor: pointer; }
       .patientSummary .patientDes .accordion .accordion-item .accordion-body ul {
         margin: 20px 0 0; }
         .patientSummary .patientDes .accordion .accordion-item .accordion-body ul li {

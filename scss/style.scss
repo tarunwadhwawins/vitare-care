@@ -9,7 +9,7 @@
 			tr {
 				th {
 					color: $primary-color;
-					font-weight:600;
+					font-weight: 600;
 					font-size: 13px;
 					position: relative;
 					vertical-align: top;
@@ -53,6 +53,16 @@
 						height: 10px;
 						display: inline-block;
 						border-radius: 4px;
+					}
+					.checkBox {
+						margin: 0;
+						.checkInput {
+							margin: 0;
+							padding-left:10px;
+							.checkmark{
+							 height:20px;
+							}
+						}
 					}
 				}
 			}
@@ -429,7 +439,7 @@
 	}
 }
 .select2-container {
-	z-index: 99999!important;
+	z-index: 99999 !important;
 }
 .appoinmentDetailModal {
 	.selectOption {
@@ -947,7 +957,7 @@
 				}
 				.accordion-body {
 					position: relative;
-					padding: 10px 40px 10px 15px;
+					padding: 10px 15px 10px 15px;
 					a.edit {
 						position: absolute;
 						right: 10px;
@@ -955,6 +965,14 @@
 					}
 					h4 {
 						color: $primary-color;
+						position: relative;
+						font-size: 1.2rem;
+						span {
+							font-size: 1.2rem;
+							position: absolute;
+							right: 0;
+							cursor: pointer;
+						}
 					}
 					ul {
 						margin: 20px 0 0;

@@ -101,7 +101,6 @@
                               </div>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                  <div class="accordion-body">
-                                    <a href="#" class="edit"> <i class="fa fa-edit"></i> </a>
                                     <div class="row">
                                        <div class="col-sm-4">
                                           <h4>Health Team</h4>
@@ -127,7 +126,9 @@
                                           </ul>
                                        </div>
                                        <div class="col-sm-4">
-                                          <h4>Care Coordinators</h4>
+                                          <h4>Care Coordinators
+                                             <span data-bs-toggle="modal" data-bs-target="#care"><i class="fa fa-plus"></i></span>
+                                          </h4>
                                           <ul>
                                              <li>
                                                 <div class="profileImg">
@@ -152,7 +153,9 @@
                                           </ul>
                                        </div>
                                        <div class="col-sm-4">
-                                          <h4>Family Coordinators</h4>
+                                          <h4>Family Coordinators
+                                             <span data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-plus"></i></span>
+                                          </h4>
                                           <ul>
                                              <li>
                                                 <div class="profileImg">
@@ -510,7 +513,7 @@
                               </div>
                            </div>
                            <div class="tab-pane fade" id="pills-Notes" role="tabpanel" aria-labelledby="pills-Notes-tab">
-                           <div class="commonTable">
+                              <div class="commonTable">
                                  <table class="table">
                                     <thead>
                                        <tr>
@@ -527,7 +530,7 @@
                                           <td class="text-nowrap">Nov 11, 2021</td>
                                           <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe, ipsam molestias ducimus nemo fugit quos beatae. Explicabo consequatur cumque iusto magni laudantium saepe voluptas quasi eius, error quisquam quos?</td>
                                        </tr>
-                                      
+
                                     </tbody>
                                  </table>
                               </div>
@@ -541,10 +544,531 @@
       </div>
    </div>
 
+   <!---->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Family Coordinators</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Phone No</label>
+                        <input type="number" class="form-control" />
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Relationship</label>
+                        <select class="form-select">
+                           <option value="0">Select Relationship</option>
+                           <option value="1">Brother</option>
+                           <option value="1">Sister</option>
+                           <option value="1">Mother</option>
+                           <option value="1">Father</option>
+                        </select>
+                     </div>
+                  </div>
 
 
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="care" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Care Coordinators</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-10">
+                     <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Search Here..">
+                     </div>
+                  </div>
+                  <div class="col-sm-2">
+                     <div class="form-group">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Add New</button>
+                     </div>
+                  </div>
+                  <!---->
+               </div>
+               <div class="row">
+                 <div class="col-sm-12">
+                     <div class="table-responsive commonTable">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th></th>
+                                 <th>First Name
+                                 <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                                 <th>Last Name
+                                 <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                                 <th>Role
+                                 <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Jane</td>
+                                 <td>Doe</td>
+                                 <td>Physician</td>
+                              </tr>
+                              <tr>
+                              <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Steve </td>
+                                 <td>Smith</td>
+                                 <td>Cardiologist</td>
+                              </tr>
+                              <tr>
+                              <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Joseph </td>
+                                 <td>William</td>
+                                 <td>RN</td>
+                              </tr>
+                              <tr>
+                              <td>
+                                 <div class="checkBox">
+                                       <label class="checkInput">
+                                          <input type="checkbox">
+                                          <span class="checkmark"></span>
+                                       </label>
+                                    </div>
+                                 </td>
+                                 <td>Robert </td>
+                                 <td>Henry</td>
+                                 <td>Physician</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                 </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+         <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Add New Care Coordinators</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="min-height:380px;">
+               <div class="stepper">
+                  <div class="stepperHead">
+                     <div class="step active">
+                        <div class="stepTitle">
+                           <div class="title">Personal Information</div>
+                        </div>
+                        <div class="stepperCard">
+                           <div class="stepperBody">
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>First Name</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Last Name</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Designation</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Gender</label>
+                                       <select class="form-select">
+                                          <option value="0" selected> Choose </option>
+                                          <option value="0"> Male </option>
+                                          <option value="0"> Female </option>
+                                          <option value="0"> Others </option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Email</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Phone No</label>
+                                       <input type="number" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <!---->
+                              </div>
+                           </div>
+                           <div class="stepperFooter">
+                              <button class="btn next btn-primary">Next</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="step">
+                        <div class="stepTitle">
+                           <div class="title">Contacts</div>
+                        </div>
+                        <div class="stepperCard">
+                           <div class="stepperBody">
+                           <div class="row">
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>First Name</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Last Name</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Email</label>
+                                       <input type="email" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Phone No.</label>
+                                       <input type="number" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group text-end">
+                                       <button class="btn btn-primary">Add</button>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="table-responsive commonTable">
+                                       <table class="table">
+                                          <thead>
+                                             <tr>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Email</th>
+                                                <th>Phone No</th>
+                                                <th>Actions</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>John</td>
+                                                <td>Goe</td>
+                                                <td>john@aa.com</td>
+                                                <td>999-2222-111</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>Steve</td>
+                                                <td>Smith</td>
+                                                <td>steve@smith.com</td>
+                                                <td>999-2222-112</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                                 <!---->
+                              </div>
+                           </div>
+                           <div class="stepperFooter">
+                              <button class="btn back">Back</button>
+                              <button class="btn next btn-primary">Next </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="step">
+                        <div class="stepTitle">
+                           <div class="title">Availability </div>
+                        </div>
+                        <div class="stepperCard">
+                           <div class="stepperBody">
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Start Time</label>
+                                       <select class="form-select">
+                                          <option value="0" selected> Choose start Time</option>
+                                          <option value="1">08:00 AM</option>
+                                          <option value="1">08:30 AM</option>
+                                          <option value="1">09:00 AM</option>
+                                          <option value="1">09:30 AM</option>
+                                          <option value="1">10:00 AM</option>
+                                          <option value="1">10:30 AM</option>
+                                          <option value="1">11:00 AM</option>
+                                          <option value="1">11:30 AM</option>
+                                          <option value="1">12:00 PM</option>
+                                          <option value="1">12:30 PM</option>
+                                          
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                    <label>End Time</label>
+                                       <select class="form-select">
+                                          <option value="0" selected> Choose End Time</option>
+                                          <option value="1">2:00 PM</option>
+                                          <option value="1">2:30 PM</option>
+                                          <option value="1">3:00 PM</option>
+                                          <option value="1">3:30 PM</option>
+                                          <option value="1">4:00 PM</option>
+                                          <option value="1">4:30 PM</option>
+                                          <option value="1">5:00 PM</option>
+                                          <option value="1">5:30 PM</option>
+                                         
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group text-end">
+                                       <button class="btn btn-primary">Add</button>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="table-responsive commonTable">
+                                       <table class="table">
+                                          <thead>
+                                             <tr>
+                                                <th>Start Time</th>
+                                                <th>End Time</th>
+                                                <th>Actions</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>08:00 AM</td>
+                                                <td>02:30 PM</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>09:00 AM</td>
+                                                <td>03:30 PM</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
 
 
+                              </div>
+                           </div>
+                           <div class="stepperFooter">
+                              <button class="btn back">Back</button>
+                              <button class="btn next btn-primary">Next </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="step">
+                        <div class="stepTitle">
+                           <div class="title">Documents </div>
+                        </div>
+                        <div class="stepperCard">
+                           <div class="stepperBody">
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Name</label>
+                                       <input type="text" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Document</label>
+                                       <input type="file" class="form-control" />
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Type</label>
+                                       <select class="form-select">
+                                          <option value="0" selected> Choose Type</option>
+                                          <option value="1">Id Proof</option>
+                                          <option value="2">Clinical</option>
+                                          <option value="3">Insurance </option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                       <label>Tags</label>
+                                       <select class="form-control" multiple="multiple">
+                                          <option selected="selected">orange</option>
+                                          <option>white</option>
+                                          <option selected="selected">purple</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="form-group text-end">
+                                       <button class="btn btn-primary">Add</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-sm-12">
+                                    <div class="table-responsive commonTable">
+                                       <table class="table">
+                                          <thead>
+                                             <tr>
+                                                <th>Name</th>
+                                                <th>Document</th>
+                                                <th>Type </th>
+                                                <th>Tags </th>
+                                                <th>Actions</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>Program 1</td>
+                                                <td>abc.pdf</td>
+                                                <td>Voter Id</td>
+                                                <td>Voter Id</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>Program 1</td>
+                                                <td>abc.pdf</td>
+                                                <td>Voter Id</td>
+                                                <td>Voter Id</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="stepperFooter">
+                              <button class="btn back">Back</button>
+                              <button class="btn save btn-primary">Save </button>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+            </div> -->
+         </div>
+      </div>
+      </div>
+   <!---->
    <script type="text/javascript" src="assets/js/jquery.js"></script>
    <script type="text/javascript" src="assets/js/popper.js"></script>
    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -855,6 +1379,37 @@
 
       var chart = new ApexCharts(document.querySelector("#chart3"), options);
       chart.render();
+   </script>
+   <script type="text/javascript" src="assets/js/stepper.js"></script>
+   <script>
+      $(document).ready(function() {
+         $(".next").click(function() {
+            $('.stepper').parent().scrollTop(0);
+            $(".stepperHead").find('.active').addClass('completed');
+            $(".step").removeClass('active');
+            console.log($(this).parent().parent().parent());
+            $(this).parent().parent().parent().next().addClass('active');
+         });
+         $(".back").click(function() {
+            $('.stepper').parent().scrollTop(0);
+
+            $(".step").removeClass('active');
+            $(this).parent().parent().parent().removeClass('completed');
+            $(this).parent().parent().parent().prev().addClass('active');
+         });
+         $(".title").click(function() {
+            $('.stepper').parent().scrollTop(0);
+            var all_child = $(this).parent().parent().parent().children();
+            var child = $(this).parent().parent()[0];
+            var parent = child.parentNode;
+            var index = Array.prototype.indexOf.call(parent.children, child);
+            for (i = index; i < all_child.length; i++) {
+               $(all_child[i]).removeClass('completed');
+            }
+            $(".step").removeClass('active');
+            $(this).parent().parent().addClass('active');
+         });
+      })
    </script>
    <!---->
 </body>
