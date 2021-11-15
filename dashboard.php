@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -187,6 +188,45 @@
    <script type="text/javascript" src="assets/js/iconify.min.js"></script>
    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.29.0/apexcharts.min.js"></script>
+   <script type="text/javascript" src="assets/js/stepper.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function() {
+         $(".next").click(function() {
+            $('.stepper').parent().scrollTop(0);
+            $(".stepperHead").find('.active').addClass('completed');
+            $(".step").removeClass('active');
+            console.log($(this).parent().parent().parent());
+            $(this).parent().parent().parent().next().addClass('active');
+         });
+         $(".back").click(function() {
+            $('.stepper').parent().scrollTop(0);
+
+            $(".step").removeClass('active');
+            $(this).parent().parent().parent().removeClass('completed');
+            $(this).parent().parent().parent().prev().addClass('active');
+         });
+         $(".title").click(function() {
+            $('.stepper').parent().scrollTop(0);
+            var all_child = $(this).parent().parent().parent().children();
+            var child = $(this).parent().parent()[0];
+            var parent = child.parentNode;
+            var index = Array.prototype.indexOf.call(parent.children, child);
+            for (i = index; i < all_child.length; i++) {
+               $(all_child[i]).removeClass('completed');
+            }
+            $(".step").removeClass('active');
+            $(this).parent().parent().addClass('active');
+         });
+      })
+   </script>
+      <script>
+      $(document).ready(function() {
+         $('.js-example-basic-single').select2({
+            placeholder: "Select a Patient",
+         });
+      });
+   </script>
    <script>
       var options = {
          series: [25, 15, 44, 55, 41, 17],
