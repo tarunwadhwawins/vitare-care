@@ -7956,6 +7956,12 @@ ul {
 .commonCheckbox .form-check-input:focus {
   box-shadow: none; }
 
+.form-control {
+  appearance: none; }
+
+input[type="time" i], input[type="date" i] {
+  width: 100%; }
+
 .sidebar {
   width: 50px;
   position: fixed;

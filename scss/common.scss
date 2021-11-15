@@ -186,6 +186,13 @@ ul {
 		}
 	}
 }
+.form-control{
+ appearance: none;
+}
+input[type="time" i],input[type="date" i] {
+width:100%;	
+}
+
 
 // Sidebar
 .sidebar {
