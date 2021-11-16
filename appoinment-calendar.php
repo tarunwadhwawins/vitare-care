@@ -7,14 +7,7 @@
    <meta name="description" content="">
    <meta name="keywords" content="">
    <meta name="author" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
-   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+   <?php include_once('common/common-css.php'); ?>
 
 </head>
 
@@ -37,7 +30,7 @@
                <div class="row">
                   <div class="col-sm-3 leftCalendarView">
                      <div class="text-center mb-3">
-                        <button class="btn primaryBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa fa-plus"></i> New Appointment</button>
+                        <button class="btn primaryBtn" data-bs-toggle="modal" data-bs-target="#addAppointment"> <i class="fa fa-plus"></i> New Appointment</button>
                      </div>
                      <div class="calendar">
                         <div class="header">
@@ -779,82 +772,9 @@
       </div>
    </div>
 
-   <!-- Modal -->
-   <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">Appointment Detail</h5>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body appoinmentDetailModal">
-               <div class="row">
-                  <div class="col-sm-6">
-                     <div class="mb-3 selectOption">
-                        <label for="exampleInputEmail1" class="form-label">Patient</label>
-                        <select class="js-example-basic-single">
-                           <option>Search & Select Patient</option>
-                           <option value="1">Jane Doe</option>
-                           <option value="2">Steve Smith</option>
-                           <option value="3">Joseph Spouse</option>
-                           <option value="4">Robert Henry</option>
-                        </select>
-                     </div>
-                  </div>
 
-                  <div class="col-sm-6">
-                     <div class="mb-3 selectOption">
-                        <label for="exampleInputEmail1" class="form-label">Staff</label>
-                        <select class="js-example-basic-single">
-                           <option>Search & Select Staff</option>
-                           <option value="1">Jane Doe</option>
-                           <option value="2">Steve Smith</option>
-                           <option value="3">Joseph Spouse</option>
-                           <option value="4">Robert Henry</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Start Date</label>
-                        <input type="text"  class="form-control" id="datepicker" placeholder="Select Date">
-                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label"> Time</label>
-                        <input type="text"  class="form-control" id="timepicker" placeholder="Select Time">
-                     </div>
-                  </div>
-                  <div class="col-sm-12">
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Note</label>
-                        <textarea class="form-control" aria-describedby="emailHelp"></textarea>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
-               <button type="button" class="btn primaryBtn" data-bs-dismiss="modal">Save</button>
-            </div>
-         </div>
-      </div>
-   </div>
-
-
-
-
-   <script type="text/javascript" src="assets/js/jquery.js"></script>
-   <script type="text/javascript" src="assets/js/popper.js"></script>
-   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="assets/js/topup.js"></script>
-   <script type="text/javascript" src="assets/js/custom.js"></script>
-   <script type="text/javascript" src="assets/js/iconify.min.js"></script>
-   <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-   <script type="text/javascript" src="assets/js/main.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+   <?php include_once('common/modals.php'); ?>
+   <?php include_once('common/common-js.php'); ?>
    <script>
       $(function() {
          $("#datepicker").datepicker();

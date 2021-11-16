@@ -7,15 +7,7 @@
    <meta name="description" content="">
    <meta name="keywords" content="">
    <meta name="author" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
-   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-   <link rel="stylesheet" href="assets/css/tagger.css" type="text/css" />
-   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+   <?php include_once('common/common-css.php'); ?>
 </head>
 
 <body>
@@ -179,21 +171,10 @@
    </div>
 
 
+   <?php include_once('common/modals.php'); ?>
 
-
-
-   <script type="text/javascript" src="assets/js/jquery.js"></script>
-   <script type="text/javascript" src="assets/js/popper.js"></script>
-   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="assets/js/topup.js"></script>
-   <script type="text/javascript" src="assets/js/custom.js"></script>
-   <script type="text/javascript" src="assets/js/iconify.min.js"></script>
-   <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.29.0/apexcharts.min.js"></script>
-   <script type="text/javascript" src="assets/js/stepper.js"></script>
-   <script type="text/javascript" src="assets/js/tagger.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script>
+   <?php include_once('common/common-js.php'); ?>
+   <script>
       $(document).ready(function() {
          $(".next").click(function() {
             $('.stepper').parent().scrollTop(0);
@@ -223,7 +204,7 @@
          });
       })
    </script>
-      <script>
+   <script>
       $(document).ready(function() {
          $('.js-example-basic-single').select2({
             placeholder: "Select a Patient",
@@ -305,13 +286,13 @@
       var chart = new ApexCharts(document.querySelector("#chart2"), options);
       chart.render();
    </script>
-      <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
    <script>
       $(function() {
          $(".datepicker").datepicker();
       });
    </script>
-      <script>
+   <script>
       $(".tags").select2({
          tags: true,
          tokenSeparators: [',', ' ']

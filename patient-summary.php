@@ -7,13 +7,7 @@
    <meta name="description" content="">
    <meta name="keywords" content="">
    <meta name="author" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
-   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/common.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/fonts.css" type="text/css" />
-   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+   <?php include_once('common/common-css.php'); ?>
 
 </head>
 
@@ -1244,15 +1238,8 @@
       </div>
    </div>
    <!---->
-   <script type="text/javascript" src="assets/js/jquery.js"></script>
-   <script type="text/javascript" src="assets/js/popper.js"></script>
-   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="assets/js/topup.js"></script>
-   <script type="text/javascript" src="assets/js/custom.js"></script>
-   <script type="text/javascript" src="assets/js/iconify.min.js"></script>
-   <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.29.0/apexcharts.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   <?php include_once('common/modals.php'); ?>
+   <?php include_once('common/common-js.php'); ?>
    <script>
       $(".tags").select2({
          tags: true,

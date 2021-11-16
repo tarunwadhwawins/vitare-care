@@ -1094,8 +1094,6 @@
       height: 8px;
       border-radius: 50%;
       background: white; }
-  .radioForm .radioInput:hover input ~ .checkmark {
-    background-color: #ccc; }
 
 .allTasks .taskBox {
   background-color: #fff;
@@ -1115,7 +1113,7 @@
       padding-left: 10px; }
   .allTasks .taskBox .taskBody {
     padding: 10px 0 0;
-    height: calc(100vh - 210px);
+    height: calc(100vh - 230px);
     overflow: auto; }
     .allTasks .taskBox .taskBody .taskCard {
       border: 1px solid #e3e3e3;
@@ -1185,13 +1183,13 @@
             .allTasks .taskBox .taskBody .taskCard .timeStaff .staff ul li img {
               height: 100%;
               object-fit: cover; }
-    .allTasks .taskBox .taskBody .addNewTask {
-      text-align: center; }
-      .allTasks .taskBox .taskBody .addNewTask a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: #444;
-        text-decoration: none; }
-        .allTasks .taskBox .taskBody .addNewTask a i {
-          margin: 0 5px 0 0; }
+  .allTasks .taskBox .addNewTask {
+    text-align: center; }
+    .allTasks .taskBox .addNewTask a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #444;
+      text-decoration: none; }
+      .allTasks .taskBox .addNewTask a i {
+        margin: 0 5px 0 0; }

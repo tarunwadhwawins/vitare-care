@@ -13,7 +13,7 @@
 					font-size: 13px;
 					position: relative;
 					vertical-align: top;
-					padding:10px 15px;
+					padding: 10px 15px;
 					.icon {
 						position: absolute;
 						right: 0;
@@ -40,7 +40,7 @@
 			tr {
 				td {
 					font-size: 13px;
-					padding:10px 15px;
+					padding: 10px 15px;
 					.action {
 						display: flex;
 						li {
@@ -1457,7 +1457,7 @@
 		}
 		.taskBody {
 			padding: 10px 0 0;
-			height: calc(100vh - 210px);
+			height: calc(100vh - 230px);
 			overflow: auto;
 			.taskCard {
 				border: 1px solid $gray-color-200;
@@ -1543,17 +1543,17 @@
 					}
 				}
 			}
-			.addNewTask {
-				text-align: center;
-				a {
-					display: inline-flex;
-					align-items: center;
-					justify-content: center;
-					color: $black-color;
-					text-decoration: none;
-					i {
-						margin: 0 5px 0 0;
-					}
+		}
+		.addNewTask {
+			text-align: center;
+			a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				color: $black-color;
+				text-decoration: none;
+				i {
+					margin: 0 5px 0 0;
 				}
 			}
 		}
