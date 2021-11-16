@@ -859,9 +859,6 @@
       $(function() {
          $("#datepicker").datepicker();
       });
-      $(function() {
-         $("#timepicker").timepicker();
-      });
    </script>
    <script>
       $('.fullCalendarBtn').click(function() {

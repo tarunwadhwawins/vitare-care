@@ -5,11 +5,12 @@
     font-weight: 600;
     font-size: 13px;
     position: relative;
-    vertical-align: top; }
+    vertical-align: top;
+    padding: 10px 15px; }
     .commonTable .table thead tr th .icon {
       position: absolute;
-      right: 5px;
-      top: 10px; }
+      right: 0;
+      top: 14px; }
       .commonTable .table thead tr th .icon .fa-caret-up {
         position: absolute;
         top: -3px;
@@ -24,7 +25,8 @@
   .commonTable .table tbody {
     border-top: none; }
     .commonTable .table tbody tr td {
-      font-size: 13px; }
+      font-size: 13px;
+      padding: 10px 15px; }
       .commonTable .table tbody tr td .action {
         display: flex; }
         .commonTable .table tbody tr td .action li {
@@ -364,6 +366,9 @@
   transform: rotateX(0deg);
   opacity: 1; }
 
+.appointmentCalendar .table > :not(:first-child) {
+  border-top: 0px solid currentColor; }
+
 .appointmentCalendar .months {
   width: 100%;
   height: 280px;
@@ -411,7 +416,7 @@
 
 .appointmentCalendar .table .row .cell {
   width: 14.28%;
-  padding: 5px;
+  padding: 0;
   text-align: center;
   display: table-cell; }
 
@@ -442,8 +447,8 @@
   position: absolute;
   top: 50%;
   margin-top: -20px;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 37px;
   z-index: 1;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -451,14 +456,14 @@
   transition: all 0.4s ease-in-out 0s; }
 
 .appointmentCalendar .header [data-action] > i {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 13px;
   display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -10px;
-  margin-left: -10px; }
+  margin-top: -7px;
+  margin-left: -5px; }
 
 .appointmentCalendar .header [data-action] > i:before,
 .appointmentCalendar .header [data-action] > i:after {
@@ -467,7 +472,7 @@
   content: "";
   position: absolute;
   height: 2px;
-  width: 20px;
+  width: 10px;
   border-top: 2px solid;
   border-radius: 2px; }
 
@@ -848,7 +853,8 @@
     .stepper .stepperHead .step.active .stepperCard {
       display: block; }
     .stepper .stepperHead .step.completed .title {
-      color: #267dff !important; }
+      color: #111 !important;
+      font-family: "poppinsbold"; }
     .stepper .stepperHead .step:last-child .stepTitle {
       margin: 0; }
     .stepper .stepperHead .step .stepTitle {
@@ -1050,8 +1056,6 @@
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg); }
-    .checkBox .checkInput:hover input ~ .checkmark {
-      background-color: #ccc; }
 
 .radioForm .radioInput {
   display: block;

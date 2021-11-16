@@ -13,10 +13,11 @@
 					font-size: 13px;
 					position: relative;
 					vertical-align: top;
+					padding:10px 15px;
 					.icon {
 						position: absolute;
-						right: 5px;
-						top: 10px;
+						right: 0;
+						top: 14px;
 						.fa-caret-up {
 							position: absolute;
 							top: -3px;
@@ -39,6 +40,7 @@
 			tr {
 				td {
 					font-size: 13px;
+					padding:10px 15px;
 					.action {
 						display: flex;
 						li {
@@ -523,7 +525,9 @@
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
-
+	.table > :not(:first-child) {
+		border-top: 0px solid currentColor;
+	}
 	.months {
 		width: 100%;
 		height: 280px;
@@ -575,7 +579,7 @@
 	}
 	.table .row .cell {
 		width: 14.28%;
-		padding: 5px;
+		padding: 0;
 		text-align: center;
 		display: table-cell;
 	}
@@ -608,8 +612,8 @@
 		position: absolute;
 		top: 50%;
 		margin-top: -20px;
-		width: 40px;
-		height: 40px;
+		width: 20px;
+		height: 37px;
 		z-index: 1;
 		opacity: 0;
 		-webkit-transition: all 0.4s ease-in-out 0s;
@@ -617,14 +621,14 @@
 		transition: all 0.4s ease-in-out 0s;
 	}
 	.header [data-action] > i {
-		width: 20px;
-		height: 20px;
+		width: 10px;
+		height: 13px;
 		display: block;
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		margin-top: -10px;
-		margin-left: -10px;
+		margin-top: -7px;
+		margin-left: -5px;
 	}
 	.header [data-action] > i:before,
 	.header [data-action] > i:after {
@@ -633,7 +637,7 @@
 		content: "";
 		position: absolute;
 		height: 2px;
-		width: 20px;
+		width: 10px;
 		border-top: 2px solid;
 		border-radius: 2px;
 	}
@@ -1122,7 +1126,8 @@
 			}
 			&.completed {
 				.title {
-					color: #267dff !important;
+					color: $primary-color !important;
+					font-family: $font-family-bold;
 				}
 			}
 			&:last-child {
@@ -1376,13 +1381,6 @@
 				transform: rotate(45deg);
 			}
 		}
-		&:hover {
-			input {
-				& ~ .checkmark {
-					background-color: #ccc;
-				}
-			}
-		}
 	}
 }
 
@@ -1431,13 +1429,6 @@
 				height: 8px;
 				border-radius: 50%;
 				background: white;
-			}
-		}
-		&:hover {
-			input {
-				& ~ .checkmark {
-					background-color: #ccc;
-				}
 			}
 		}
 	}
