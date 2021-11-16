@@ -7966,7 +7966,7 @@ ul {
   .sidebar .menuList ul li:hover a {
     text-decoration: none;
     background-color: #f9f9f9;
-    color: #000;
+    color: #444;
     border-color: #f9f9f9; }
   .sidebar .menuList ul li a {
     padding: 18px 15px;
@@ -7996,7 +7996,7 @@ header {
     header .logo img {
       max-width: 95px; }
   header .menuBar a {
-    color: #000; }
+    color: #444; }
   header .organisation {
     display: flex;
     align-items: center; }
@@ -8017,7 +8017,7 @@ header {
     header .profileNot > ul li {
       padding: 0 10px; }
       header .profileNot > ul li a {
-        color: #000; }
+        color: #444; }
       header .profileNot > ul li .dropdown .btn {
         display: flex;
         align-items: center; }

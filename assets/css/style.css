@@ -89,7 +89,7 @@
     padding: 10px 15px; }
     .commonCard.card .card-header h4 {
       font-size: 18px;
-      color: #000;
+      color: #444;
       padding: 8px 0; }
     .commonCard.card .card-header .buttons {
       display: flex;
@@ -134,7 +134,7 @@
         .commonCard.card .card-body .nav .nav-item:first-of-type {
           padding: 0; }
         .commonCard.card .card-body .nav .nav-item .nav-link {
-          color: #000;
+          color: #444;
           padding: 5px 0;
           border-bottom: 2px solid transparent;
           border-radius: 0;
@@ -797,7 +797,7 @@
       .patientSummary .patientTabs .nav .nav-item:first-of-type {
         padding: 0; }
       .patientSummary .patientTabs .nav .nav-item .nav-link {
-        color: #000;
+        color: #444;
         padding: 5px 0;
         border-bottom: 3px solid transparent;
         border-radius: 0;
@@ -1092,3 +1092,102 @@
       background: white; }
   .radioForm .radioInput:hover input ~ .checkmark {
     background-color: #ccc; }
+
+.allTasks .taskBox {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px; }
+  .allTasks .taskBox .taskHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9f9f9;
+    padding: 0 0 10px; }
+    .allTasks .taskBox .taskHeader h4 {
+      font-size: 18px;
+      color: #111; }
+    .allTasks .taskBox .taskHeader a {
+      color: #aaa;
+      padding-left: 10px; }
+  .allTasks .taskBox .taskBody {
+    padding: 10px 0 0;
+    height: calc(100vh - 210px);
+    overflow: auto; }
+    .allTasks .taskBox .taskBody .taskCard {
+      border: 1px solid #e3e3e3;
+      padding: 10px;
+      border-radius: 5px;
+      position: relative;
+      margin: 0 0 15px; }
+      .allTasks .taskBox .taskBody .taskCard:hover .dragIcon {
+        opacity: 1;
+        transition: 0.2s; }
+      .allTasks .taskBox .taskBody .taskCard .dragIcon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e3e3e3;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        background-color: #fff;
+        text-decoration: none;
+        color: #aaa;
+        font-size: 20px;
+        opacity: 0;
+        transition: 0.2s; }
+      .allTasks .taskBox .taskBody .taskCard .title {
+        font-size: 20px;
+        color: #111;
+        padding: 0 0 5px; }
+      .allTasks .taskBox .taskBody .taskCard .description {
+        padding: 0 0 10px; }
+      .allTasks .taskBox .taskBody .taskCard .timeStaff {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0;
+        justify-content: space-between; }
+        .allTasks .taskBox .taskBody .taskCard .timeStaff .time {
+          display: flex;
+          align-items: center; }
+          @media (max-width: 1199px) {
+            .allTasks .taskBox .taskBody .taskCard .timeStaff .time {
+              flex-direction: column; } }
+          .allTasks .taskBox .taskBody .taskCard .timeStaff .time p {
+            font-size: 13px;
+            color: #444;
+            padding: 0 15px 0 0; }
+            @media (max-width: 1199px) {
+              .allTasks .taskBox .taskBody .taskCard .timeStaff .time p {
+                padding: 0 0 5px; } }
+          .allTasks .taskBox .taskBody .taskCard .timeStaff .time .category {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 25px;
+            font-size: 12px;
+            color: #fff; }
+        .allTasks .taskBox .taskBody .taskCard .timeStaff .staff ul {
+          display: flex;
+          justify-content: flex-end; }
+          .allTasks .taskBox .taskBody .taskCard .timeStaff .staff ul li {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 0 0 5px; }
+            .allTasks .taskBox .taskBody .taskCard .timeStaff .staff ul li img {
+              height: 100%;
+              object-fit: cover; }
+    .allTasks .taskBox .taskBody .addNewTask {
+      text-align: center; }
+      .allTasks .taskBox .taskBody .addNewTask a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #444;
+        text-decoration: none; }
+        .allTasks .taskBox .taskBody .addNewTask a i {
+          margin: 0 5px 0 0; }
