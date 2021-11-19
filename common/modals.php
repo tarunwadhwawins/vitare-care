@@ -319,6 +319,84 @@
                           </div>
                           <div class="step">
                               <div class="stepTitle">
+                                  <div class="title">Roles </div>
+                              </div>
+                              <div class="stepperCard">
+                                  <div class="stepperBody">
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <div class="form-group">
+                                                  <label class="form-label">Role</label>
+                                                  <select class="form-control tags" multiple="multiple">
+                                                      <option selected="selected">Billing Admin</option>
+                                                      <option>Manager</option>
+                                                      <option>User Admin</option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group text-end">
+                                                  <button class="btn primaryBtn">Add</button>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="table-responsive commonTable">
+                                                  <table class="table">
+                                                      <thead>
+                                                          <tr>
+                                                              <th>Role Name</th>
+                                                              <th>Active/Inactive</th>
+                                                              <th>Action</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td><a href="#">Billing Admin</a></td>
+                                                            
+                                                              <td>
+                                                                  <div class="form-check form-switch">
+                                                                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                                                  </div>
+                                                              </td>
+                                                              <td>
+                                                                  <ul class="action">
+                                                                      <!-- <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li> -->
+                                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                                  </ul>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td><a href="#">Manager</a></td>
+                                                              <td>
+                                                                  <div class="form-check form-switch">
+                                                                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                                      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                                                  </div>
+                                                              </td>
+                                                              <td>
+                                                                  <ul class="action">
+                                                                      <!-- <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li> -->
+                                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                                  </ul>
+                                                              </td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+
+
+                                      </div>
+                                  </div>
+                                  <div class="stepperFooter">
+                                      <button class="btn back">Back</button>
+                                      <button class="btn next primaryBtn">Next </button>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="step">
+                              <div class="stepTitle">
                                   <div class="title">Documents </div>
                               </div>
                               <div class="stepperCard">
@@ -1218,7 +1296,7 @@
               </div>
               <div class="modal-body">
                   <div class="row">
-                      <div class="col-sm-12">
+                      <div class="col-sm-6">
                           <div class="form-group">
                               <label>Title</label>
                               <input type="text" class="form-control">
@@ -1232,9 +1310,9 @@
                       </div>
                       <div class="col-sm-6">
                           <div class="form-group">
-                              <label>Category</label>
+                              <label>Status</label>
                               <select class="form-select">
-                                  <option value="0" selected> Choose Category</option>
+                                  <option value="0" selected> Choose Status</option>
                                   <option value="1">Waiting</option>
                                   <option value="2">Inprogress</option>
                                   <option value="3">Completed</option>
@@ -1255,11 +1333,21 @@
                       <div class="col-sm-6">
                           <div class="form-group">
                               <label>Assigned To</label>
-                              <select class="form-select">
-                                  <option value="0" selected> Choose One</option>
-                                  <option value="1">Jane Doe</option>
-                                  <option value="2">Steve Smith</option>
-                                  <option value="3">Joseph William </option>
+                              <select class="form-control tags" multiple="multiple">
+                                  <option selected="selected">Jane Doe</option>
+                                  <option>Steve Smith</option>
+                                  <option>Joseph William </option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="form-group">
+                              <label>Category</label>
+                              <select class="form-control tags" multiple="multiple">
+                                  <option selected="selected">Admin</option>
+                                  <option>Clinical</option>
+                                  <option>Office</option>
+                                  <option>Personal</option>
                               </select>
                           </div>
                       </div>

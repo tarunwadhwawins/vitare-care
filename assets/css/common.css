@@ -7885,6 +7885,12 @@ ul {
 .btn:focus {
   box-shadow: none; }
 
+.addBtn {
+  background-color: #111;
+  color: #fff; }
+  .addBtn:hover {
+    color: #fff; }
+
 .primaryBtn {
   background-color: #d9d9d9;
   color: #111;

@@ -31,13 +31,104 @@
                         <div class="taskHeader">
                            <h4>Waiting</h4>
                            <div class="actions">
-                              <a href="#"><i class="fa fa-plus"></i></a>
-                              <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <a href="#" class="addTask1"><i class="fa fa-plus"></i></a>
+                              <div class="dropdown">
+                                 <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </a>
+
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Add rule to section</a></li>
+                                    <li><a class="dropdown-item" href="#">Rename section</a></li>
+                                    <li><a class="dropdown-item" href="#">Add Section</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Section</a></li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
                         <div class="taskBody connectedSortable" id="sortable1">
+                           <div class="taskCard new addTaskBox1 d-none">
+                              <input type="text" class="form-control" placeholder="Write a task name">
+                              <div class="assignCalendar">
+                                 <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                       <div class="row">
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Assigned To</label>
+                                                <select class="form-control tags" multiple="multiple">
+                                                   <option selected="selected">Jane Doe</option>
+                                                   <option>Steve Smith</option>
+                                                   <option>Joseph William </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Category</label>
+                                                <select class="form-control tags" multiple="multiple">
+                                                   <option selected="selected">Admin</option>
+                                                   <option>Clinical</option>
+                                                   <option>Office</option>
+                                                   <option>Personal</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Priority</label>
+                                                <select class="form-select">
+                                                   <option value="0" selected> Choose Priority</option>
+                                                   <option value="1">Urgent</option>
+                                                   <option value="2">Medium</option>
+                                                   <option value="3">Normal </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Short Description</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                       <li class="me-2">
+                                          <div class="form-group">
+                                             <label>Start Date</label>
+                                             <input type="text" class="form-control datepicker" placeholder="Select Date">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="form-group">
+                                             <label>Due Date</label>
+                                             <input type="text" class="form-control datepicker" placeholder="Select Date">
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
                            <div class="taskCard">
-                              <a href="#" class="dragIcon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <div class="dropdown dragIcon">
+                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Edit Task Name</a></li>
+                                    <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Task</a></li>
+                                 </ul>
+                              </div>
                               <p class="title">Medical Record for P. Pan</p>
                               <p class="description">Request medical records from his PCP</p>
                               <div class="timeStaff">
@@ -55,7 +146,16 @@
                               </div>
                            </div>
                            <div class="taskCard">
-                              <a href="#" class="dragIcon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <div class="dropdown dragIcon">
+                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Edit Task Name</a></li>
+                                    <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Task</a></li>
+                                 </ul>
+                              </div>
                               <p class="title">Medical Record for P. Pan</p>
                               <p class="description">Request medical records from his PCP</p>
                               <div class="timeStaff">
@@ -75,7 +175,7 @@
 
                         </div>
                         <div class="addNewTask">
-                           <a href="#"><i class="fa fa-plus"></i> Add Task</a>
+                           <a href="#" class="addTask1"><i class="fa fa-plus"></i> Add Task</a>
                         </div>
                      </div>
                   </div>
@@ -84,13 +184,104 @@
                         <div class="taskHeader">
                            <h4>In Progress</h4>
                            <div class="actions">
-                              <a href="#"><i class="fa fa-plus"></i></a>
-                              <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <a href="#" class="addTask2"><i class="fa fa-plus"></i></a>
+                              <div class="dropdown">
+                                 <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </a>
+
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Add rule to section</a></li>
+                                    <li><a class="dropdown-item" href="#">Rename section</a></li>
+                                    <li><a class="dropdown-item" href="#">Add Section</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Section</a></li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
                         <div class="taskBody connectedSortable" id="sortable2">
+                           <div class="new addTaskBox2 d-none">
+                              <input type="text" class="form-control" placeholder="Write a task name">
+                              <div class="assignCalendar">
+                                 <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                       <div class="row">
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Assigned To</label>
+                                                <select class="form-control tags" multiple="multiple">
+                                                   <option selected="selected">Jane Doe</option>
+                                                   <option>Steve Smith</option>
+                                                   <option>Joseph William </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Category</label>
+                                                <select class="form-control tags" multiple="multiple">
+                                                   <option selected="selected">Admin</option>
+                                                   <option>Clinical</option>
+                                                   <option>Office</option>
+                                                   <option>Personal</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Priority</label>
+                                                <select class="form-select">
+                                                   <option value="0" selected> Choose Priority</option>
+                                                   <option value="1">Urgent</option>
+                                                   <option value="2">Medium</option>
+                                                   <option value="3">Normal </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Short Description</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                       <li class="me-2">
+                                          <div class="form-group">
+                                             <label>Start Date</label>
+                                             <input type="text" class="form-control datepicker" placeholder="Select Date">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="form-group">
+                                             <label>Due Date</label>
+                                             <input type="text" class="form-control datepicker" placeholder="Select Date">
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
                            <div class="taskCard">
-                              <a href="#" class="dragIcon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <div class="dropdown dragIcon">
+                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Edit Task Name</a></li>
+                                    <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Task</a></li>
+                                 </ul>
+                              </div>
                               <p class="title">Medical Record for P. Pan</p>
                               <p class="description">Request medical records from his PCP</p>
                               <div class="timeStaff">
@@ -108,7 +299,16 @@
                               </div>
                            </div>
                            <div class="taskCard">
-                              <a href="#" class="dragIcon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <div class="dropdown dragIcon">
+                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Edit Task Name</a></li>
+                                    <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Task</a></li>
+                                 </ul>
+                              </div>
                               <p class="title">Medical Record for P. Pan</p>
                               <p class="description">Request medical records from his PCP</p>
                               <div class="timeStaff">
@@ -128,7 +328,7 @@
 
                         </div>
                         <div class="addNewTask">
-                           <a href="#"><i class="fa fa-plus"></i> Add Task</a>
+                           <a href="#" class="addTask2"><i class="fa fa-plus"></i> Add Task</a>
                         </div>
                      </div>
                   </div>
@@ -137,13 +337,104 @@
                         <div class="taskHeader">
                            <h4>Completed</h4>
                            <div class="actions">
-                              <a href="#"><i class="fa fa-plus"></i></a>
-                              <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <a href="#" class="addTask3"><i class="fa fa-plus"></i></a>
+                              <div class="dropdown">
+                                 <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </a>
+
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Add rule to section</a></li>
+                                    <li><a class="dropdown-item" href="#">Rename section</a></li>
+                                    <li><a class="dropdown-item" href="#">Add Section</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Section</a></li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
                         <div class="taskBody connectedSortable" id="sortable3">
+                           <div class="taskCard new addTaskBox3 d-none">
+                              <input type="text" class="form-control" placeholder="Write a task name">
+                              <div class="assignCalendar">
+                                 <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                       <div class="row">
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Assigned To</label>
+                                                <select class="form-control tags" multiple="multiple">
+                                                   <option selected="selected">Jane Doe</option>
+                                                   <option>Steve Smith</option>
+                                                   <option>Joseph William </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Category</label>
+                                                <select class="form-control tags" multiple="multiple">
+                                                   <option selected="selected">Admin</option>
+                                                   <option>Clinical</option>
+                                                   <option>Office</option>
+                                                   <option>Personal</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Priority</label>
+                                                <select class="form-select">
+                                                   <option value="0" selected> Choose Priority</option>
+                                                   <option value="1">Urgent</option>
+                                                   <option value="2">Medium</option>
+                                                   <option value="3">Normal </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                             <div class="form-group">
+                                                <label>Short Description</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                       <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                       <li class="me-2">
+                                          <div class="form-group">
+                                             <label>Start Date</label>
+                                             <input type="text" class="form-control datepicker" placeholder="Select Date">
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="form-group">
+                                             <label>Due Date</label>
+                                             <input type="text" class="form-control datepicker" placeholder="Select Date">
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
                            <div class="taskCard">
-                              <a href="#" class="dragIcon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <div class="dropdown dragIcon">
+                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Edit Task Name</a></li>
+                                    <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Task</a></li>
+                                 </ul>
+                              </div>
                               <p class="title">Medical Record for P. Pan</p>
                               <p class="description">Request medical records from his PCP</p>
                               <div class="timeStaff">
@@ -161,7 +452,16 @@
                               </div>
                            </div>
                            <div class="taskCard">
-                              <a href="#" class="dragIcon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                              <div class="dropdown dragIcon">
+                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                 </button>
+                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Edit Task Name</a></li>
+                                    <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Task</a></li>
+                                 </ul>
+                              </div>
                               <p class="title">Medical Record for P. Pan</p>
                               <p class="description">Request medical records from his PCP</p>
                               <div class="timeStaff">
@@ -181,7 +481,7 @@
 
                         </div>
                         <div class="addNewTask">
-                           <a href="#"><i class="fa fa-plus"></i> Add Task</a>
+                           <a href="#" class="addTask3"><i class="fa fa-plus"></i> Add Task</a>
                         </div>
                      </div>
                   </div>
@@ -203,6 +503,21 @@
          $("#sortable1, #sortable2, #sortable3").sortable({
             connectWith: ".connectedSortable"
          }).disableSelection();
+      });
+
+      $(".addTask1").click(function() {
+         $(".addTaskBox1").removeClass("d-none");
+      });
+      $(".addTask2").click(function() {
+         $(".addTaskBox2").removeClass("d-none");
+      });
+      $(".addTask3").click(function() {
+         $(".addTaskBox3").removeClass("d-none");
+      });
+   </script>
+   <script>
+      $(document).ready(function() {
+         $('.tags').select2({});
       });
    </script>
 

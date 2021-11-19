@@ -1084,6 +1084,19 @@
 			}
 			.card-body {
 				padding: 10px 15px;
+				// .nav {
+				// 	@media (min-width: 1199px) {
+				// 		display: none;
+				// 	}
+				// }
+				// .tab-content {
+				// 	.tab-pane {
+				// 		@media (min-width: 1199px) {
+				// 			display: block;
+				// 			opacity: 1;
+				// 		}
+				// 	}
+				// }
 				.commonTable {
 					margin: 0;
 					padding: 0;
@@ -1450,9 +1463,21 @@
 				font-size: 18px;
 				color: $primary-color;
 			}
-			a {
-				color: $gray-color-300;
-				padding-left: 10px;
+			.actions {
+				display: flex;
+				align-items: center;
+				> a {
+					color: $gray-color-300;
+					padding-left: 10px;
+				}
+				.dropdown {
+					.btn {
+						color: $gray-color-300;
+						&::after {
+							display: none;
+						}
+					}
+				}
 			}
 		}
 		.taskBody {
@@ -1475,19 +1500,24 @@
 					position: absolute;
 					top: 10px;
 					right: 10px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					border: 1px solid $gray-color-200;
-					height: 30px;
-					width: 30px;
-					border-radius: 5px;
-					background-color: $primary-color-contrast;
-					text-decoration: none;
-					color: $gray-color-300;
-					font-size: 20px;
 					opacity: 0;
 					transition: 0.2s;
+					.btn {
+						font-size: 20px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border: 1px solid $gray-color-200;
+						height: 30px;
+						width: 30px;
+						border-radius: 5px;
+						background-color: $primary-color-contrast;
+						text-decoration: none;
+						color: $gray-color-300;
+						&::after {
+							display: none;
+						}
+					}
 				}
 				.title {
 					font-size: 20px;
@@ -1537,6 +1567,33 @@
 								img {
 									height: 100%;
 									object-fit: cover;
+								}
+							}
+						}
+					}
+				}
+				&.new {
+					.assignCalendar {
+						display: flex;
+						padding: 15px 0 0;
+						.dropdown {
+							.btn {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								color: $gray-color-300;
+								text-decoration: none;
+								font-size: 20px;
+								&::after {
+									display: none;
+								}
+							}
+							.dropdown-menu {
+								padding: 10px;
+								width: 300px;
+								li {
+									display: inline-block;
+									width: 47%;
 								}
 							}
 						}

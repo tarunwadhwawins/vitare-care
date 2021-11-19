@@ -31,6 +31,7 @@
             <li><a class="dropdown-item" data-bs-toggle="modal" href="#addAppointment">Add Appointment</a></li>
             <li><a class="dropdown-item" data-bs-toggle="modal" href="#manangePatients">Add Patient</a></li>
             <li><a class="dropdown-item" data-bs-toggle="modal" href="#manageCareCoordinator">Add Care Coordinator</a></li>
+            <li><a class="dropdown-item" data-bs-toggle="modal" href="#addTask">Add Task</a></li>
           </ul>
         </div>
       </div>

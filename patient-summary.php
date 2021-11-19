@@ -221,6 +221,9 @@
                               <button class="nav-link" id="pills-Time-tab" data-bs-toggle="pill" data-bs-target="#pills-Time" type="button" role="tab" aria-controls="pills-Time" aria-selected="false">Time Logs</button>
                            </li>
                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-Devices-tab" data-bs-toggle="pill" data-bs-target="#pills-Devices" type="button" role="tab" aria-controls="pills-Devices" aria-selected="false">Devices</button>
+                           </li>
+                           <li class="nav-item" role="presentation">
                               <button class="nav-link" id="pills-Notes-tab" data-bs-toggle="pill" data-bs-target="#pills-Notes" type="button" role="tab" aria-controls="pills-Notes" aria-selected="false">Notes</button>
                            </li>
                         </ul>
@@ -234,8 +237,16 @@
                                           <button class="btn primaryBtn">Detail</button>
                                        </div>
                                        <div class="card-body">
-                                          <div class="row">
-                                             <div class="col-xl-5">
+                                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Graph1" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Graph</button>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#Table1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Table</button>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content row" id="pills-tabContent">
+                                             <div class="tab-pane fade col-xl-12" id="Table1" role="tabpanel" aria-labelledby="pills-home-tab">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -270,7 +281,7 @@
                                                 </div>
                                                 <p>Average of last 5 : <strong>120.55</strong></p>
                                              </div>
-                                             <div class="col-xl-7">
+                                             <div class="tab-pane  show active fade col-xl-12" id="Graph1" role="tabpanel" aria-labelledby="pills-profile-tab">
                                                 <div id="chart1"></div>
                                              </div>
                                           </div>
@@ -284,8 +295,16 @@
                                           <button class="btn primaryBtn">Detail</button>
                                        </div>
                                        <div class="card-body">
-                                          <div class="row">
-                                             <div class="col-xl-5">
+                                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Graph2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Graph</button>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#Table2" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Table</button>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content row" id="pills-tabContent">
+                                             <div class="tab-pane  col-xl-12 fade " id="Table2" role="tabpanel" aria-labelledby="pills-home-tab">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -320,7 +339,7 @@
                                                 </div>
                                                 <p>Average of last 5 : <strong>75.55</strong></p>
                                              </div>
-                                             <div class="col-xl-7">
+                                             <div class="tab-pane col-xl-12 fade show active" id="Graph2" role="tabpanel" aria-labelledby="pills-profile-tab">
                                                 <div id="chart2"></div>
                                              </div>
                                           </div>
@@ -334,8 +353,16 @@
                                           <button class="btn primaryBtn">Detail</button>
                                        </div>
                                        <div class="card-body">
-                                          <div class="row">
-                                             <div class="col-xl-5">
+                                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Graph3" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Graph</button>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#Table3" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Table</button>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content row" id="pills-tabContent">
+                                             <div class="tab-pane fade col-xl-12" id="Table3" role="tabpanel" aria-labelledby="pills-home-tab">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -370,7 +397,7 @@
                                                 </div>
                                                 <p>Average of last 5 : <strong>120.85</strong></p>
                                              </div>
-                                             <div class="col-xl-7">
+                                             <div class="tab-pane fade show active col-xl-12" id="Graph3" role="tabpanel" aria-labelledby="pills-profile-tab">
                                                 <div id="chart3"></div>
                                              </div>
                                           </div>
@@ -384,8 +411,16 @@
                                           <button class="btn primaryBtn">Detail</button>
                                        </div>
                                        <div class="card-body">
-                                          <div class="row">
-                                             <div class="col-xl-5">
+                                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#Graph4" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Graph</button>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#Table4" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Table</button>
+                                             </li>
+                                          </ul>
+                                          <div class="tab-content row" id="pills-tabContent">
+                                             <div class="tab-pane fade col-xl-12" id="Table4" role="tabpanel" aria-labelledby="pills-home-tab">
                                                 <div class="commonTable">
                                                    <table class="table table-bordered">
                                                       <thead>
@@ -402,7 +437,7 @@
                                                    </table>
                                                 </div>
                                              </div>
-                                             <div class="col-xl-7">
+                                             <div class="tab-pane fade show active col-xl-12" id="Graph4" role="tabpanel" aria-labelledby="pills-profile-tab">
                                                 <div id="chart4"></div>
                                              </div>
                                           </div>
@@ -412,15 +447,28 @@
                               </div>
                            </div>
                            <div class="tab-pane fade" id="pills-Care" role="tabpanel" aria-labelledby="pills-Care-tab">...</div>
+
                            <div class="tab-pane fade" id="pills-Documents" role="tabpanel" aria-labelledby="pills-Documents-tab">
                               <div class="commonTable">
                                  <table class="table">
                                     <thead>
                                        <tr>
-                                          <th>Name</th>
-                                          <th>Document</th>
-                                          <th>Type</th>
-                                          <th>Tags</th>
+                                          <th>Name<span class="icon">
+                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                             </span></th>
+                                          <th>Document<span class="icon">
+                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                             </span></th>
+                                          <th>Type<span class="icon">
+                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                             </span></th>
+                                          <th>Tags<span class="icon">
+                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                             </span></th>
                                           <th>Action</th>
                                        </tr>
                                     </thead>
@@ -454,68 +502,147 @@
                               </div>
                            </div>
                            <div class="tab-pane fade" id="pills-Time" role="tabpanel" aria-labelledby="pills-Time-tab">
-                              <div class="commonTable">
-                                 <table class="table">
-                                    <thead>
-                                       <tr>
-                                          <th>Category</th>
-                                          <th>Logged By</th>
-                                          <th>Performed By</th>
-                                          <th>Date</th>
-                                          <th>Time Amount</th>
-                                          <th>Action</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td>Daily monitoring of vitals</td>
-                                          <td><a href="#">Jane Doe</a></td>
-                                          <td><a href="#">Steve Smith</a></td>
-                                          <td>Oct 25, 2021</td>
-                                          <td>3:00</td>
-                                          <td>
-                                             <ul class="action">
-                                                <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                                                <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
-                                             </ul>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td>Provider Order For Lab</td>
-                                          <td><a href="#">Jane Doe</a></td>
-                                          <td><a href="#">Steve Smith</a></td>
-                                          <td>Oct 28, 2021</td>
-                                          <td>2:00</td>
-                                          <td>
-                                             <ul class="action">
-                                                <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                                                <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
-                                             </ul>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td>Daily monitoring of vitals</td>
-                                          <td><a href="#">Jane Doe</a></td>
-                                          <td><a href="#">Joseph Spouse</a></td>
-                                          <td>Oct 20, 2021</td>
-                                          <td>1:30</td>
-                                          <td>
-                                             <ul class="action">
-                                                <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                                                <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
-                                             </ul>
-                                          </td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
+                              <div class="row">
+                                 <div class="col-sm-12 text-end">
+                                    <button class="addBtn btn" title="Add Time Log" data-bs-toggle="modal" data-bs-target="#timeLog"><i class="fa fa-plus"></i></button>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="commonTable">
+                                       <table class="table">
+                                          <thead>
+                                             <tr>
+                                                <th>Category <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Logged By <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Performed By <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Date <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Time Amount <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Action</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>Daily monitoring of vitals</td>
+                                                <td><a href="#">Jane Doe</a></td>
+                                                <td><a href="#">Steve Smith</a></td>
+                                                <td>Oct 25, 2021</td>
+                                                <td>3:00</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>Provider Order For Lab</td>
+                                                <td><a href="#">Jane Doe</a></td>
+                                                <td><a href="#">Steve Smith</a></td>
+                                                <td>Oct 28, 2021</td>
+                                                <td>2:00</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>Daily monitoring of vitals</td>
+                                                <td><a href="#">Jane Doe</a></td>
+                                                <td><a href="#">Joseph Spouse</a></td>
+                                                <td>Oct 20, 2021</td>
+                                                <td>1:30</td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
                               </div>
+
+                           </div>
+                           <div class="tab-pane fade" id="pills-Devices" role="tabpanel" aria-labelledby="pills-Care-tab">
+                              <div class="row">
+                                 <div class="col-sm-12 text-end">
+                                    <button class="addBtn btn" title="Add Device" data-bs-toggle="modal" data-bs-target="#addDevices"><i class="fa fa-plus"></i></button>
+                                 </div>
+                                 <div class="col-sm-12">
+                                    <div class="commonTable">
+                                       <table class="table">
+                                          <thead>
+                                             <tr>
+                                                <th>Device <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Active/Inactive</th>
+                                                <th>Action</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>Blood Pressure</td>
+                                                <td>
+                                                   <div class="form-check form-switch">
+                                                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1">
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>Glucose</td>
+                                                <td>
+                                                   <div class="form-check form-switch">
+                                                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1">
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <ul class="action">
+                                                      <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+
                            </div>
                            <div class="tab-pane fade" id="pills-Notes" role="tabpanel" aria-labelledby="pills-Notes-tab">
                               <div class="commonTable">
                                  <table class="table">
                                     <thead>
                                        <tr>
-                                          <th>Date</th>
+                                          <th>Date<span class="icon">
+                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                             </span></th>
                                           <th>Note</th>
                                        </tr>
                                     </thead>
@@ -936,9 +1063,18 @@
                                        <table class="table">
                                           <thead>
                                              <tr>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Email</th>
+                                                <th>First Name<span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Last Name<span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Email<span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
                                                 <th>Phone No</th>
                                                 <th>Actions</th>
                                              </tr>
@@ -1034,8 +1170,14 @@
                                        <table class="table">
                                           <thead>
                                              <tr>
-                                                <th>Start Time</th>
-                                                <th>End Time</th>
+                                                <th>Start Time<span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>End Time<span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
                                                 <th>Actions</th>
                                              </tr>
                                           </thead>
@@ -1126,10 +1268,22 @@
                                        <table class="table">
                                           <thead>
                                              <tr>
-                                                <th>Name</th>
-                                                <th>Document</th>
-                                                <th>Type </th>
-                                                <th>Tags </th>
+                                                <th>Name <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Document <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Type <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
+                                                <th>Tags <span class="icon">
+                                                      <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                   </span></th>
                                                 <th>Actions</th>
                                              </tr>
                                           </thead>
@@ -1238,6 +1392,72 @@
       </div>
    </div>
    <!---->
+   <div class="modal fade" id="addDevices" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Device</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Device Name</label>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Status</label>
+                        <div class="form-check form-switch">
+                           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                           <label class="form-check-label" for="flexSwitchCheckDefault">Active</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal fade" id="timeLog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Device</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Device Name</label>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Status</label>
+                        <div class="form-check form-switch">
+                           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                           <label class="form-check-label" for="flexSwitchCheckDefault">Active</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
    <?php include_once('common/modals.php'); ?>
    <?php include_once('common/common-js.php'); ?>
    <script>

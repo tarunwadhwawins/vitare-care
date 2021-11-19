@@ -225,6 +225,9 @@
                enabled: true
             }
          },
+         fill: {
+            colors: ['#8e60ff', '#0fb5c2', '#ffa800', '#ff6061', '#267dff','#71DFE7']
+         },
          plotOptions: {
             pie: {
                dataLabels: {
@@ -253,11 +256,14 @@
       var options = {
          series: [{
             name: 'series1',
-            data: [31, 40, 28, 51, 42, 109, 100]
+            data: [31, 40, 28, 51, 42, 109, 100],
+            color:"#ff6061",
+            
          }],
          chart: {
             height: 350,
             type: 'area',
+            
             toolbar: {
                show: false,
             }
@@ -269,11 +275,15 @@
             enabled: false
          },
          stroke: {
-            curve: 'smooth'
+            curve: 'smooth',
+         },
+         fill: {
+            colors: ['#ff6061']
          },
          xaxis: {
             type: 'text',
-            categories: ["Jan", "Feb", "Mar", "April", "May", "Jun", "July"]
+            categories: ["Jan", "Feb", "Mar", "April", "May", "Jun", "July"],
+            
          },
          tooltip: {
             toolbar: 'false',

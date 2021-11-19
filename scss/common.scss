@@ -101,6 +101,13 @@ ul {
 		box-shadow: none;
 	}
 }
+.addBtn {
+	background-color: $primary-color;
+	color: $primary-color-contrast;
+	&:hover {
+		color: $primary-color-contrast;
+	}
+}
 
 .primaryBtn {
 	background-color: $secondary-color;

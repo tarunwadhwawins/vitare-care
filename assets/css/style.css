@@ -1108,9 +1108,16 @@
     .allTasks .taskBox .taskHeader h4 {
       font-size: 18px;
       color: #111; }
-    .allTasks .taskBox .taskHeader a {
-      color: #aaa;
-      padding-left: 10px; }
+    .allTasks .taskBox .taskHeader .actions {
+      display: flex;
+      align-items: center; }
+      .allTasks .taskBox .taskHeader .actions > a {
+        color: #aaa;
+        padding-left: 10px; }
+      .allTasks .taskBox .taskHeader .actions .dropdown .btn {
+        color: #aaa; }
+        .allTasks .taskBox .taskHeader .actions .dropdown .btn::after {
+          display: none; }
   .allTasks .taskBox .taskBody {
     padding: 10px 0 0;
     height: calc(100vh - 230px);
@@ -1128,19 +1135,22 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #e3e3e3;
-        height: 30px;
-        width: 30px;
-        border-radius: 5px;
-        background-color: #fff;
-        text-decoration: none;
-        color: #aaa;
-        font-size: 20px;
         opacity: 0;
         transition: 0.2s; }
+        .allTasks .taskBox .taskBody .taskCard .dragIcon .btn {
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #e3e3e3;
+          height: 30px;
+          width: 30px;
+          border-radius: 5px;
+          background-color: #fff;
+          text-decoration: none;
+          color: #aaa; }
+          .allTasks .taskBox .taskBody .taskCard .dragIcon .btn::after {
+            display: none; }
       .allTasks .taskBox .taskBody .taskCard .title {
         font-size: 20px;
         color: #111;
@@ -1183,6 +1193,24 @@
             .allTasks .taskBox .taskBody .taskCard .timeStaff .staff ul li img {
               height: 100%;
               object-fit: cover; }
+      .allTasks .taskBox .taskBody .taskCard.new .assignCalendar {
+        display: flex;
+        padding: 15px 0 0; }
+        .allTasks .taskBox .taskBody .taskCard.new .assignCalendar .dropdown .btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #aaa;
+          text-decoration: none;
+          font-size: 20px; }
+          .allTasks .taskBox .taskBody .taskCard.new .assignCalendar .dropdown .btn::after {
+            display: none; }
+        .allTasks .taskBox .taskBody .taskCard.new .assignCalendar .dropdown .dropdown-menu {
+          padding: 10px;
+          width: 300px; }
+          .allTasks .taskBox .taskBody .taskCard.new .assignCalendar .dropdown .dropdown-menu li {
+            display: inline-block;
+            width: 47%; }
   .allTasks .taskBox .addNewTask {
     text-align: center; }
     .allTasks .taskBox .addNewTask a {
