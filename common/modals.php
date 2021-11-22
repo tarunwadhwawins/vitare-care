@@ -130,6 +130,26 @@
                                                   <input type="number" class="form-control" />
                                               </div>
                                           </div>
+                                          <div class="col-sm-6">
+                                              <div class="form-group">
+                                                  <label>Specialization</label>
+                                                  <select class="form-select">
+                                                      <option value="0" selected> Choose </option>
+                                                      <option value="0"> Wellness </option>
+                                                      <option value="0"> Behavior </option>
+                                                  </select>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                              <div class="form-group">
+                                                  <label>Network</label>
+                                                  <select class="form-select">
+                                                      <option value="0" selected> Choose </option>
+                                                      <option value="0"> In </option>
+                                                      <option value="0"> Out </option>
+                                                  </select>
+                                              </div>
+                                          </div>
                                           <!---->
                                       </div>
                                   </div>

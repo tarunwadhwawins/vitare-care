@@ -27,25 +27,46 @@
                   </div>
                </div>
                <div class="row mb-4">
-                  <div class="col ">
-                     <div class="topBox manage two">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <h5>3</h5>
-                        <p>Today</p>
+                  <div class="col-sm-6">
+                     <div class="row">
+                        <div class="col-12 mb-2">
+                           <h5>Specialization</h5>
+                        </div>
+                        <div class="col ">
+                           <div class="topBox manage two">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <h5>4</h5>
+                              <p>Wellness</p>
+                           </div>
+                        </div>
+                        <div class="col ">
+                           <div class="topBox manage four">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <h5>5</h5>
+                              <p>Behavior</p>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="col ">
-                     <div class="topBox manage five">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <h5>5</h5>
-                        <p>Tomorrow</p>
-                     </div>
-                  </div>
-                  <div class="col ">
-                     <div class="topBox manage four">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <h5>12</h5>
-                        <p>Week</p>
+                  <div class="col-sm-6">
+                     <div class="row">
+                     <div class="col-12 mb-2">
+                           <h5>Network</h5>
+                        </div>
+                        <div class="col ">
+                           <div class="topBox manage six">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <h5>5</h5>
+                              <p>In</p>
+                           </div>
+                        </div>
+                        <div class="col ">
+                           <div class="topBox manage five">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <h5>6</h5>
+                              <p>Out</p>
+                           </div>
+                        </div>
                      </div>
                   </div>
 
@@ -74,6 +95,18 @@
                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </span>
                                  </th>
+                                 <th>Specialization
+                                    <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
+                                 <th>Network
+                                    <span class="icon">
+                                       <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                       <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                 </th>
                                  <th>Created At
                                     <span class="icon">
                                        <i class="fa fa-caret-up" aria-hidden="true"></i>
@@ -94,6 +127,8 @@
                                  <td>Jane</td>
                                  <td>Doe</td>
                                  <td>Physician</td>
+                                 <td>Wellness</td>
+                                 <td>In</td>
                                  <td>Nov 10,2021</td>
                                  <td>Active</td>
                                  <td>
@@ -108,6 +143,8 @@
                                  <td>Steve </td>
                                  <td>Smith</td>
                                  <td>Cardiologist</td>
+                                 <td>Behavior </td>
+                                 <td>Out</td>
                                  <td>Nov 07,2021</td>
                                  <td>Active</td>
                                  <td>
@@ -122,6 +159,8 @@
                                  <td>Joseph </td>
                                  <td>William</td>
                                  <td>RN</td>
+                                 <td>Wellness</td>
+                                 <td>In</td>
                                  <td>Nov 01,2021</td>
                                  <td>Active</td>
                                  <td>
@@ -136,6 +175,8 @@
                                  <td>Robert </td>
                                  <td>Henry</td>
                                  <td>Physician</td>
+                                 <td>Behavior </td>
+                                 <td>Out</td>
                                  <td>Nov 05,2021</td>
                                  <td>Active</td>
                                  <td>
@@ -156,7 +197,7 @@
       </div>
    </div>
 
-  
+
 
    <?php include_once('common/modals.php'); ?>
    <?php include_once('common/common-js.php'); ?>
