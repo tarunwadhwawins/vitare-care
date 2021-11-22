@@ -1268,7 +1268,17 @@
                       <div class="col-sm-6">
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label"> Time</label>
-                              <input type="text" class="form-control" id="timepicker" placeholder="Select Time">
+                              <!-- <input type="text" class="form-control" id="timepicker" placeholder="Select Time"> -->
+                              <select class="form-select">
+                                  <option>Select Time</option>
+                                  <option value="1">10 Mins</option>
+                                  <option value="2">20 Mins</option>
+                                  <option value="3">30 Mins</option>
+                                  <option value="4">1 Hour</option>
+                                  <option value="5">2 Hour</option>
+                                  <option value="6">4 Hour</option>
+                                  <option value="7">Full Day</option>
+                              </select>
                           </div>
                       </div>
                       <div class="col-sm-12">

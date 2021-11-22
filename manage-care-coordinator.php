@@ -26,6 +26,30 @@
                      <button class="btn primaryBtn" data-bs-toggle="modal" data-bs-target="#manageCareCoordinator">Add New Coordinator</button>
                   </div>
                </div>
+               <div class="row mb-4">
+                  <div class="col ">
+                     <div class="topBox manage two">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h5>3</h5>
+                        <p>Today</p>
+                     </div>
+                  </div>
+                  <div class="col ">
+                     <div class="topBox manage five">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h5>5</h5>
+                        <p>Tomorrow</p>
+                     </div>
+                  </div>
+                  <div class="col ">
+                     <div class="topBox manage four">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h5>12</h5>
+                        <p>Week</p>
+                     </div>
+                  </div>
+
+               </div>
                <div class="row">
                   <div class="col-sm-12">
                      <div class="table-responsive commonTable">
