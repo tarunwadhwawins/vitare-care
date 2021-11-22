@@ -7965,7 +7965,8 @@ ul {
 .form-control {
   appearance: none; }
 
-input[type="time" i], input[type="date" i] {
+input[type="time" i],
+input[type="date" i] {
   width: 100%; }
 
 .sidebar {
@@ -8030,31 +8031,64 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-    header .profileNot > ul li {
+    header .profileNot > ul > li {
       padding: 0 10px; }
-      header .profileNot > ul li a {
+      header .profileNot > ul > li a {
         color: #444; }
-      header .profileNot > ul li .dropdown .btn {
+      header .profileNot > ul > li .dropdown .btn {
         display: flex;
         align-items: center; }
-        header .profileNot > ul li .dropdown .btn:focus {
+        header .profileNot > ul > li .dropdown .btn:focus {
           outline: none;
           box-shadow: none; }
-        header .profileNot > ul li .dropdown .btn::after {
+        header .profileNot > ul > li .dropdown .btn::after {
           display: none; }
-        header .profileNot > ul li .dropdown .btn .profileTitle {
+        header .profileNot > ul > li .dropdown .btn .profileTitle {
           text-align: right;
           padding: 0 10px 0 0; }
-          header .profileNot > ul li .dropdown .btn .profileTitle p {
+          header .profileNot > ul > li .dropdown .btn .profileTitle p {
             font-size: 13px;
             line-height: 15px; }
-            header .profileNot > ul li .dropdown .btn .profileTitle p.role {
+            header .profileNot > ul > li .dropdown .btn .profileTitle p.role {
               font-weight: 600; }
-        header .profileNot > ul li .dropdown .btn img {
+        header .profileNot > ul > li .dropdown .btn img {
           max-width: 30px;
           border-radius: 5px;
           height: 30px;
           object-fit: cover; }
+      header .profileNot > ul > li .notificationDropDown ul {
+        width: 280px;
+        padding: 0; }
+        header .profileNot > ul > li .notificationDropDown ul li.title {
+          border-bottom: 1px solid #e3e3e3;
+          padding: 10px 15px;
+          color: #aaa;
+          text-transform: uppercase;
+          font-size: 15px;
+          letter-spacing: 1px;
+          text-align: center; }
+        header .profileNot > ul > li .notificationDropDown ul li.notification {
+          border-bottom: 1px solid #e3e3e3; }
+          header .profileNot > ul > li .notificationDropDown ul li.notification a {
+            text-decoration: none;
+            padding: 10px 15px; }
+            header .profileNot > ul > li .notificationDropDown ul li.notification a .imgProfile img {
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              object-fit: cover; }
+            header .profileNot > ul > li .notificationDropDown ul li.notification a .summary p {
+              font-size: 14px;
+              line-height: 18px; }
+            header .profileNot > ul > li .notificationDropDown ul li.notification a .summary .date {
+              font-size: 12px;
+              color: #aaa; }
+        header .profileNot > ul > li .notificationDropDown ul li.allNotication a {
+          display: block;
+          text-align: center;
+          color: #111;
+          padding: 10px 15px;
+          text-decoration: none; }
 
 .main .pageWrapper {
   padding: 64px 0 0 50px; }

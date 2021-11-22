@@ -193,13 +193,13 @@ ul {
 		}
 	}
 }
-.form-control{
- appearance: none;
+.form-control {
+	appearance: none;
 }
-input[type="time" i],input[type="date" i] {
-width:100%;	
+input[type="time" i],
+input[type="date" i] {
+	width: 100%;
 }
-
 
 // Sidebar
 .sidebar {
@@ -208,7 +208,7 @@ width:100%;
 	left: 0;
 	top: 64px;
 	bottom: 0;
-	background-color:$white-color;
+	background-color: $white-color;
 	.menuList {
 		ul {
 			li {
@@ -297,18 +297,18 @@ header {
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			li {
+			> li {
 				padding: 0 10px;
-				a{
+				a {
 					color: $black-color;
 				}
 				.dropdown {
 					.btn {
 						display: flex;
 						align-items: center;
-						&:focus{
-						 outline:none;
-						 box-shadow:none;
+						&:focus {
+							outline: none;
+							box-shadow: none;
 						}
 						&::after {
 							display: none;
@@ -329,6 +329,57 @@ header {
 							border-radius: 5px;
 							height: 30px;
 							object-fit: cover;
+						}
+					}
+				}
+				.notificationDropDown {
+					ul {
+						width: 280px;
+						padding: 0;
+						li {
+							&.title {
+								border-bottom: 1px solid $gray-color-200;
+								padding: 10px 15px;
+								color: $gray-color-300;
+								text-transform: uppercase;
+								font-size: 15px;
+								letter-spacing: 1px;
+								text-align: center;
+							}
+							&.notification {
+								border-bottom: 1px solid $gray-color-200;
+								a {
+									text-decoration: none;
+									padding: 10px 15px;
+									.imgProfile {
+										img {
+											height: 50px;
+											width: 50px;
+											border-radius: 50px;
+											object-fit: cover;
+										}
+									}
+									.summary {
+										p {
+											font-size: 14px;
+											line-height: 18px;
+										}
+										.date {
+											font-size: 12px;
+											color: $gray-color-300;
+										}
+									}
+								}
+							}
+							&.allNotication {
+								a {
+									display: block;
+									text-align: center;
+									color: $primary-color;
+									padding: 10px 15px;
+									text-decoration: none;
+								}
+							}
 						}
 					}
 				}
@@ -458,9 +509,7 @@ header {
 	}
 }
 
-
-@media (max-width: 1199px)
-{
+@media (max-width: 1199px) {
 	.modal-xl {
 		max-width: 100%;
 	}

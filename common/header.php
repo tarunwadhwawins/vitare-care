@@ -49,15 +49,35 @@
         <div class="profileNot">
           <ul>
             <li>
-              <div class="dropdown quickAction">
+              <div class="dropdown notificationDropDown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#addAppointment">Lorem ipsum dolor sit.</a></li>
-                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#manangePatients">Lorem ipsum dolor sit.</a></li>
-                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#manageCareCoordinator">Lorem ipsum dolor sit.</a></li>
-                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#addTask">Lorem ipsum dolor sit.</a></li>
+                  <li class="title">Notification</li>
+                  <li class="notification">
+                    <a class="d-flex align-items-center" href="#">
+                      <div class="flex-shrink-0 imgProfile">
+                        <img src="assets/images/user-2.jpg" alt="image" width="50" />
+                      </div>
+                      <div class="flex-grow-1 ms-3 summary">
+                        <p>Just a reminder that you have appoinment</p>
+                        <span class="date">40 minutes ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="notification">
+                    <a class="d-flex align-items-center" href="#">
+                      <div class="flex-shrink-0 imgProfile">
+                        <img src="assets/images/user-1.jpg" alt="image" width="50">
+                      </div>
+                      <div class="flex-grow-1 ms-3 summary">
+                        <p>Just a reminder that you have appoinment</p>
+                        <span class="date">20 minutes ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="allNotication"><a href="#">Check all notifications</a></li>
                 </ul>
               </div>
             </li>
