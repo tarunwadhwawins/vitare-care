@@ -9,27 +9,40 @@
           <a href="#" id="barMenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </div>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-3">
         <div class="organisation">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select Organisation</option>
-            <option value="1">Organisation One</option>
-            <option value="2">Organisation Two</option>
-            <option value="3">Organisation Three</option>
-          </select>
+          <p>Select Organisation & Location</p>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Organisation - <span>Location</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <div class="organisationValue cmndrp">
+                <p>Select Organisation</p>
+                <ul>
+                  <li><a href="javascript:void(0)">Organisation 1</a></li>
+                  <li><a href="javascript:void(0)">Organisation 2</a></li>
+                  <li><a href="javascript:void(0)">Organisation 3</a></li>
+                  <li><a href="javascript:void(0)">Organisation 4</a></li>
+                  <li><a href="javascript:void(0)">Organisation 5</a></li>
+                </ul>
+              </div>
+              <div class="locationValue cmndrp d-none">
+                <p>Select Location</p>
+                <ul>
+                  <li><a href="javascript:void(0)">Location 1</a></li>
+                  <li><a href="javascript:void(0)">Location 2</a></li>
+                  <li><a href="javascript:void(0)">Location 3</a></li>
+                  <li><a href="javascript:void(0)">Location 4</a></li>
+                  <li><a href="javascript:void(0)">Location 5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2">
-        <div class="organisation">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select Location</option>
-            <option value="1">Location One</option>
-            <option value="2">Location Two</option>
-            <option value="3">Location Three</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-2">
+
+      <div class="col-md-3">
         <input type="text" class="form-control" placeholder="Search" class="searchInput">
       </div>
       <div class="col-xl-3 col-md-2">

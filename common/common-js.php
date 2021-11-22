@@ -19,8 +19,16 @@
     });
 
     $(document).ready(function() {
-        $('#barMenu').click(function(){
-        $('.sidebar') .toggleClass('show')
+        $('#barMenu').click(function() {
+            $('.sidebar').toggleClass('show')
         });
     });
+    $(document).ready(function() {
+        $('.organisationValue ul li a').click(function() {
+            $('.locationValue').removeClass('d-none')
+            $('.organisationValue').addClass('d-none')
+        });
+    });
+    var $disabledResults = $(".js-example-disabled-results");
+    $disabledResults.select2();
 </script>
