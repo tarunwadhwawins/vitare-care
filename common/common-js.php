@@ -17,4 +17,10 @@
             placeholder: "Select a Patient",
         });
     });
+
+    $(document).ready(function() {
+        $('#barMenu').click(function(){
+        $('.sidebar') .toggleClass('show')
+        });
+    });
 </script>

@@ -6,7 +6,7 @@
           <a href="dashboard"><img src="assets/images/logo.png" alt=""></a>
         </div>
         <div class="menuBar">
-          <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <a href="#" id="barMenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </div>
       </div>
       <div class="col-sm-2">

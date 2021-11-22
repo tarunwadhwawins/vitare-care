@@ -7975,7 +7975,20 @@ input[type="date" i] {
   left: 0;
   top: 64px;
   bottom: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: 0.5s;
+  z-index: 99; }
+  .sidebar.show {
+    width: 230px; }
+    .sidebar.show .menuList ul li a i {
+      padding-right: 12px; }
+    .sidebar.show .menuList ul li a span {
+      display: block;
+      transition: 0.5s;
+      transition-delay: 1.5s; }
+  @media screen and (min-width: 1600px) {
+    .sidebar {
+      width: 230px; } }
   .sidebar .menuList ul li:hover a {
     text-decoration: none;
     background-color: #f9f9f9;
@@ -7987,11 +8000,16 @@ input[type="date" i] {
     color: #6e84a3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     text-decoration: none;
     border-bottom: 1px solid #eee; }
+    @media screen and (min-width: 1600px) {
+      .sidebar .menuList ul li a i {
+        padding-right: 12px; } }
     .sidebar .menuList ul li a span {
       display: none; }
+      @media screen and (min-width: 1600px) {
+        .sidebar .menuList ul li a span {
+          display: block; } }
   .sidebar .menuList ul li:last-child a {
     border-bottom: 0px solid; }
 
@@ -8092,6 +8110,9 @@ header {
 
 .main .pageWrapper {
   padding: 64px 0 0 50px; }
+  @media screen and (min-width: 1600px) {
+    .main .pageWrapper {
+      padding: 64px 0 0 230px; } }
   .main .pageWrapper .contentWrapper {
     background-color: #f9f9f9;
     padding: 15px 0;
