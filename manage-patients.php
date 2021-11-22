@@ -25,6 +25,30 @@
                      <button class="btn primaryBtn" data-bs-toggle="modal" data-bs-target="#manangePatients">Add New Patient</button>
                   </div>
                </div>
+               <div class="row mb-4">
+                  <div class="col ">
+                     <div class="topBox manage red">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h5>10</h5>
+                        <p>Critical</p>
+                     </div>
+                  </div>
+                  <div class="col ">
+                     <div class="topBox manage blue">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h5>10</h5>
+                        <p>High</p>
+                     </div>
+                  </div>
+                  <div class="col ">
+                     <div class="topBox manage green">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h5>12</h5>
+                        <p>Normal</p>
+                     </div>
+                  </div>
+
+               </div>
                <div class="row">
                   <div class="col-sm-12">
                      <div class="table-responsive commonTable">
@@ -174,7 +198,7 @@
       </div>
    </div>
 
- 
+
    <?php include_once('common/common-js.php'); ?>
    <?php include_once('common/modals.php'); ?>
    <script>

@@ -234,7 +234,10 @@
                                     <div class="card">
                                        <div class="card-title">
                                           <h3>Blood Pressure</h3>
-                                          <button class="btn primaryBtn">Detail</button>
+                                          <div>
+                                             <button class="btn primaryBtn">Detail</button>
+                                             <button class="addBtn btn" title="Add Reoprt" data-bs-toggle="modal" data-bs-target="#addBloodReport"><i class="fa fa-plus"></i></button>
+                                          </div>
                                        </div>
                                        <div class="card-body">
                                           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -292,7 +295,10 @@
                                     <div class="card">
                                        <div class="card-title">
                                           <h3>Pulse</h3>
-                                          <button class="btn primaryBtn">Detail</button>
+                                          <div>
+                                             <button class="btn primaryBtn">Detail</button>
+                                             <button class="addBtn btn" title="Add report" data-bs-toggle="modal" data-bs-target="#addPulse"><i class="fa fa-plus"></i></button>
+                                          </div>
                                        </div>
                                        <div class="card-body">
                                           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -350,7 +356,10 @@
                                     <div class="card">
                                        <div class="card-title">
                                           <h3>Blood Glucose</h3>
-                                          <button class="btn primaryBtn">Detail</button>
+                                          <div>
+                                             <button class="btn primaryBtn">Detail</button>
+                                             <button class="addBtn btn" title="Add report" data-bs-toggle="modal" data-bs-target="#addBloodGlucose"><i class="fa fa-plus"></i></button>
+                                          </div>
                                        </div>
                                        <div class="card-body">
                                           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -373,23 +382,23 @@
                                                       </thead>
                                                       <tbody>
                                                          <tr>
-                                                            <td>Nov 05, 2021 10:00 AM</td>
+                                                            <td>Nov 05, 2021 10:00 AM (FBS)</td>
                                                             <td>105</td>
                                                          </tr>
                                                          <tr>
-                                                            <td>Nov 06, 2021 10:00 AM</td>
+                                                            <td>Nov 06, 2021 10:00 AM (FBS)</td>
                                                             <td>100</td>
                                                          </tr>
                                                          <tr>
-                                                            <td>Nov 08, 2021 10:00 AM</td>
+                                                            <td>Nov 08, 2021 10:00 AM (FBS)</td>
                                                             <td>95</td>
                                                          </tr>
                                                          <tr>
-                                                            <td>Nov 09, 2021 10:00 AM <i class="fa fa-cutlery" aria-hidden="true"></i> </td>
+                                                            <td>Nov 09, 2021 10:00 AM (RBS)</td>
                                                             <td>120</td>
                                                          </tr>
                                                          <tr>
-                                                            <td>Nov 11, 2021 10:00 AM <i class="fa fa-cutlery" aria-hidden="true"></i></td>
+                                                            <td>Nov 11, 2021 10:00 AM (RBS)</td>
                                                             <td>130</td>
                                                          </tr>
                                                       </tbody>
@@ -408,7 +417,10 @@
                                     <div class="card">
                                        <div class="card-title">
                                           <h3>Blood Oxygen Saturation</h3>
-                                          <button class="btn primaryBtn">Detail</button>
+                                          <div>
+                                             <button class="btn primaryBtn">Detail</button>
+                                             <button class="addBtn btn" title="Add report" data-bs-toggle="modal" data-bs-target="#bloodOxygenSaturation"><i class="fa fa-plus"></i></button>
+                                          </div>
                                        </div>
                                        <div class="card-body">
                                           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -431,7 +443,20 @@
                                                       </thead>
                                                       <tbody>
                                                          <tr>
-                                                            <td colspan="2">No records found</td>
+                                                            <td>Nov 05, 2021 10:00 AM</td>
+                                                            <td>80</td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>Nov 06, 2021 10:00 AM</td>
+                                                            <td>100</td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>Nov 08, 2021 10:00 AM</td>
+                                                            <td>95</td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td>Nov 09, 2021 10:00 AM </td>
+                                                            <td>88</td>
                                                          </tr>
                                                       </tbody>
                                                    </table>
@@ -449,56 +474,62 @@
                            <div class="tab-pane fade" id="pills-Care" role="tabpanel" aria-labelledby="pills-Care-tab">...</div>
 
                            <div class="tab-pane fade" id="pills-Documents" role="tabpanel" aria-labelledby="pills-Documents-tab">
-                              <div class="commonTable">
-                                 <table class="table">
-                                    <thead>
-                                       <tr>
-                                          <th>Name<span class="icon">
-                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                             </span></th>
-                                          <th>Document<span class="icon">
-                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                             </span></th>
-                                          <th>Type<span class="icon">
-                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                             </span></th>
-                                          <th>Tags<span class="icon">
-                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                             </span></th>
-                                          <th>Action</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td>Program 1</td>
-                                          <td>abc.pdf</td>
-                                          <td>Voter ID</td>
-                                          <td>Voter ID</td>
-                                          <td>
-                                             <ul class="action">
-                                                <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                                                <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
-                                             </ul>
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td>Program 2</td>
-                                          <td>example.pdf</td>
-                                          <td>Voter ID</td>
-                                          <td>Voter ID</td>
-                                          <td>
-                                             <ul class="action">
-                                                <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                                                <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
-                                             </ul>
-                                          </td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
+                              <div class="col-sm-12 text-end">
+                                 <button class="addBtn btn" title="Add Documents" data-bs-toggle="modal" data-bs-target="#addDocument"><i class="fa fa-plus"></i></button>
+                              </div>
+
+                              <div class="col-sm-12">
+                                 <div class="commonTable">
+                                    <table class="table">
+                                       <thead>
+                                          <tr>
+                                             <th>Name<span class="icon">
+                                                   <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                   <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </span></th>
+                                             <th>Document<span class="icon">
+                                                   <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                   <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </span></th>
+                                             <th>Type<span class="icon">
+                                                   <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                   <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </span></th>
+                                             <th>Tags<span class="icon">
+                                                   <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                   <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </span></th>
+                                             <th>Action</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>Program 1</td>
+                                             <td>abc.pdf</td>
+                                             <td>Voter ID</td>
+                                             <td>Voter ID</td>
+                                             <td>
+                                                <ul class="action">
+                                                   <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                   <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                </ul>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>Program 2</td>
+                                             <td>example.pdf</td>
+                                             <td>Voter ID</td>
+                                             <td>Voter ID</td>
+                                             <td>
+                                                <ul class="action">
+                                                   <li><a href="#" class="link-success"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                   <li><a href="#" class="link-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                </ul>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
                               </div>
                            </div>
                            <div class="tab-pane fade" id="pills-Time" role="tabpanel" aria-labelledby="pills-Time-tab">
@@ -635,29 +666,37 @@
 
                            </div>
                            <div class="tab-pane fade" id="pills-Notes" role="tabpanel" aria-labelledby="pills-Notes-tab">
-                              <div class="commonTable">
-                                 <table class="table">
-                                    <thead>
-                                       <tr>
-                                          <th>Date<span class="icon">
-                                                <i class="fa fa-caret-up" aria-hidden="true"></i>
-                                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                             </span></th>
-                                          <th>Note</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td class="text-nowrap">Nov 10, 2021</td>
-                                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus dolore, vel error harum porro totam eveniet modi iusto eos, dolorum provident aliquid earum corporis veritatis? Officiis molestiae amet ullam?</td>
-                                       </tr>
-                                       <tr>
-                                          <td class="text-nowrap">Nov 11, 2021</td>
-                                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe, ipsam molestias ducimus nemo fugit quos beatae. Explicabo consequatur cumque iusto magni laudantium saepe voluptas quasi eius, error quisquam quos?</td>
-                                       </tr>
+                              <div class="col-sm-12 text-end">
+                                 <button class="addBtn btn" title="Add Notes" data-bs-toggle="modal" data-bs-target="#addNotes"><i class="fa fa-plus"></i></button>
+                              </div>
+                              <div class="col-sm-12">
+                                 <div class="commonTable">
+                                    <table class="table">
+                                       <thead>
+                                          <tr>
+                                             <th>Date<span class="icon">
+                                                   <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                   <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </span></th>
+                                             <th>Note</th>
+                                             <th>Flag</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="text-nowrap">Nov 10, 2021</td>
+                                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus dolore, vel error harum porro totam eveniet modi iusto eos, dolorum provident aliquid earum corporis veritatis? Officiis molestiae amet ullam?</td>
+                                             <td><span class="box blueBgColor"></span></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-nowrap">Nov 11, 2021</td>
+                                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe, ipsam molestias ducimus nemo fugit quos beatae. Explicabo consequatur cumque iusto magni laudantium saepe voluptas quasi eius, error quisquam quos?</td>
+                                             <td><span class="box redBgColor"></span></td>
+                                          </tr>
 
-                                    </tbody>
-                                 </table>
+                                       </tbody>
+                                    </table>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -841,6 +880,7 @@
          </div>
       </div>
    </div>
+   <!---->
    <div class="modal fade" id="health" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-xl-down">
          <div class="modal-content">
@@ -1404,7 +1444,12 @@
                   <div class="col-sm-6">
                      <div class="form-group">
                         <label class="form-label">Device Name</label>
-                        <input type="text" class="form-control">
+                        <select class="form-select">
+                           <option>--Select Device--</option>
+                           <option>Blood Pressure</option>
+                           <option>SpO2</option>
+                           <option>Glucose</option>
+                        </select>
                      </div>
                   </div>
                   <div class="col-sm-6">
@@ -1425,6 +1470,7 @@
          </div>
       </div>
    </div>
+   <!---->
    <div class="modal fade" id="timeLog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
          <div class="modal-content">
@@ -1436,17 +1482,78 @@
                <div class="row">
                   <div class="col-sm-6">
                      <div class="form-group">
-                        <label class="form-label">Device Name</label>
+                        <label class="form-label">Category</label>
+                        <br>
+                        <select class="form-select" name="lable" id="cars">
+                           <option value="vitals">Daily monitoring of vitals</option>
+                           <option value="Provider">Provider Order For Lab</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Logged By</label>
                         <input type="text" class="form-control">
                      </div>
                   </div>
                   <div class="col-sm-6">
                      <div class="form-group">
-                        <label class="form-label">Status</label>
-                        <div class="form-check form-switch">
-                           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                           <label class="form-check-label" for="flexSwitchCheckDefault">Active</label>
-                        </div>
+                        <label class="form-label">Performed By</label>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Time Amount</label>
+                        <input type="time" class="form-control">
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="addNotes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Notes</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Note</label>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label class="form-label">Flag</label>
+                        <br>
+                        <input type="color">
                      </div>
                   </div>
                </div>
@@ -1458,6 +1565,196 @@
          </div>
       </div>
    </div>
+   <!---->
+   <div class="modal fade" id="addDocument" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Notes</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Document</label>
+                        <input type="file" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Type</label>
+                        <select class="form-select">
+                           <option value="0" selected="">Choose Type</option>
+                           <option value="1">Id Proof</option>
+                           <option value="2">Clinical</option>
+                           <option value="3">Insurance </option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Tags</label>
+
+                        <select class="form-control tags" multiple="multiple">
+                           <option selected="selected">Billing Admin</option>
+                           <option>Manager</option>
+                           <option>User Admin</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="addBloodReport" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Blood Report</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <div class="form-group">
+                        <label>Date & Time</label>
+                        <input type="datetime-local" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="form-group">
+                        <label>Systolic</label>
+                        <input type="text" class="form-control" placeholder="Value">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="form-group">
+                        <label>Diastoli</label>
+                        <input type="text" class="form-control" placeholder="Value">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="addPulse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Pulse</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Date & Time</label>
+                        <input type="datetime-local" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Value</label>
+                        <input type="text" class="form-control" placeholder="Add heart rate">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="addBloodGlucose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Add Blood Glucose</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <div class="form-group">
+                        <label>Date & Time </label>
+                        <input type="datetime-local" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="form-group">
+                        <label>FBS</label>
+                        <input type="text" class="form-control" placeholder="value">
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="form-group">
+                        <label>RBS</label>
+                        <input type="text" class="form-control" placeholder="value">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
+   <div class="modal fade" id="bloodOxygenSaturation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Blood Oxygen Saturation</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Date & Time </label>
+                        <input type="datetime-local" class="form-control">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form-group">
+                        <label>Value</label>
+                        <input type="text" class="form-control" placeholder="value">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+               <button type="button" class="btn primaryBtn">Save</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!---->
    <?php include_once('common/modals.php'); ?>
    <?php include_once('common/common-js.php'); ?>
    <script>
@@ -1622,8 +1919,8 @@
       var options = {
          series: [{
                name: "  ",
-               data: [0, 0, 0, 0, 0],
-               colors: ['#000']
+               data: [80, 95, 78, 100, 88],
+               color: '#228b22'
             },
 
          ],

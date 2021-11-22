@@ -278,6 +278,8 @@ header {
 		border-radius: 30px;
 	}
 	.quickAction {
+		display: flex;
+		justify-content: flex-end;
 		.btn {
 			&:hover {
 				color: $primary-color;

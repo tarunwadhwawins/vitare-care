@@ -8017,12 +8017,15 @@ header {
       font-size: 13px; }
   header .searchInput {
     border-radius: 30px; }
-  header .quickAction .btn:hover {
-    color: #111; }
-  header .quickAction .btn:focus {
-    box-shadow: none; }
-  header .quickAction .dropdown-menu {
-    z-index: 9999; }
+  header .quickAction {
+    display: flex;
+    justify-content: flex-end; }
+    header .quickAction .btn:hover {
+      color: #111; }
+    header .quickAction .btn:focus {
+      box-shadow: none; }
+    header .quickAction .dropdown-menu {
+      z-index: 9999; }
   header .profileNot > ul {
     display: flex;
     justify-content: flex-end;

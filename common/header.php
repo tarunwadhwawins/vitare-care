@@ -1,7 +1,7 @@
 <header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2 d-flex align-items-center">
+      <div class="col-xl-1 col-md-2 d-flex align-items-center">
         <div class="logo">
           <a href="dashboard"><img src="assets/images/logo.png" alt=""></a>
         </div>
@@ -9,7 +9,7 @@
           <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-2">
         <div class="organisation">
           <select class="form-select" aria-label="Default select example">
             <option selected>Select Organisation</option>
@@ -19,10 +19,20 @@
           </select>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-2">
+        <div class="organisation">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Location</option>
+            <option value="1">Location One</option>
+            <option value="2">Location Two</option>
+            <option value="3">Location Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2">
         <input type="text" class="form-control" placeholder="Search" class="searchInput">
       </div>
-      <div class="col-sm-2">
+      <div class="col-xl-3 col-md-2">
         <div class="dropdown quickAction">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Quick Action
@@ -39,7 +49,17 @@
         <div class="profileNot">
           <ul>
             <li>
-              <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+              <div class="dropdown quickAction">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#addAppointment">Lorem ipsum dolor sit.</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#manangePatients">Lorem ipsum dolor sit.</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#manageCareCoordinator">Lorem ipsum dolor sit.</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" href="#addTask">Lorem ipsum dolor sit.</a></li>
+                </ul>
+              </div>
             </li>
             <li>
               <div class="dropdown">

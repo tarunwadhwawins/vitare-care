@@ -27,6 +27,13 @@
     .commonTable .table tbody tr td {
       font-size: 13px;
       padding: 10px 15px; }
+      .commonTable .table tbody tr td span.flag {
+        height: 15px;
+        width: 30px;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 0 0 0 10px;
+        background-color: #ff6061; }
       .commonTable .table tbody tr td .action {
         display: flex; }
         .commonTable .table tbody tr td .action li {
@@ -67,6 +74,12 @@
     background-color: #0fb5c2; }
   .topBox.six {
     background-color: #267dff; }
+  .topBox.red {
+    background-color: #E30D2A; }
+  .topBox.blue {
+    background-color: #00897b; }
+  .topBox.green {
+    background-color: #267dff; }
   .topBox i {
     color: #fff;
     font-size: 22px; }
@@ -77,6 +90,20 @@
   .topBox p {
     font-size: 12px;
     color: #fff; }
+  .topBox.manage {
+    position: relative; }
+    .topBox.manage i {
+      font-size: 40px; }
+    .topBox.manage h5 {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin: 0;
+      font-size: 50px;
+      transform: translatey(-50%); }
+    .topBox.manage p {
+      font-size: 16px;
+      display: block; }
 
 .commonCard.card {
   background-color: #fff;
